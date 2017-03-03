@@ -1,0 +1,906 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CEB18E081E6711AE001653AD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB18E071E6711AE001653AD /* AppDelegate.swift */; };
+		CEB18E0D1E6711AE001653AD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEB18E0B1E6711AE001653AD /* Main.storyboard */; };
+		CEB18E0F1E6711AE001653AD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEB18E0E1E6711AE001653AD /* Assets.xcassets */; };
+		CEB18E121E6711AE001653AD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEB18E101E6711AE001653AD /* LaunchScreen.storyboard */; };
+		CEB18E1D1E6711AE001653AD /* DeDaoSwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB18E1C1E6711AE001653AD /* DeDaoSwiftTests.swift */; };
+		CEB18E281E6711AE001653AD /* DeDaoSwiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB18E271E6711AE001653AD /* DeDaoSwiftUITests.swift */; };
+		CEE4DE6A1E684A9B0093558C /* DDTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE4DE691E684A9B0093558C /* DDTabBarViewController.swift */; };
+		CEE4DE7F1E684DA60093558C /* DDTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE4DE7E1E684DA60093558C /* DDTableViewController.swift */; };
+		CEE4DE901E69089F0093558C /* CYLPlusButton.m in Sources */ = {isa = PBXBuildFile; fileRef = CEE4DE891E69089F0093558C /* CYLPlusButton.m */; };
+		CEE4DE911E69089F0093558C /* CYLTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = CEE4DE8B1E69089F0093558C /* CYLTabBar.m */; };
+		CEE4DE921E69089F0093558C /* CYLTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = CEE4DE8D1E69089F0093558C /* CYLTabBarController.m */; };
+		CEE4DE931E69089F0093558C /* UIViewController+CYLTabBarControllerExtention.m in Sources */ = {isa = PBXBuildFile; fileRef = CEE4DE8F1E69089F0093558C /* UIViewController+CYLTabBarControllerExtention.m */; };
+		CEE4DEAE1E690A9D0093558C /* DDBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE4DEAD1E690A9D0093558C /* DDBaseViewController.swift */; };
+		CEE4DEB01E690AAE0093558C /* DDBaseTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE4DEAF1E690AAE0093558C /* DDBaseTableViewController.swift */; };
+		CEE4DEB21E690ACB0093558C /* DDBaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE4DEB11E690ACB0093558C /* DDBaseViewModel.swift */; };
+		EB70D11DC41422F772F8819C /* Pods_DeDaoSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D88A0070B2B8B67E8338D85 /* Pods_DeDaoSwift.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CEB18E191E6711AE001653AD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CEB18DFC1E6711AE001653AD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CEB18E031E6711AE001653AD;
+			remoteInfo = DeDaoSwift;
+		};
+		CEB18E241E6711AE001653AD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CEB18DFC1E6711AE001653AD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CEB18E031E6711AE001653AD;
+			remoteInfo = DeDaoSwift;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0D88A0070B2B8B67E8338D85 /* Pods_DeDaoSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DeDaoSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B5EF831CD7B9695B76DF1DAE /* Pods-DeDaoSwift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DeDaoSwift.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DeDaoSwift/Pods-DeDaoSwift.debug.xcconfig"; sourceTree = "<group>"; };
+		CEB18E041E6711AE001653AD /* DeDaoSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DeDaoSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CEB18E071E6711AE001653AD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		CEB18E0C1E6711AE001653AD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CEB18E0E1E6711AE001653AD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CEB18E111E6711AE001653AD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CEB18E131E6711AE001653AD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CEB18E181E6711AE001653AD /* DeDaoSwiftTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DeDaoSwiftTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CEB18E1C1E6711AE001653AD /* DeDaoSwiftTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeDaoSwiftTests.swift; sourceTree = "<group>"; };
+		CEB18E1E1E6711AE001653AD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CEB18E231E6711AE001653AD /* DeDaoSwiftUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DeDaoSwiftUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CEB18E271E6711AE001653AD /* DeDaoSwiftUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeDaoSwiftUITests.swift; sourceTree = "<group>"; };
+		CEB18E291E6711AE001653AD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CEE4DE691E684A9B0093558C /* DDTabBarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DDTabBarViewController.swift; sourceTree = "<group>"; };
+		CEE4DE7D1E684C6A0093558C /* DeDaoSwift-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DeDaoSwift-Bridging-Header.h"; sourceTree = "<group>"; };
+		CEE4DE7E1E684DA60093558C /* DDTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DDTableViewController.swift; sourceTree = "<group>"; };
+		CEE4DE871E69089F0093558C /* CYLConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYLConstants.h; sourceTree = "<group>"; };
+		CEE4DE881E69089F0093558C /* CYLPlusButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYLPlusButton.h; sourceTree = "<group>"; };
+		CEE4DE891E69089F0093558C /* CYLPlusButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYLPlusButton.m; sourceTree = "<group>"; };
+		CEE4DE8A1E69089F0093558C /* CYLTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYLTabBar.h; sourceTree = "<group>"; };
+		CEE4DE8B1E69089F0093558C /* CYLTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYLTabBar.m; sourceTree = "<group>"; };
+		CEE4DE8C1E69089F0093558C /* CYLTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYLTabBarController.h; sourceTree = "<group>"; };
+		CEE4DE8D1E69089F0093558C /* CYLTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYLTabBarController.m; sourceTree = "<group>"; };
+		CEE4DE8E1E69089F0093558C /* UIViewController+CYLTabBarControllerExtention.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+CYLTabBarControllerExtention.h"; sourceTree = "<group>"; };
+		CEE4DE8F1E69089F0093558C /* UIViewController+CYLTabBarControllerExtention.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+CYLTabBarControllerExtention.m"; sourceTree = "<group>"; };
+		CEE4DEAD1E690A9D0093558C /* DDBaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DDBaseViewController.swift; sourceTree = "<group>"; };
+		CEE4DEAF1E690AAE0093558C /* DDBaseTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DDBaseTableViewController.swift; sourceTree = "<group>"; };
+		CEE4DEB11E690ACB0093558C /* DDBaseViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DDBaseViewModel.swift; sourceTree = "<group>"; };
+		D07FDF203FB69993E2B75B43 /* Pods-DeDaoSwift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DeDaoSwift.release.xcconfig"; path = "Pods/Target Support Files/Pods-DeDaoSwift/Pods-DeDaoSwift.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CEB18E011E6711AE001653AD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EB70D11DC41422F772F8819C /* Pods_DeDaoSwift.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CEB18E151E6711AE001653AD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CEB18E201E6711AE001653AD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AAD24ECD578A86CED5E87A47 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B5EF831CD7B9695B76DF1DAE /* Pods-DeDaoSwift.debug.xcconfig */,
+				D07FDF203FB69993E2B75B43 /* Pods-DeDaoSwift.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		C894F4DA47B26F5A07FA3A0F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0D88A0070B2B8B67E8338D85 /* Pods_DeDaoSwift.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CEB18DFB1E6711AE001653AD = {
+			isa = PBXGroup;
+			children = (
+				CEB18E061E6711AE001653AD /* DeDaoSwift */,
+				CEB18E1B1E6711AE001653AD /* DeDaoSwiftTests */,
+				CEB18E261E6711AE001653AD /* DeDaoSwiftUITests */,
+				CEB18E051E6711AE001653AD /* Products */,
+				AAD24ECD578A86CED5E87A47 /* Pods */,
+				C894F4DA47B26F5A07FA3A0F /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		CEB18E051E6711AE001653AD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CEB18E041E6711AE001653AD /* DeDaoSwift.app */,
+				CEB18E181E6711AE001653AD /* DeDaoSwiftTests.xctest */,
+				CEB18E231E6711AE001653AD /* DeDaoSwiftUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CEB18E061E6711AE001653AD /* DeDaoSwift */ = {
+			isa = PBXGroup;
+			children = (
+				CEB18E071E6711AE001653AD /* AppDelegate.swift */,
+				CEE4DE691E684A9B0093558C /* DDTabBarViewController.swift */,
+				CEE4DE7D1E684C6A0093558C /* DeDaoSwift-Bridging-Header.h */,
+				CEE4DEA81E690A060093558C /* Base */,
+				CEE4DE941E69098A0093558C /* Listen */,
+				CEE4DE991E69098A0093558C /* Mine */,
+				CEE4DE9E1E69098A0093558C /* Purchase */,
+				CEE4DEA31E69098A0093558C /* Subscribe */,
+				CEE4DE851E69089F0093558C /* Vendor */,
+				CEE4DE651E684A4F0093558C /* Home */,
+				CEB18E0B1E6711AE001653AD /* Main.storyboard */,
+				CEB18E0E1E6711AE001653AD /* Assets.xcassets */,
+				CEB18E101E6711AE001653AD /* LaunchScreen.storyboard */,
+				CEB18E131E6711AE001653AD /* Info.plist */,
+			);
+			path = DeDaoSwift;
+			sourceTree = "<group>";
+		};
+		CEB18E1B1E6711AE001653AD /* DeDaoSwiftTests */ = {
+			isa = PBXGroup;
+			children = (
+				CEB18E1C1E6711AE001653AD /* DeDaoSwiftTests.swift */,
+				CEB18E1E1E6711AE001653AD /* Info.plist */,
+			);
+			path = DeDaoSwiftTests;
+			sourceTree = "<group>";
+		};
+		CEB18E261E6711AE001653AD /* DeDaoSwiftUITests */ = {
+			isa = PBXGroup;
+			children = (
+				CEB18E271E6711AE001653AD /* DeDaoSwiftUITests.swift */,
+				CEB18E291E6711AE001653AD /* Info.plist */,
+			);
+			path = DeDaoSwiftUITests;
+			sourceTree = "<group>";
+		};
+		CEE4DE651E684A4F0093558C /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				CEE4DE661E684A4F0093558C /* Controller */,
+				CEE4DE671E684A4F0093558C /* Model */,
+				CEE4DE681E684A4F0093558C /* View */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		CEE4DE661E684A4F0093558C /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				CEE4DE7E1E684DA60093558C /* DDTableViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		CEE4DE671E684A4F0093558C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CEE4DE681E684A4F0093558C /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CEE4DE851E69089F0093558C /* Vendor */ = {
+			isa = PBXGroup;
+			children = (
+				CEE4DE861E69089F0093558C /* CYLTabBarController */,
+			);
+			path = Vendor;
+			sourceTree = "<group>";
+		};
+		CEE4DE861E69089F0093558C /* CYLTabBarController */ = {
+			isa = PBXGroup;
+			children = (
+				CEE4DE871E69089F0093558C /* CYLConstants.h */,
+				CEE4DE881E69089F0093558C /* CYLPlusButton.h */,
+				CEE4DE891E69089F0093558C /* CYLPlusButton.m */,
+				CEE4DE8A1E69089F0093558C /* CYLTabBar.h */,
+				CEE4DE8B1E69089F0093558C /* CYLTabBar.m */,
+				CEE4DE8C1E69089F0093558C /* CYLTabBarController.h */,
+				CEE4DE8D1E69089F0093558C /* CYLTabBarController.m */,
+				CEE4DE8E1E69089F0093558C /* UIViewController+CYLTabBarControllerExtention.h */,
+				CEE4DE8F1E69089F0093558C /* UIViewController+CYLTabBarControllerExtention.m */,
+			);
+			path = CYLTabBarController;
+			sourceTree = "<group>";
+		};
+		CEE4DE941E69098A0093558C /* Listen */ = {
+			isa = PBXGroup;
+			children = (
+				CEE4DE951E69098A0093558C /* Controller */,
+				CEE4DE961E69098A0093558C /* Model */,
+				CEE4DE971E69098A0093558C /* View */,
+				CEE4DE981E69098A0093558C /* ViewModel */,
+			);
+			path = Listen;
+			sourceTree = "<group>";
+		};
+		CEE4DE951E69098A0093558C /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		CEE4DE961E69098A0093558C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CEE4DE971E69098A0093558C /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CEE4DE981E69098A0093558C /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		CEE4DE991E69098A0093558C /* Mine */ = {
+			isa = PBXGroup;
+			children = (
+				CEE4DE9A1E69098A0093558C /* Controller */,
+				CEE4DE9B1E69098A0093558C /* Model */,
+				CEE4DE9C1E69098A0093558C /* View */,
+				CEE4DE9D1E69098A0093558C /* ViewModel */,
+			);
+			path = Mine;
+			sourceTree = "<group>";
+		};
+		CEE4DE9A1E69098A0093558C /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		CEE4DE9B1E69098A0093558C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CEE4DE9C1E69098A0093558C /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CEE4DE9D1E69098A0093558C /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		CEE4DE9E1E69098A0093558C /* Purchase */ = {
+			isa = PBXGroup;
+			children = (
+				CEE4DE9F1E69098A0093558C /* Controller */,
+				CEE4DEA01E69098A0093558C /* Model */,
+				CEE4DEA11E69098A0093558C /* View */,
+				CEE4DEA21E69098A0093558C /* ViewModel */,
+			);
+			path = Purchase;
+			sourceTree = "<group>";
+		};
+		CEE4DE9F1E69098A0093558C /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		CEE4DEA01E69098A0093558C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CEE4DEA11E69098A0093558C /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CEE4DEA21E69098A0093558C /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		CEE4DEA31E69098A0093558C /* Subscribe */ = {
+			isa = PBXGroup;
+			children = (
+				CEE4DEA41E69098A0093558C /* Controller */,
+				CEE4DEA51E69098A0093558C /* Model */,
+				CEE4DEA61E69098A0093558C /* View */,
+				CEE4DEA71E69098A0093558C /* ViewModel */,
+			);
+			path = Subscribe;
+			sourceTree = "<group>";
+		};
+		CEE4DEA41E69098A0093558C /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		CEE4DEA51E69098A0093558C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CEE4DEA61E69098A0093558C /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CEE4DEA71E69098A0093558C /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		CEE4DEA81E690A060093558C /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				CEE4DEA91E690A060093558C /* Controller */,
+				CEE4DEAA1E690A060093558C /* Model */,
+				CEE4DEAB1E690A060093558C /* View */,
+				CEE4DEAC1E690A060093558C /* ViewModel */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		CEE4DEA91E690A060093558C /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				CEE4DEAD1E690A9D0093558C /* DDBaseViewController.swift */,
+				CEE4DEAF1E690AAE0093558C /* DDBaseTableViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		CEE4DEAA1E690A060093558C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CEE4DEAB1E690A060093558C /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CEE4DEAC1E690A060093558C /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				CEE4DEB11E690ACB0093558C /* DDBaseViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CEB18E031E6711AE001653AD /* DeDaoSwift */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CEB18E2C1E6711AE001653AD /* Build configuration list for PBXNativeTarget "DeDaoSwift" */;
+			buildPhases = (
+				B0AC6E966B4FE7B9F79E6B72 /* [CP] Check Pods Manifest.lock */,
+				CEB18E001E6711AE001653AD /* Sources */,
+				CEB18E011E6711AE001653AD /* Frameworks */,
+				CEB18E021E6711AE001653AD /* Resources */,
+				FEB984B53EAAF70280E278DA /* [CP] Embed Pods Frameworks */,
+				0C207E0D3A8C482DDBE45E1B /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DeDaoSwift;
+			productName = DeDaoSwift;
+			productReference = CEB18E041E6711AE001653AD /* DeDaoSwift.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CEB18E171E6711AE001653AD /* DeDaoSwiftTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CEB18E2F1E6711AE001653AD /* Build configuration list for PBXNativeTarget "DeDaoSwiftTests" */;
+			buildPhases = (
+				CEB18E141E6711AE001653AD /* Sources */,
+				CEB18E151E6711AE001653AD /* Frameworks */,
+				CEB18E161E6711AE001653AD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CEB18E1A1E6711AE001653AD /* PBXTargetDependency */,
+			);
+			name = DeDaoSwiftTests;
+			productName = DeDaoSwiftTests;
+			productReference = CEB18E181E6711AE001653AD /* DeDaoSwiftTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		CEB18E221E6711AE001653AD /* DeDaoSwiftUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CEB18E321E6711AE001653AD /* Build configuration list for PBXNativeTarget "DeDaoSwiftUITests" */;
+			buildPhases = (
+				CEB18E1F1E6711AE001653AD /* Sources */,
+				CEB18E201E6711AE001653AD /* Frameworks */,
+				CEB18E211E6711AE001653AD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CEB18E251E6711AE001653AD /* PBXTargetDependency */,
+			);
+			name = DeDaoSwiftUITests;
+			productName = DeDaoSwiftUITests;
+			productReference = CEB18E231E6711AE001653AD /* DeDaoSwiftUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CEB18DFC1E6711AE001653AD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = DD;
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = niuNaruto;
+				TargetAttributes = {
+					CEB18E031E6711AE001653AD = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = EYJX338JDS;
+						ProvisioningStyle = Automatic;
+					};
+					CEB18E171E6711AE001653AD = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = CEB18E031E6711AE001653AD;
+					};
+					CEB18E221E6711AE001653AD = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = CEB18E031E6711AE001653AD;
+					};
+				};
+			};
+			buildConfigurationList = CEB18DFF1E6711AE001653AD /* Build configuration list for PBXProject "DeDaoSwift" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CEB18DFB1E6711AE001653AD;
+			productRefGroup = CEB18E051E6711AE001653AD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CEB18E031E6711AE001653AD /* DeDaoSwift */,
+				CEB18E171E6711AE001653AD /* DeDaoSwiftTests */,
+				CEB18E221E6711AE001653AD /* DeDaoSwiftUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CEB18E021E6711AE001653AD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CEB18E121E6711AE001653AD /* LaunchScreen.storyboard in Resources */,
+				CEB18E0F1E6711AE001653AD /* Assets.xcassets in Resources */,
+				CEB18E0D1E6711AE001653AD /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CEB18E161E6711AE001653AD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CEB18E211E6711AE001653AD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0C207E0D3A8C482DDBE45E1B /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DeDaoSwift/Pods-DeDaoSwift-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B0AC6E966B4FE7B9F79E6B72 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		FEB984B53EAAF70280E278DA /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DeDaoSwift/Pods-DeDaoSwift-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CEB18E001E6711AE001653AD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CEE4DE6A1E684A9B0093558C /* DDTabBarViewController.swift in Sources */,
+				CEE4DE7F1E684DA60093558C /* DDTableViewController.swift in Sources */,
+				CEE4DE921E69089F0093558C /* CYLTabBarController.m in Sources */,
+				CEE4DE901E69089F0093558C /* CYLPlusButton.m in Sources */,
+				CEE4DEB01E690AAE0093558C /* DDBaseTableViewController.swift in Sources */,
+				CEE4DEB21E690ACB0093558C /* DDBaseViewModel.swift in Sources */,
+				CEE4DE911E69089F0093558C /* CYLTabBar.m in Sources */,
+				CEE4DE931E69089F0093558C /* UIViewController+CYLTabBarControllerExtention.m in Sources */,
+				CEB18E081E6711AE001653AD /* AppDelegate.swift in Sources */,
+				CEE4DEAE1E690A9D0093558C /* DDBaseViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CEB18E141E6711AE001653AD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CEB18E1D1E6711AE001653AD /* DeDaoSwiftTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CEB18E1F1E6711AE001653AD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CEB18E281E6711AE001653AD /* DeDaoSwiftUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CEB18E1A1E6711AE001653AD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CEB18E031E6711AE001653AD /* DeDaoSwift */;
+			targetProxy = CEB18E191E6711AE001653AD /* PBXContainerItemProxy */;
+		};
+		CEB18E251E6711AE001653AD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CEB18E031E6711AE001653AD /* DeDaoSwift */;
+			targetProxy = CEB18E241E6711AE001653AD /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		CEB18E0B1E6711AE001653AD /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CEB18E0C1E6711AE001653AD /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		CEB18E101E6711AE001653AD /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CEB18E111E6711AE001653AD /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CEB18E2A1E6711AE001653AD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		CEB18E2B1E6711AE001653AD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CEB18E2D1E6711AE001653AD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B5EF831CD7B9695B76DF1DAE /* Pods-DeDaoSwift.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = EYJX338JDS;
+				INFOPLIST_FILE = DeDaoSwift/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = niuNatuto.DeDaoSwift;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "/Users/niuting/DeDaoAppSwift/DeDaoSwift/DeDaoSwift/DeDaoSwift-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		CEB18E2E1E6711AE001653AD /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D07FDF203FB69993E2B75B43 /* Pods-DeDaoSwift.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = EYJX338JDS;
+				INFOPLIST_FILE = DeDaoSwift/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = niuNatuto.DeDaoSwift;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "/Users/niuting/DeDaoAppSwift/DeDaoSwift/DeDaoSwift/DeDaoSwift-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		CEB18E301E6711AE001653AD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = DeDaoSwiftTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = niuNatuto.DeDaoSwiftTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DeDaoSwift.app/DeDaoSwift";
+			};
+			name = Debug;
+		};
+		CEB18E311E6711AE001653AD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = DeDaoSwiftTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = niuNatuto.DeDaoSwiftTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DeDaoSwift.app/DeDaoSwift";
+			};
+			name = Release;
+		};
+		CEB18E331E6711AE001653AD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = DeDaoSwiftUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = niuNatuto.DeDaoSwiftUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = DeDaoSwift;
+			};
+			name = Debug;
+		};
+		CEB18E341E6711AE001653AD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = DeDaoSwiftUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = niuNatuto.DeDaoSwiftUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = DeDaoSwift;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CEB18DFF1E6711AE001653AD /* Build configuration list for PBXProject "DeDaoSwift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CEB18E2A1E6711AE001653AD /* Debug */,
+				CEB18E2B1E6711AE001653AD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CEB18E2C1E6711AE001653AD /* Build configuration list for PBXNativeTarget "DeDaoSwift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CEB18E2D1E6711AE001653AD /* Debug */,
+				CEB18E2E1E6711AE001653AD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CEB18E2F1E6711AE001653AD /* Build configuration list for PBXNativeTarget "DeDaoSwiftTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CEB18E301E6711AE001653AD /* Debug */,
+				CEB18E311E6711AE001653AD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CEB18E321E6711AE001653AD /* Build configuration list for PBXNativeTarget "DeDaoSwiftUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CEB18E331E6711AE001653AD /* Debug */,
+				CEB18E341E6711AE001653AD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CEB18DFC1E6711AE001653AD /* Project object */;
+}
