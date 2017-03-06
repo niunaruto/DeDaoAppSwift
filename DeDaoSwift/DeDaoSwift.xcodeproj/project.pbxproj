@@ -7,21 +7,47 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CE708D1C1E6914B300F4DF5D /* DDBaseTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE708D191E6914B300F4DF5D /* DDBaseTableViewController.swift */; };
+		CE708D1D1E6914B300F4DF5D /* DDBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE708D1A1E6914B300F4DF5D /* DDBaseViewController.swift */; };
+		CE708D1E1E6914B300F4DF5D /* DDBaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE708D1B1E6914B300F4DF5D /* DDBaseViewModel.swift */; };
+		CE708D201E6914D100F4DF5D /* DDNavigationProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE708D1F1E6914D100F4DF5D /* DDNavigationProtocol.swift */; };
+		CE708D281E6929A800F4DF5D /* UIImage+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE708D271E6929A800F4DF5D /* UIImage+Extension.swift */; };
+		CE708D2A1E69389A00F4DF5D /* ReactiveSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE708D291E69389A00F4DF5D /* ReactiveSwift.framework */; };
+		CE708D2C1E69389F00F4DF5D /* SnapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE708D2B1E69389F00F4DF5D /* SnapKit.framework */; };
+		CE708D301E6938A800F4DF5D /* Kingfisher.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE708D2F1E6938A800F4DF5D /* Kingfisher.framework */; };
+		CE708D321E6938AC00F4DF5D /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE708D311E6938AC00F4DF5D /* Result.framework */; };
+		CE708D341E6939B000F4DF5D /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE708D331E6939B000F4DF5D /* Alamofire.framework */; };
+		CE708D361E69454200F4DF5D /* DDNetworkTools.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE708D351E69454200F4DF5D /* DDNetworkTools.swift */; };
+		CE708D3A1E694D0E00F4DF5D /* DDScrollBannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE708D391E694D0E00F4DF5D /* DDScrollBannerView.swift */; };
+		CE708D3D1E69CA0A00F4DF5D /* MJRefresh.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE708D3C1E69CA0A00F4DF5D /* MJRefresh.framework */; };
+		CE708D421E69CD0500F4DF5D /* homeJsonData.json in Resources */ = {isa = PBXBuildFile; fileRef = CE708D411E69CD0500F4DF5D /* homeJsonData.json */; };
+		CE7C11E71E6D09B900067BFB /* DDTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7C11E61E6D09B900067BFB /* DDTool.swift */; };
+		CE7C11EB1E6D0E5700067BFB /* DDHomeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7C11EA1E6D0E5700067BFB /* DDHomeModel.swift */; };
+		CE7C11ED1E6D0F7B00067BFB /* CYLTabBarController.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE7C11EC1E6D0F7B00067BFB /* CYLTabBarController.framework */; };
+		CE7C11EF1E6D24F800067BFB /* ObjectMapper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE7C11EE1E6D24F800067BFB /* ObjectMapper.framework */; };
+		CE7C11F91E6D387E00067BFB /* DDHomeSliderModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7C11F81E6D387E00067BFB /* DDHomeSliderModel.swift */; };
+		CE7C11FB1E6D395000067BFB /* DDHomeFreeAudioModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7C11FA1E6D395000067BFB /* DDHomeFreeAudioModel.swift */; };
+		CE7C11FD1E6D3C2B00067BFB /* DDHomeColumnModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7C11FC1E6D3C2B00067BFB /* DDHomeColumnModel.swift */; };
+		CE7C11FF1E6D3D2F00067BFB /* DDHomeStorytellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7C11FE1E6D3D2F00067BFB /* DDHomeStorytellModel.swift */; };
+		CE7C12011E6D433600067BFB /* DDHomeNewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7C12001E6D433600067BFB /* DDHomeNewModel.swift */; };
+		CE7C12031E6D441300067BFB /* DDHomeSubjectModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7C12021E6D441300067BFB /* DDHomeSubjectModel.swift */; };
+		CE7C12051E6D44B800067BFB /* DDHomeVerseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7C12041E6D44B800067BFB /* DDHomeVerseModel.swift */; };
+		CE7C12091E6D46EF00067BFB /* DDBannerScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7C12081E6D46EF00067BFB /* DDBannerScrollView.swift */; };
+		CE7C121B1E6D623600067BFB /* TAAbstractDotView.m in Sources */ = {isa = PBXBuildFile; fileRef = CE7C120E1E6D623600067BFB /* TAAbstractDotView.m */; };
+		CE7C121C1E6D623600067BFB /* TAAnimatedDotView.m in Sources */ = {isa = PBXBuildFile; fileRef = CE7C12101E6D623600067BFB /* TAAnimatedDotView.m */; };
+		CE7C121D1E6D623600067BFB /* TADotView.m in Sources */ = {isa = PBXBuildFile; fileRef = CE7C12121E6D623600067BFB /* TADotView.m */; };
+		CE7C121E1E6D623600067BFB /* TAPageControl.m in Sources */ = {isa = PBXBuildFile; fileRef = CE7C12141E6D623600067BFB /* TAPageControl.m */; };
+		CE7C121F1E6D623600067BFB /* SDCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CE7C12161E6D623600067BFB /* SDCollectionViewCell.m */; };
+		CE7C12201E6D623600067BFB /* SDCycleScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = CE7C12181E6D623600067BFB /* SDCycleScrollView.m */; };
+		CE7C12211E6D623600067BFB /* UIView+SDExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = CE7C121A1E6D623600067BFB /* UIView+SDExtension.m */; };
+		CE7C12231E6D648D00067BFB /* UIImageView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7C12221E6D648D00067BFB /* UIImageView+Extension.swift */; };
 		CEB18E081E6711AE001653AD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB18E071E6711AE001653AD /* AppDelegate.swift */; };
-		CEB18E0D1E6711AE001653AD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEB18E0B1E6711AE001653AD /* Main.storyboard */; };
 		CEB18E0F1E6711AE001653AD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEB18E0E1E6711AE001653AD /* Assets.xcassets */; };
 		CEB18E121E6711AE001653AD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEB18E101E6711AE001653AD /* LaunchScreen.storyboard */; };
 		CEB18E1D1E6711AE001653AD /* DeDaoSwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB18E1C1E6711AE001653AD /* DeDaoSwiftTests.swift */; };
 		CEB18E281E6711AE001653AD /* DeDaoSwiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB18E271E6711AE001653AD /* DeDaoSwiftUITests.swift */; };
 		CEE4DE6A1E684A9B0093558C /* DDTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE4DE691E684A9B0093558C /* DDTabBarViewController.swift */; };
 		CEE4DE7F1E684DA60093558C /* DDTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE4DE7E1E684DA60093558C /* DDTableViewController.swift */; };
-		CEE4DE901E69089F0093558C /* CYLPlusButton.m in Sources */ = {isa = PBXBuildFile; fileRef = CEE4DE891E69089F0093558C /* CYLPlusButton.m */; };
-		CEE4DE911E69089F0093558C /* CYLTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = CEE4DE8B1E69089F0093558C /* CYLTabBar.m */; };
-		CEE4DE921E69089F0093558C /* CYLTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = CEE4DE8D1E69089F0093558C /* CYLTabBarController.m */; };
-		CEE4DE931E69089F0093558C /* UIViewController+CYLTabBarControllerExtention.m in Sources */ = {isa = PBXBuildFile; fileRef = CEE4DE8F1E69089F0093558C /* UIViewController+CYLTabBarControllerExtention.m */; };
-		CEE4DEAE1E690A9D0093558C /* DDBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE4DEAD1E690A9D0093558C /* DDBaseViewController.swift */; };
-		CEE4DEB01E690AAE0093558C /* DDBaseTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE4DEAF1E690AAE0093558C /* DDBaseTableViewController.swift */; };
-		CEE4DEB21E690ACB0093558C /* DDBaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE4DEB11E690ACB0093558C /* DDBaseViewModel.swift */; };
 		EB70D11DC41422F772F8819C /* Pods_DeDaoSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D88A0070B2B8B67E8338D85 /* Pods_DeDaoSwift.framework */; };
 /* End PBXBuildFile section */
 
@@ -45,9 +71,50 @@
 /* Begin PBXFileReference section */
 		0D88A0070B2B8B67E8338D85 /* Pods_DeDaoSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DeDaoSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5EF831CD7B9695B76DF1DAE /* Pods-DeDaoSwift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DeDaoSwift.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DeDaoSwift/Pods-DeDaoSwift.debug.xcconfig"; sourceTree = "<group>"; };
+		CE708D191E6914B300F4DF5D /* DDBaseTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DDBaseTableViewController.swift; sourceTree = "<group>"; };
+		CE708D1A1E6914B300F4DF5D /* DDBaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DDBaseViewController.swift; sourceTree = "<group>"; };
+		CE708D1B1E6914B300F4DF5D /* DDBaseViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DDBaseViewModel.swift; sourceTree = "<group>"; };
+		CE708D1F1E6914D100F4DF5D /* DDNavigationProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DDNavigationProtocol.swift; sourceTree = "<group>"; };
+		CE708D271E6929A800F4DF5D /* UIImage+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+Extension.swift"; sourceTree = "<group>"; };
+		CE708D291E69389A00F4DF5D /* ReactiveSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ReactiveSwift.framework; path = "../../Library/Developer/Xcode/DerivedData/DeDaoSwift-epadcgrmirgswpdzquunptpotfgw/Build/Products/Debug-iphoneos/ReactiveSwift/ReactiveSwift.framework"; sourceTree = "<group>"; };
+		CE708D2B1E69389F00F4DF5D /* SnapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SnapKit.framework; path = "../../Library/Developer/Xcode/DerivedData/DeDaoSwift-epadcgrmirgswpdzquunptpotfgw/Build/Products/Debug-iphoneos/SnapKit/SnapKit.framework"; sourceTree = "<group>"; };
+		CE708D2D1E6938A400F4DF5D /* SwiftyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyJSON.framework; path = "../../Library/Developer/Xcode/DerivedData/DeDaoSwift-epadcgrmirgswpdzquunptpotfgw/Build/Products/Debug-iphoneos/SwiftyJSON/SwiftyJSON.framework"; sourceTree = "<group>"; };
+		CE708D2F1E6938A800F4DF5D /* Kingfisher.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Kingfisher.framework; path = "../../Library/Developer/Xcode/DerivedData/DeDaoSwift-epadcgrmirgswpdzquunptpotfgw/Build/Products/Debug-iphoneos/Kingfisher/Kingfisher.framework"; sourceTree = "<group>"; };
+		CE708D311E6938AC00F4DF5D /* Result.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Result.framework; path = "../../Library/Developer/Xcode/DerivedData/DeDaoSwift-epadcgrmirgswpdzquunptpotfgw/Build/Products/Debug-iphoneos/Result/Result.framework"; sourceTree = "<group>"; };
+		CE708D331E6939B000F4DF5D /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = "Pods/../build/Debug-iphoneos/Alamofire/Alamofire.framework"; sourceTree = "<group>"; };
+		CE708D351E69454200F4DF5D /* DDNetworkTools.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DDNetworkTools.swift; sourceTree = "<group>"; };
+		CE708D391E694D0E00F4DF5D /* DDScrollBannerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DDScrollBannerView.swift; sourceTree = "<group>"; };
+		CE708D3C1E69CA0A00F4DF5D /* MJRefresh.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MJRefresh.framework; path = "Pods/../build/Release-iphoneos/MJRefresh/MJRefresh.framework"; sourceTree = "<group>"; };
+		CE708D411E69CD0500F4DF5D /* homeJsonData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = homeJsonData.json; sourceTree = "<group>"; };
+		CE7C11E61E6D09B900067BFB /* DDTool.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DDTool.swift; sourceTree = "<group>"; };
+		CE7C11EA1E6D0E5700067BFB /* DDHomeModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DDHomeModel.swift; sourceTree = "<group>"; };
+		CE7C11EC1E6D0F7B00067BFB /* CYLTabBarController.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CYLTabBarController.framework; path = "Pods/../build/Release-iphoneos/CYLTabBarController/CYLTabBarController.framework"; sourceTree = "<group>"; };
+		CE7C11EE1E6D24F800067BFB /* ObjectMapper.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ObjectMapper.framework; path = "Pods/../build/Debug-iphoneos/ObjectMapper/ObjectMapper.framework"; sourceTree = "<group>"; };
+		CE7C11F81E6D387E00067BFB /* DDHomeSliderModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DDHomeSliderModel.swift; sourceTree = "<group>"; };
+		CE7C11FA1E6D395000067BFB /* DDHomeFreeAudioModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DDHomeFreeAudioModel.swift; sourceTree = "<group>"; };
+		CE7C11FC1E6D3C2B00067BFB /* DDHomeColumnModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DDHomeColumnModel.swift; sourceTree = "<group>"; };
+		CE7C11FE1E6D3D2F00067BFB /* DDHomeStorytellModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DDHomeStorytellModel.swift; sourceTree = "<group>"; };
+		CE7C12001E6D433600067BFB /* DDHomeNewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DDHomeNewModel.swift; sourceTree = "<group>"; };
+		CE7C12021E6D441300067BFB /* DDHomeSubjectModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DDHomeSubjectModel.swift; sourceTree = "<group>"; };
+		CE7C12041E6D44B800067BFB /* DDHomeVerseModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DDHomeVerseModel.swift; sourceTree = "<group>"; };
+		CE7C12081E6D46EF00067BFB /* DDBannerScrollView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DDBannerScrollView.swift; sourceTree = "<group>"; };
+		CE7C120D1E6D623600067BFB /* TAAbstractDotView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TAAbstractDotView.h; sourceTree = "<group>"; };
+		CE7C120E1E6D623600067BFB /* TAAbstractDotView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TAAbstractDotView.m; sourceTree = "<group>"; };
+		CE7C120F1E6D623600067BFB /* TAAnimatedDotView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TAAnimatedDotView.h; sourceTree = "<group>"; };
+		CE7C12101E6D623600067BFB /* TAAnimatedDotView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TAAnimatedDotView.m; sourceTree = "<group>"; };
+		CE7C12111E6D623600067BFB /* TADotView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TADotView.h; sourceTree = "<group>"; };
+		CE7C12121E6D623600067BFB /* TADotView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TADotView.m; sourceTree = "<group>"; };
+		CE7C12131E6D623600067BFB /* TAPageControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TAPageControl.h; sourceTree = "<group>"; };
+		CE7C12141E6D623600067BFB /* TAPageControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TAPageControl.m; sourceTree = "<group>"; };
+		CE7C12151E6D623600067BFB /* SDCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDCollectionViewCell.h; sourceTree = "<group>"; };
+		CE7C12161E6D623600067BFB /* SDCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDCollectionViewCell.m; sourceTree = "<group>"; };
+		CE7C12171E6D623600067BFB /* SDCycleScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDCycleScrollView.h; sourceTree = "<group>"; };
+		CE7C12181E6D623600067BFB /* SDCycleScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDCycleScrollView.m; sourceTree = "<group>"; };
+		CE7C12191E6D623600067BFB /* UIView+SDExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+SDExtension.h"; sourceTree = "<group>"; };
+		CE7C121A1E6D623600067BFB /* UIView+SDExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+SDExtension.m"; sourceTree = "<group>"; };
+		CE7C12221E6D648D00067BFB /* UIImageView+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImageView+Extension.swift"; sourceTree = "<group>"; };
 		CEB18E041E6711AE001653AD /* DeDaoSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DeDaoSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEB18E071E6711AE001653AD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		CEB18E0C1E6711AE001653AD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CEB18E0E1E6711AE001653AD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CEB18E111E6711AE001653AD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CEB18E131E6711AE001653AD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -60,18 +127,6 @@
 		CEE4DE691E684A9B0093558C /* DDTabBarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DDTabBarViewController.swift; sourceTree = "<group>"; };
 		CEE4DE7D1E684C6A0093558C /* DeDaoSwift-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DeDaoSwift-Bridging-Header.h"; sourceTree = "<group>"; };
 		CEE4DE7E1E684DA60093558C /* DDTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DDTableViewController.swift; sourceTree = "<group>"; };
-		CEE4DE871E69089F0093558C /* CYLConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYLConstants.h; sourceTree = "<group>"; };
-		CEE4DE881E69089F0093558C /* CYLPlusButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYLPlusButton.h; sourceTree = "<group>"; };
-		CEE4DE891E69089F0093558C /* CYLPlusButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYLPlusButton.m; sourceTree = "<group>"; };
-		CEE4DE8A1E69089F0093558C /* CYLTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYLTabBar.h; sourceTree = "<group>"; };
-		CEE4DE8B1E69089F0093558C /* CYLTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYLTabBar.m; sourceTree = "<group>"; };
-		CEE4DE8C1E69089F0093558C /* CYLTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYLTabBarController.h; sourceTree = "<group>"; };
-		CEE4DE8D1E69089F0093558C /* CYLTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYLTabBarController.m; sourceTree = "<group>"; };
-		CEE4DE8E1E69089F0093558C /* UIViewController+CYLTabBarControllerExtention.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+CYLTabBarControllerExtention.h"; sourceTree = "<group>"; };
-		CEE4DE8F1E69089F0093558C /* UIViewController+CYLTabBarControllerExtention.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+CYLTabBarControllerExtention.m"; sourceTree = "<group>"; };
-		CEE4DEAD1E690A9D0093558C /* DDBaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DDBaseViewController.swift; sourceTree = "<group>"; };
-		CEE4DEAF1E690AAE0093558C /* DDBaseTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DDBaseTableViewController.swift; sourceTree = "<group>"; };
-		CEE4DEB11E690ACB0093558C /* DDBaseViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DDBaseViewModel.swift; sourceTree = "<group>"; };
 		D07FDF203FB69993E2B75B43 /* Pods-DeDaoSwift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DeDaoSwift.release.xcconfig"; path = "Pods/Target Support Files/Pods-DeDaoSwift/Pods-DeDaoSwift.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -80,6 +135,14 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE7C11EF1E6D24F800067BFB /* ObjectMapper.framework in Frameworks */,
+				CE7C11ED1E6D0F7B00067BFB /* CYLTabBarController.framework in Frameworks */,
+				CE708D3D1E69CA0A00F4DF5D /* MJRefresh.framework in Frameworks */,
+				CE708D341E6939B000F4DF5D /* Alamofire.framework in Frameworks */,
+				CE708D321E6938AC00F4DF5D /* Result.framework in Frameworks */,
+				CE708D301E6938A800F4DF5D /* Kingfisher.framework in Frameworks */,
+				CE708D2C1E69389F00F4DF5D /* SnapKit.framework in Frameworks */,
+				CE708D2A1E69389A00F4DF5D /* ReactiveSwift.framework in Frameworks */,
 				EB70D11DC41422F772F8819C /* Pods_DeDaoSwift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -113,9 +176,79 @@
 		C894F4DA47B26F5A07FA3A0F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				CE7C11EE1E6D24F800067BFB /* ObjectMapper.framework */,
+				CE7C11EC1E6D0F7B00067BFB /* CYLTabBarController.framework */,
+				CE708D3C1E69CA0A00F4DF5D /* MJRefresh.framework */,
+				CE708D331E6939B000F4DF5D /* Alamofire.framework */,
+				CE708D311E6938AC00F4DF5D /* Result.framework */,
+				CE708D2F1E6938A800F4DF5D /* Kingfisher.framework */,
+				CE708D2D1E6938A400F4DF5D /* SwiftyJSON.framework */,
+				CE708D2B1E69389F00F4DF5D /* SnapKit.framework */,
+				CE708D291E69389A00F4DF5D /* ReactiveSwift.framework */,
 				0D88A0070B2B8B67E8338D85 /* Pods_DeDaoSwift.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CE708D181E6914B300F4DF5D /* BaseClass */ = {
+			isa = PBXGroup;
+			children = (
+				CE708D191E6914B300F4DF5D /* DDBaseTableViewController.swift */,
+				CE708D1A1E6914B300F4DF5D /* DDBaseViewController.swift */,
+				CE708D1B1E6914B300F4DF5D /* DDBaseViewModel.swift */,
+				CE708D1F1E6914D100F4DF5D /* DDNavigationProtocol.swift */,
+				CE708D351E69454200F4DF5D /* DDNetworkTools.swift */,
+				CE708D391E694D0E00F4DF5D /* DDScrollBannerView.swift */,
+			);
+			path = BaseClass;
+			sourceTree = "<group>";
+		};
+		CE708D241E691B3200F4DF5D /* UIKitExtension */ = {
+			isa = PBXGroup;
+			children = (
+				CE708D271E6929A800F4DF5D /* UIImage+Extension.swift */,
+				CE7C12221E6D648D00067BFB /* UIImageView+Extension.swift */,
+				CE7C11E61E6D09B900067BFB /* DDTool.swift */,
+			);
+			name = UIKitExtension;
+			path = Home/UIKitExtension;
+			sourceTree = "<group>";
+		};
+		CE7C120A1E6D623600067BFB /* Vendors */ = {
+			isa = PBXGroup;
+			children = (
+				CE7C120B1E6D623600067BFB /* SDCycleScrollView */,
+			);
+			path = Vendors;
+			sourceTree = "<group>";
+		};
+		CE7C120B1E6D623600067BFB /* SDCycleScrollView */ = {
+			isa = PBXGroup;
+			children = (
+				CE7C120C1E6D623600067BFB /* PageControl */,
+				CE7C12151E6D623600067BFB /* SDCollectionViewCell.h */,
+				CE7C12161E6D623600067BFB /* SDCollectionViewCell.m */,
+				CE7C12171E6D623600067BFB /* SDCycleScrollView.h */,
+				CE7C12181E6D623600067BFB /* SDCycleScrollView.m */,
+				CE7C12191E6D623600067BFB /* UIView+SDExtension.h */,
+				CE7C121A1E6D623600067BFB /* UIView+SDExtension.m */,
+			);
+			path = SDCycleScrollView;
+			sourceTree = "<group>";
+		};
+		CE7C120C1E6D623600067BFB /* PageControl */ = {
+			isa = PBXGroup;
+			children = (
+				CE7C120D1E6D623600067BFB /* TAAbstractDotView.h */,
+				CE7C120E1E6D623600067BFB /* TAAbstractDotView.m */,
+				CE7C120F1E6D623600067BFB /* TAAnimatedDotView.h */,
+				CE7C12101E6D623600067BFB /* TAAnimatedDotView.m */,
+				CE7C12111E6D623600067BFB /* TADotView.h */,
+				CE7C12121E6D623600067BFB /* TADotView.m */,
+				CE7C12131E6D623600067BFB /* TAPageControl.h */,
+				CE7C12141E6D623600067BFB /* TAPageControl.m */,
+			);
+			path = PageControl;
 			sourceTree = "<group>";
 		};
 		CEB18DFB1E6711AE001653AD = {
@@ -143,17 +276,18 @@
 		CEB18E061E6711AE001653AD /* DeDaoSwift */ = {
 			isa = PBXGroup;
 			children = (
+				CE708D411E69CD0500F4DF5D /* homeJsonData.json */,
 				CEB18E071E6711AE001653AD /* AppDelegate.swift */,
 				CEE4DE691E684A9B0093558C /* DDTabBarViewController.swift */,
 				CEE4DE7D1E684C6A0093558C /* DeDaoSwift-Bridging-Header.h */,
-				CEE4DEA81E690A060093558C /* Base */,
+				CE7C120A1E6D623600067BFB /* Vendors */,
+				CE708D181E6914B300F4DF5D /* BaseClass */,
 				CEE4DE941E69098A0093558C /* Listen */,
 				CEE4DE991E69098A0093558C /* Mine */,
 				CEE4DE9E1E69098A0093558C /* Purchase */,
 				CEE4DEA31E69098A0093558C /* Subscribe */,
-				CEE4DE851E69089F0093558C /* Vendor */,
 				CEE4DE651E684A4F0093558C /* Home */,
-				CEB18E0B1E6711AE001653AD /* Main.storyboard */,
+				CE708D241E691B3200F4DF5D /* UIKitExtension */,
 				CEB18E0E1E6711AE001653AD /* Assets.xcassets */,
 				CEB18E101E6711AE001653AD /* LaunchScreen.storyboard */,
 				CEB18E131E6711AE001653AD /* Info.plist */,
@@ -200,6 +334,14 @@
 		CEE4DE671E684A4F0093558C /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				CE7C11EA1E6D0E5700067BFB /* DDHomeModel.swift */,
+				CE7C11F81E6D387E00067BFB /* DDHomeSliderModel.swift */,
+				CE7C11FA1E6D395000067BFB /* DDHomeFreeAudioModel.swift */,
+				CE7C11FC1E6D3C2B00067BFB /* DDHomeColumnModel.swift */,
+				CE7C11FE1E6D3D2F00067BFB /* DDHomeStorytellModel.swift */,
+				CE7C12001E6D433600067BFB /* DDHomeNewModel.swift */,
+				CE7C12021E6D441300067BFB /* DDHomeSubjectModel.swift */,
+				CE7C12041E6D44B800067BFB /* DDHomeVerseModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -207,32 +349,9 @@
 		CEE4DE681E684A4F0093558C /* View */ = {
 			isa = PBXGroup;
 			children = (
+				CE7C12081E6D46EF00067BFB /* DDBannerScrollView.swift */,
 			);
 			path = View;
-			sourceTree = "<group>";
-		};
-		CEE4DE851E69089F0093558C /* Vendor */ = {
-			isa = PBXGroup;
-			children = (
-				CEE4DE861E69089F0093558C /* CYLTabBarController */,
-			);
-			path = Vendor;
-			sourceTree = "<group>";
-		};
-		CEE4DE861E69089F0093558C /* CYLTabBarController */ = {
-			isa = PBXGroup;
-			children = (
-				CEE4DE871E69089F0093558C /* CYLConstants.h */,
-				CEE4DE881E69089F0093558C /* CYLPlusButton.h */,
-				CEE4DE891E69089F0093558C /* CYLPlusButton.m */,
-				CEE4DE8A1E69089F0093558C /* CYLTabBar.h */,
-				CEE4DE8B1E69089F0093558C /* CYLTabBar.m */,
-				CEE4DE8C1E69089F0093558C /* CYLTabBarController.h */,
-				CEE4DE8D1E69089F0093558C /* CYLTabBarController.m */,
-				CEE4DE8E1E69089F0093558C /* UIViewController+CYLTabBarControllerExtention.h */,
-				CEE4DE8F1E69089F0093558C /* UIViewController+CYLTabBarControllerExtention.m */,
-			);
-			path = CYLTabBarController;
 			sourceTree = "<group>";
 		};
 		CEE4DE941E69098A0093558C /* Listen */ = {
@@ -391,48 +510,6 @@
 			path = ViewModel;
 			sourceTree = "<group>";
 		};
-		CEE4DEA81E690A060093558C /* Base */ = {
-			isa = PBXGroup;
-			children = (
-				CEE4DEA91E690A060093558C /* Controller */,
-				CEE4DEAA1E690A060093558C /* Model */,
-				CEE4DEAB1E690A060093558C /* View */,
-				CEE4DEAC1E690A060093558C /* ViewModel */,
-			);
-			path = Base;
-			sourceTree = "<group>";
-		};
-		CEE4DEA91E690A060093558C /* Controller */ = {
-			isa = PBXGroup;
-			children = (
-				CEE4DEAD1E690A9D0093558C /* DDBaseViewController.swift */,
-				CEE4DEAF1E690AAE0093558C /* DDBaseTableViewController.swift */,
-			);
-			path = Controller;
-			sourceTree = "<group>";
-		};
-		CEE4DEAA1E690A060093558C /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		CEE4DEAB1E690A060093558C /* View */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
-		CEE4DEAC1E690A060093558C /* ViewModel */ = {
-			isa = PBXGroup;
-			children = (
-				CEE4DEB11E690ACB0093558C /* DDBaseViewModel.swift */,
-			);
-			path = ViewModel;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -545,9 +622,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE708D421E69CD0500F4DF5D /* homeJsonData.json in Resources */,
 				CEB18E121E6711AE001653AD /* LaunchScreen.storyboard in Resources */,
 				CEB18E0F1E6711AE001653AD /* Assets.xcassets in Resources */,
-				CEB18E0D1E6711AE001653AD /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -620,16 +697,34 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE708D281E6929A800F4DF5D /* UIImage+Extension.swift in Sources */,
+				CE7C11FB1E6D395000067BFB /* DDHomeFreeAudioModel.swift in Sources */,
+				CE7C12231E6D648D00067BFB /* UIImageView+Extension.swift in Sources */,
 				CEE4DE6A1E684A9B0093558C /* DDTabBarViewController.swift in Sources */,
+				CE7C12011E6D433600067BFB /* DDHomeNewModel.swift in Sources */,
+				CE7C12211E6D623600067BFB /* UIView+SDExtension.m in Sources */,
 				CEE4DE7F1E684DA60093558C /* DDTableViewController.swift in Sources */,
-				CEE4DE921E69089F0093558C /* CYLTabBarController.m in Sources */,
-				CEE4DE901E69089F0093558C /* CYLPlusButton.m in Sources */,
-				CEE4DEB01E690AAE0093558C /* DDBaseTableViewController.swift in Sources */,
-				CEE4DEB21E690ACB0093558C /* DDBaseViewModel.swift in Sources */,
-				CEE4DE911E69089F0093558C /* CYLTabBar.m in Sources */,
-				CEE4DE931E69089F0093558C /* UIViewController+CYLTabBarControllerExtention.m in Sources */,
+				CE7C121E1E6D623600067BFB /* TAPageControl.m in Sources */,
+				CE708D3A1E694D0E00F4DF5D /* DDScrollBannerView.swift in Sources */,
+				CE708D201E6914D100F4DF5D /* DDNavigationProtocol.swift in Sources */,
+				CE7C12091E6D46EF00067BFB /* DDBannerScrollView.swift in Sources */,
+				CE708D1C1E6914B300F4DF5D /* DDBaseTableViewController.swift in Sources */,
+				CE708D1E1E6914B300F4DF5D /* DDBaseViewModel.swift in Sources */,
+				CE7C121C1E6D623600067BFB /* TAAnimatedDotView.m in Sources */,
+				CE7C121D1E6D623600067BFB /* TADotView.m in Sources */,
+				CE7C121B1E6D623600067BFB /* TAAbstractDotView.m in Sources */,
+				CE708D1D1E6914B300F4DF5D /* DDBaseViewController.swift in Sources */,
+				CE7C11FF1E6D3D2F00067BFB /* DDHomeStorytellModel.swift in Sources */,
+				CE7C12051E6D44B800067BFB /* DDHomeVerseModel.swift in Sources */,
+				CE7C12201E6D623600067BFB /* SDCycleScrollView.m in Sources */,
+				CE7C11F91E6D387E00067BFB /* DDHomeSliderModel.swift in Sources */,
+				CE7C121F1E6D623600067BFB /* SDCollectionViewCell.m in Sources */,
+				CE7C11FD1E6D3C2B00067BFB /* DDHomeColumnModel.swift in Sources */,
 				CEB18E081E6711AE001653AD /* AppDelegate.swift in Sources */,
-				CEE4DEAE1E690A9D0093558C /* DDBaseViewController.swift in Sources */,
+				CE7C11E71E6D09B900067BFB /* DDTool.swift in Sources */,
+				CE7C12031E6D441300067BFB /* DDHomeSubjectModel.swift in Sources */,
+				CE7C11EB1E6D0E5700067BFB /* DDHomeModel.swift in Sources */,
+				CE708D361E69454200F4DF5D /* DDNetworkTools.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -665,14 +760,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		CEB18E0B1E6711AE001653AD /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				CEB18E0C1E6711AE001653AD /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		CEB18E101E6711AE001653AD /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -780,7 +867,15 @@
 			baseConfigurationReference = B5EF831CD7B9695B76DF1DAE /* Pods-DeDaoSwift.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = EYJX338JDS;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/build/Debug-iphoneos/Alamofire",
+					"$(PROJECT_DIR)/build/Release-iphoneos/MJRefresh",
+					"$(PROJECT_DIR)/build/Release-iphoneos/CYLTabBarController",
+					"$(PROJECT_DIR)/build/Debug-iphoneos/ObjectMapper",
+				);
 				INFOPLIST_FILE = DeDaoSwift/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -796,7 +891,15 @@
 			baseConfigurationReference = D07FDF203FB69993E2B75B43 /* Pods-DeDaoSwift.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = EYJX338JDS;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/build/Debug-iphoneos/Alamofire",
+					"$(PROJECT_DIR)/build/Release-iphoneos/MJRefresh",
+					"$(PROJECT_DIR)/build/Release-iphoneos/CYLTabBarController",
+					"$(PROJECT_DIR)/build/Debug-iphoneos/ObjectMapper",
+				);
 				INFOPLIST_FILE = DeDaoSwift/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

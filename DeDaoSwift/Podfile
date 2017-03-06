@@ -6,5 +6,10 @@ target 'DeDaoSwift' do
 
 pod 'SnapKit'
 pod 'Kingfisher'
-#pod 'RAMAnimatedTabBarController', "~> 2.0.13"
+pod 'ReactiveSwift'
+pod 'ObjectMapper'
+pod 'Alamofire'
+pod 'MJRefresh'
+pod 'CYLTabBarController'
+
 end
