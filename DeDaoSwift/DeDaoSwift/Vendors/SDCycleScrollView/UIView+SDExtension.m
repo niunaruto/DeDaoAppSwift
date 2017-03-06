@@ -102,29 +102,6 @@
     self.frame = temp;
 }
 
-- (void)setSd_centerX:(CGFloat)centerX
-{
-    CGPoint center = self.center;
-    center.x = centerX;
-    self.center = center;
-}
-
-- (CGFloat)sd_centerX
-{
-    return self.center.x;
-}
-
-- (void)setSd_centerY:(CGFloat)centerY
-{
-    CGPoint center = self.center;
-    center.y = centerY;
-    self.center = center;
-}
-
-- (CGFloat)sd_centerY
-{
-    return self.center.y;
-}
 
 
 @end

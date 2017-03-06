@@ -35,9 +35,8 @@ class DDTableViewController: DDBaseTableViewController {
             print(list.m_img)
             
         }
-        
-        
-        let banner = SDCycleScrollView(frame: CGRect(x: 0, y: 64, width: UIScreen.main.bounds.size.width, height: 100), imageURLStringsGroup: array)
+        let banner = SDCycleScrollView(frame: CGRect(x: 0, y: 64, width: UIScreen.main.bounds.size.width, height: 140), delegate: self, placeholderImage: UIImage(named: ""))
+        banner?.imageURLStringsGroup = array
         banner?.autoScrollTimeInterval = 4
         banner?.backgroundColor  = UIColor.red
         view.addSubview(banner!)

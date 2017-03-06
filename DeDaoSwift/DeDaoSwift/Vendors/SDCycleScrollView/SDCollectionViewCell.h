@@ -29,6 +29,7 @@
  */
 
 
+
 #import <UIKit/UIKit.h>
 
 @interface SDCollectionViewCell : UICollectionViewCell
@@ -40,9 +41,11 @@
 @property (nonatomic, strong) UIFont *titleLabelTextFont;
 @property (nonatomic, strong) UIColor *titleLabelBackgroundColor;
 @property (nonatomic, assign) CGFloat titleLabelHeight;
+@property (nonatomic, assign) NSTextAlignment titleLabelTextAlignment;
 
 @property (nonatomic, assign) BOOL hasConfigured;
 
-@property (nonatomic, copy) NSString *topImageName;
+/** 只展示文字轮播 */
+@property (nonatomic, assign) BOOL onlyDisplayText;
 
 @end

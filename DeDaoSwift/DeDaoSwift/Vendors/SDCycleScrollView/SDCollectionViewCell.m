@@ -33,12 +33,6 @@
 #import "SDCollectionViewCell.h"
 #import "UIView+SDExtension.h"
 
-@interface SDCollectionViewCell ()
-
-@property (nonatomic, strong) UIImageView *topImage;
-
-@end
-
 @implementation SDCollectionViewCell
 {
     __weak UILabel *_titleLabel;
@@ -50,10 +44,6 @@
     if (self = [super initWithFrame:frame]) {
         [self setupImageView];
         [self setupTitleLabel];
-        
-        _topImage = [[UIImageView alloc] init];
-        _topImage.hidden = YES;
-        [self.contentView addSubview:_topImage];
     }
     
     return self;
@@ -96,38 +86,31 @@
 {
     _title = [title copy];
     _titleLabel.text = [NSString stringWithFormat:@"   %@", title];
+    if (_titleLabel.hidden) {
+        _titleLabel.hidden = NO;
+    }
 }
 
+-(void)setTitleLabelTextAlignment:(NSTextAlignment)titleLabelTextAlignment
+{
+    _titleLabelTextAlignment = titleLabelTextAlignment;
+    _titleLabel.textAlignment = titleLabelTextAlignment;
+}
 
 - (void)layoutSubviews
 {
     [super layoutSubviews];
     
-    _imageView.frame = self.bounds;
-    _imageView.contentMode = UIViewContentModeScaleAspectFit;
-    CGFloat titleLabelW = self.sd_width;
-    CGFloat titleLabelH = _titleLabelHeight;
-    CGFloat titleLabelX = 0;
-    CGFloat titleLabelY = self.sd_height - titleLabelH;
-    _titleLabel.frame = CGRectMake(titleLabelX, titleLabelY, titleLabelW, titleLabelH);
-    _titleLabel.hidden = !_titleLabel.text;
-    
-    _topImage.sd_width = 42;
-    _topImage.sd_height = 42;
-    _topImage.center = CGPointMake(self.bounds.size.width/2, self.bounds.size.height/2);
-}
-
-- (void) setTopImageName:(NSString *)topImageName {
-
-    if (!topImageName) {
-        _topImage.hidden = YES;
-    }else {
-        _topImageName = topImageName;
-        _topImage.image = [UIImage imageNamed:topImageName];
-        _topImage.hidden = NO;
+    if (self.onlyDisplayText) {
+        _titleLabel.frame = self.bounds;
+    } else {
+        _imageView.frame = self.bounds;
+        CGFloat titleLabelW = self.sd_width;
+        CGFloat titleLabelH = _titleLabelHeight;
+        CGFloat titleLabelX = 0;
+        CGFloat titleLabelY = self.sd_height - titleLabelH;
+        _titleLabel.frame = CGRectMake(titleLabelX, titleLabelY, titleLabelW, titleLabelH);
     }
-    
 }
-
 
 @end

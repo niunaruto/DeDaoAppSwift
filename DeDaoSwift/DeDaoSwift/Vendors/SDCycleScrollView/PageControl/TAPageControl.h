@@ -49,9 +49,7 @@
  */
 @property (nonatomic) NSInteger spacingBetweenDots;
 
-@property (nonatomic, assign) NSInteger shouldShowVideoSign;
 
-@property (nonatomic, assign) NSInteger videoIndex;
 /**
  * Page control setup properties
  */

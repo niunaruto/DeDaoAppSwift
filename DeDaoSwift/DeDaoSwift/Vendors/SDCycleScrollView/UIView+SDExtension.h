@@ -40,7 +40,5 @@
 
 @property (nonatomic, assign) CGFloat sd_y;
 @property (nonatomic, assign) CGFloat sd_x;
-@property (assign, nonatomic) CGFloat sd_centerY;
-@property (assign, nonatomic) CGFloat sd_centerX;
 
 @end

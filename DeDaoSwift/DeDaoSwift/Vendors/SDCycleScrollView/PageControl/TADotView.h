@@ -11,7 +11,3 @@
 @interface TADotView : TAAbstractDotView
 
 @end
-
-@interface TAVideoDotView : TADotView
-
-@end

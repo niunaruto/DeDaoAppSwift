@@ -10,7 +10,7 @@
 #import "TAAbstractDotView.h"
 #import "TAAnimatedDotView.h"
 #import "TADotView.h"
-//TAVideoDotView
+
 /**
  *  Default number of pages for initialization
  */
@@ -49,6 +49,7 @@ static CGSize const kDefaultDotSize = {8, 8};
  *  Array of dot views for reusability and touch events.
  */
 @property (strong, nonatomic) NSMutableArray *dots;
+
 
 @end
 
@@ -119,6 +120,7 @@ static CGSize const kDefaultDotSize = {8, 8};
 
 #pragma mark - Layout
 
+
 /**
  *  Resizes and moves the receiver view so it just encloses its subviews.
  */
@@ -148,8 +150,8 @@ static CGSize const kDefaultDotSize = {8, 8};
         UIView *dot;
         if (i < self.dots.count) {
             dot = [self.dots objectAtIndex:i];
-        } else {//(NSInteger)index
-            dot = [self generateDotViewWithIndex:i];
+        } else {
+            dot = [self generateDotView];
         }
         
         [self updateDotFrame:dot atIndex:i];
@@ -182,6 +184,7 @@ static CGSize const kDefaultDotSize = {8, 8};
     [self resetDotViews];
 }
 
+
 /**
  *  Update the frame of a specific dot at a specific index
  *
@@ -200,34 +203,24 @@ static CGSize const kDefaultDotSize = {8, 8};
 
 #pragma mark - Utils
 
-- (void) setShouldShowVideoSign:(NSInteger)shouldShowVideoSign {
-    _shouldShowVideoSign = shouldShowVideoSign;
-    // regenerateDotView
-    [self resetDotViews];
-}
-
 
 /**
  *  Generate a dot view and add it to the collection
  *
  *  @return The UIView object representing a dot
  */
-- (UIView *)generateDotViewWithIndex:(NSInteger)index
+- (UIView *)generateDotView
 {
     UIView *dotView;
     
-    if (self.shouldShowVideoSign && index == self.videoIndex) {
-        dotView = [[TAVideoDotView alloc] initWithFrame:CGRectMake(0, 0, self.dotSize.width, self.dotSize.height)];
-    }else {
-        if (self.dotViewClass) {
-            dotView = [[self.dotViewClass alloc] initWithFrame:CGRectMake(0, 0, self.dotSize.width, self.dotSize.height)];
-            if ([dotView isKindOfClass:[TAAnimatedDotView class]] && self.dotColor) {
-                ((TAAnimatedDotView *)dotView).dotColor = self.dotColor;
-            }
-        } else {
-            dotView = [[UIImageView alloc] initWithImage:self.dotImage];
-            dotView.frame = CGRectMake(0, 0, self.dotSize.width, self.dotSize.height);
+    if (self.dotViewClass) {
+        dotView = [[self.dotViewClass alloc] initWithFrame:CGRectMake(0, 0, self.dotSize.width, self.dotSize.height)];
+        if ([dotView isKindOfClass:[TAAnimatedDotView class]] && self.dotColor) {
+            ((TAAnimatedDotView *)dotView).dotColor = self.dotColor;
         }
+    } else {
+        dotView = [[UIImageView alloc] initWithImage:self.dotImage];
+        dotView.frame = CGRectMake(0, 0, self.dotSize.width, self.dotSize.height);
     }
     
     if (dotView) {
