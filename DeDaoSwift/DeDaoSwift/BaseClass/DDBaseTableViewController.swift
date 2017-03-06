@@ -11,22 +11,46 @@ import SnapKit
 import ObjectMapper
 class DDBaseTableViewController: DDBaseViewController {
 
-   public lazy var tableView : UITableView = {
-        let tableView = UITableView(frame: CGRect.zero, style: .plain)
+    
+    /// 设置tableViewStyle 默认plain
+    var tableViewStyle : UITableViewStyle?
+    
+    /// 有几个section 默认为1
+    var sectionCount = 1
+    
+    
+   public lazy var tableView : UITableView = { [unowned self] in
+        let tableView = UITableView(frame: self.view.bounds, style: self.tableViewStyle!)
     
         tableView.delegate = self
         tableView.dataSource = self
+    
         return tableView;
         
     }()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.addSubview(tableView)
-        tableView.snp.makeConstraints { (make) in
-            make.edges.edges.equalTo(self.view)
-        }
         
+        
+    
+    }
+    
+    override func initialize() {
+        super.initialize()
+    }
+    override func initializeData() {
+        super.initializeData()
+        
+        if let style =  tableViewStyle{
+            tableViewStyle = style
+        }else{
+            tableViewStyle = UITableViewStyle.plain
+        }
+    }
+    override func initializeUI() {
+        super.initializeUI()
+        view.addSubview(tableView)
 
     }
 
@@ -34,9 +58,11 @@ class DDBaseTableViewController: DDBaseViewController {
     
 }
 
+
+
 extension DDBaseTableViewController : UITableViewDataSource,UITableViewDelegate {
     func numberOfSections(in tableView: UITableView) -> Int {
-        return 0
+        return sectionCount
     }
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 0;

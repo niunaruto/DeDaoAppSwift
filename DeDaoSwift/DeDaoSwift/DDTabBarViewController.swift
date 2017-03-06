@@ -36,7 +36,6 @@ UITabBarControllerDelegate {
     
     func setupViewController() {
         
-        
         let tabbarAttributes = [
             [CYLTabBarItemImage:"pad_tabbar_index_1",
              CYLTabBarItemSelectedImage:"pad_tabbar_index_1_light"],
