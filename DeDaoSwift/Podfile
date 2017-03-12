@@ -11,5 +11,6 @@ pod 'ObjectMapper'
 pod 'Alamofire'
 pod 'MJRefresh'
 pod 'CYLTabBarController'
-
+pod 'RxSwift'
+pod 'ReactiveCocoa'
 end

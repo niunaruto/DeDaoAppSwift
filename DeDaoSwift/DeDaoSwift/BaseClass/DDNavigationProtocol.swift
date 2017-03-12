@@ -9,6 +9,12 @@
 import UIKit
 
 protocol DDNavigationProtocol{
-    
+ 
+    func pushViewModel(viewModel : DDBaseViewModel,_ animated : Bool)
+    func popViewModelAnimated(_ animated : Bool)
+    func popToRootViewModelAnimated(_ animated : Bool)
+    func presentViewModel(viewModel :DDBaseViewModel, _ animated : Bool,completion:()->())
+    func dismissViewModelAnimated(_ animated : Bool,completion:()->())
+    func resetRootViewModel(viewModel :DDBaseViewModel)
 }
 

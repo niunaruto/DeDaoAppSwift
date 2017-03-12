@@ -8,71 +8,42 @@
 
 import UIKit
 import ObjectMapper
+
 class DDTableViewController: DDBaseTableViewController {
 
-    var bannerImageUrlArray = Array<String>()
+    
+    var bannerImageUrlArray = [String]()
     
     override func viewDidLoad() {
-        
         super.viewDidLoad()
         
         
     }
-    
-
-  
-}
-extension DDTableViewController {
-  
-    override func initialize() {
-        super.initialize()
-         titleName = "首页"
-    }
-    
     override func initializeData() {
         super.initializeData()
         let dic = DDTool.getDictionaryWithPatch(fileName:"homeJsonData.json") as? Dictionary<String, Any>
-        
-        
         let  model = Mapper<DDHomeModel>().map(JSON: dic ?? ["":""])
-        guard model?.c?.data?.slider?.list != nil else {
-            return
-        }
-        for  list in (model?.c?.data?.slider?.list)! {
-            bannerImageUrlArray.append(list.m_img)
-            print(list.m_img)
-            
-        }
-
-    }
-    override func initializeUI() {
-        super.initializeUI()
         
-        
-        let banner = SDCycleScrollView(frame: CGRect(x: 0, y: -140, width: UIScreen.main.bounds.size.width, height: 140), delegate: self, placeholderImage: UIImage(named: ""))
-        banner?.imageURLStringsGroup = bannerImageUrlArray
-        banner?.autoScrollTimeInterval = 4
-        tableView.addSubview(banner!)
-        tableView.contentInset = UIEdgeInsetsMake(140, 0, 0, 0)
-        tableView.register(UITableViewCell.classForCoder(), forCellReuseIdentifier: "reuseIdentifier")
-
+        if let listTemp = model?.c?.data?.slider?.list {
+            for  list in listTemp {
+                bannerImageUrlArray.append(list.m_img)
+            }
+        }
     }
-}
-extension DDTableViewController {
-    
-    
+    override func registerCells() {
+        tableView.register(DDHomeBannerCell.classForCoder(), forCellReuseIdentifier: DDHomeBannerCell.cellIdentifier())
+    }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 100
+        return 1
     }
-    
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: DDHomeBannerCell.cellIdentifier(), for: indexPath) as! DDHomeBannerCell
         
-        cell.textLabel?.text = "index = =\(indexPath.row)"
+        cell.imageArray = bannerImageUrlArray
         return cell
+        
     }
-    
 }
 

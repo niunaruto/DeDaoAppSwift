@@ -10,7 +10,6 @@
 #define DeDaoSwift_Bridging_Header_h
 #import "CYLTabBarController/CYLTabBarController-umbrella.h"
 #import "MJRefresh/MJRefresh.h"
-#import "SDCycleScrollView.h"
 
 
 #endif /* DeDaoSwift_Bridging_Header_h */

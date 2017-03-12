@@ -7,7 +7,7 @@
 //
 
 import UIKit
-import UIKit
+
 
 class CYLBaseNavigationController: UINavigationController {
     
@@ -51,17 +51,18 @@ UITabBarControllerDelegate {
         
         tabBarItemsAttributes = tabbarAttributes
         imageInsets = UIEdgeInsetsMake(8, 0, -8, 0)
-        let home = CYLBaseNavigationController(rootViewController: DDTableViewController())
+        let hoemViewModel = DDHomeViewModel()
+        
+        let home = CYLBaseNavigationController(rootViewController: DDTableViewController.init(viewMode: hoemViewModel))
         
         
-        let mine = CYLBaseNavigationController(rootViewController: DDTableViewController())
+        let mine = CYLBaseNavigationController(rootViewController: DDTableViewController.init(viewMode: hoemViewModel))
         
-        let chat = CYLBaseNavigationController(rootViewController: DDTableViewController())
+        let chat = CYLBaseNavigationController(rootViewController: DDTableViewController.init(viewMode: hoemViewModel))
         
-        let bbs = CYLBaseNavigationController(rootViewController: DDTableViewController())
+        let bbs = CYLBaseNavigationController(rootViewController: DDTableViewController.init(viewMode: hoemViewModel))
         
-        let seven = CYLBaseNavigationController(rootViewController: DDTableViewController())
-        
+        let seven = CYLBaseNavigationController(rootViewController: DDTableViewController.init(viewMode: hoemViewModel))
         
         
         

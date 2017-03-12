@@ -10,6 +10,7 @@ import UIKit
 
 class DDBaseViewController: UIViewController {
 
+    
    var titleName : String? {
         didSet {
             navigationItem.title = titleName
@@ -23,7 +24,6 @@ class DDBaseViewController: UIViewController {
         initializeUI()
     }
     
-
     
 }
 extension DDBaseViewController {
@@ -36,9 +36,7 @@ extension DDBaseViewController {
     /// 初始化UI（可以用来添加所有子控件）
     func initializeUI() {
         view.backgroundColor = UIColor.white
-        
-        setLeftSearchNavItem()
-        setRightNavItems()
+      
 
     }
     
@@ -52,14 +50,14 @@ extension DDBaseViewController {
 extension DDBaseViewController {
     func setLeftSearchNavItem() {
         
-        let leftSeacrch = UIButton()
-        leftSeacrch.frame.size = CGSize(width: 44, height: 44)
+        let leftSeacrch = UIButton.init(type: .custom)
+        leftSeacrch.frame = CGRect(x: -15, y: 0, width: 44, height: 44)
         leftSeacrch.setImage(UIImage(named: "new_main_navbar_search_black-1"), for: .normal)
-        let LeftBar = UIBarButtonItem(customView: leftSeacrch)
-        LeftBar.width = -15
-        
-        
+        let leftView = UIView(frame: CGRect(x: 0, y: 0, width: 44, height: 44))
+        leftView.addSubview(leftSeacrch)
+        let LeftBar = UIBarButtonItem(customView: leftView)
         self.navigationItem.leftBarButtonItem =  LeftBar
+        
     }
     func setRightNavItems() {
         

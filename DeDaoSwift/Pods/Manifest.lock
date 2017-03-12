@@ -4,9 +4,17 @@ PODS:
   - Kingfisher (3.2.4)
   - MJRefresh (3.1.12)
   - ObjectMapper (2.2.2)
+  - ReactiveCocoa (2.5):
+    - ReactiveCocoa/UI (= 2.5)
+  - ReactiveCocoa/Core (2.5):
+    - ReactiveCocoa/no-arc
+  - ReactiveCocoa/no-arc (2.5)
+  - ReactiveCocoa/UI (2.5):
+    - ReactiveCocoa/Core
   - ReactiveSwift (1.0.0):
     - Result (~> 3.1)
   - Result (3.1.0)
+  - RxSwift (3.1.0)
   - SnapKit (3.1.2)
 
 DEPENDENCIES:
@@ -15,7 +23,9 @@ DEPENDENCIES:
   - Kingfisher
   - MJRefresh
   - ObjectMapper
+  - ReactiveCocoa
   - ReactiveSwift
+  - RxSwift
   - SnapKit
 
 SPEC CHECKSUMS:
@@ -24,10 +34,12 @@ SPEC CHECKSUMS:
   Kingfisher: 8d80f39da403cd9c9ee11984e1655f4d6a566cdb
   MJRefresh: b96cdb21c4aa75a7b07654311ab2f315c497e806
   ObjectMapper: 9e385c2295bcc4e16eabbcfc85db801442bba545
+  ReactiveCocoa: e2db045570aa97c695e7aa97c2bcab222ae51f4a
   ReactiveSwift: f391724ee318a2cfd3e37dfb041cd49ecf4e7869
   Result: 4e3ed5995ed94d0cd6a09be9a431fce3f3624bbf
+  RxSwift: 83ff553e7593fdfdcb2562933a64c0284dffdadc
   SnapKit: 12b24f569cb7c143acc9c22b9d91b23e7b1c84a2
 
-PODFILE CHECKSUM: 6d0ac4d1e9f4fbea54146b5b89cf550c94978f90
+PODFILE CHECKSUM: 1d4224d2b9c0a864fcae69bea14734475d3defbe
 
 COCOAPODS: 1.1.1
