@@ -10,18 +10,20 @@ import UIKit
 
 class DDBaseViewController: UIViewController {
 
+    lazy var viewModel : DDBaseViewModel = {
+        let viewModel = DDBaseViewModel()
+        
+        return viewModel
+    }()
     
-   var titleName : String? {
-        didSet {
-            navigationItem.title = titleName
-        }
-    }
+    
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        view.backgroundColor = UIColor.white
         initialize()
-        initializeData()
-        initializeUI()
+        navigationItem.title = viewModel.title
     }
     
     
@@ -33,17 +35,6 @@ extension DDBaseViewController {
         
     }
     
-    /// 初始化UI（可以用来添加所有子控件）
-    func initializeUI() {
-        view.backgroundColor = UIColor.white
-      
-
-    }
-    
-    /// 初始化数据
-    func initializeData() {
-        
-    }
 }
 
 // MARK: 设置navItem

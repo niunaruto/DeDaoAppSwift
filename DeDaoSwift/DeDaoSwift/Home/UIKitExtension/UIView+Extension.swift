@@ -15,12 +15,12 @@ extension UIView {
     }
     
     /// The screen's width
-    class var width: CGFloat {
+    class var screenWidth: CGFloat {
         return UIView.size.width
     }
     
     /// The screen's height
-    class var height: CGFloat {
+    class var screenHeight: CGFloat {
         return UIView.size.height
     }
     

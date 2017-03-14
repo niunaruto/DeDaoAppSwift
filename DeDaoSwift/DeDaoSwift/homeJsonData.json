@@ -2,268 +2,247 @@
     "h": {
         "c": 0,
         "e": "",
-        "t": 0.26376295089722,
-        "s": 1488555957
+        "t": 0.20568609237671,
+        "s": 1489388814
     },
     "c": {
         "data": {
             "slider": {
-                "count": 4,
+                "count": 3,
                 "title": "",
                 "rightTitle": "",
                 "list": [
-                    {
-                        "m_type": 3,
-                        "m_isSubscribe": 0,
-                        "m_title": "本周什么值得看",
-                        "m_img": "https://piccdn.igetget.com/img/201703/03/201703032259247990303872.jpg@960w_1l_",
-                        "m_url": "https://zt.igetget.com/h5/pic/?alias=pDrkVYn0G6i3DOVV5Vvg",
-                        "m_id": 0,
-                        "m_from": ""
-                    },
-                    {
-                        "m_type": 3,
-                        "m_isSubscribe": 0,
-                        "m_title": "「得到」2月TOP10",
-                        "m_img": "https://piccdn.igetget.com/img/201703/03/201703032320075429376963.png@960w_1l_",
-                        "m_url": "https://zt.igetget.com/h5/pic/?alias=gq1nXVWpD0IZkwoo8omO",
-                        "m_id": 0,
-                        "m_from": ""
-                    },
-                    {
-                        "m_type": 3,
-                        "m_isSubscribe": 0,
-                        "m_title": "做一个「以得服人」的人",
-                        "m_img": "https://piccdn.igetget.com/img/201703/01/201703012003152561336076.png@960w_1l_",
-                        "m_url": "https://zt.igetget.com/h5/pic/?alias=1oxWZGZLxOUNRBPP8Pkl",
-                        "m_id": 0,
-                        "m_from": ""
-                    },
-                    {
-                        "m_type": 5,
-                        "m_isSubscribe": 0,
-                        "m_title": "极简读史",
-                        "m_img": "https://piccdn.igetget.com/img/201703/03/201703031741145749006120.jpg@960w_1l_",
-                        "m_url": "",
-                        "m_id": 177,
-                        "m_from": ""
-                    }
-                ]
+                         {
+                         "m_type": 3,
+                         "m_isSubscribe": 0,
+                         "m_title": "上周什么值得看",
+                         "m_img": "https://piccdn.igetget.com/img/201703/10/201703101946562572302685.png@960w_1l_",
+                         "m_url": "https://zt.igetget.com/h5/pic/?alias=KoK5qwJw6QIplJEpEZ6v",
+                         "m_id": 0,
+                         "m_from": ""
+                         },
+                         {
+                         "m_type": 3,
+                         "m_isSubscribe": 0,
+                         "m_title": "战争与战略",
+                         "m_img": "https://piccdn.igetget.com/img/201703/10/201703102037553444592165.jpg@960w_1l_",
+                         "m_url": "https://zt.igetget.com/h5/pic/?alias=XGmkOgWvlkuoJD88m8qY",
+                         "m_id": 0,
+                         "m_from": ""
+                         },
+                         {
+                         "m_type": 3,
+                         "m_isSubscribe": 0,
+                         "m_title": "他也在看「得到」",
+                         "m_img": "https://piccdn.igetget.com/img/201702/28/201702281701109208585770.png@960w_1l_",
+                         "m_url": "https://zt.igetget.com/h5/pic/?alias=YJovgZRrkjC28pnn5nNG",
+                         "m_id": 0,
+                         "m_from": ""
+                         }
+                         ]
             },
             "category": {
                 "count": 4,
                 "title": "",
                 "rightTitle": "",
                 "list": [
-                    {
-                        "m_type": 1,
-                        "m_isSubscribe": 0,
-                        "m_title": "有料音频",
-                        "m_img": "https://piccdn.igetget.com/img/201607/21/201607211459322605981806.png",
-                        "m_url": "",
-                        "m_id": 0,
-                        "m_from": ""
-                    },
-                    {
-                        "m_type": 2,
-                        "m_isSubscribe": 0,
-                        "m_title": "干货图书",
-                        "m_img": "https://piccdn.igetget.com/img/201607/21/201607211459322917557273.png",
-                        "m_url": "",
-                        "m_id": 0,
-                        "m_from": ""
-                    },
-                    {
-                        "m_type": 3,
-                        "m_isSubscribe": 0,
-                        "m_title": "全本图书",
-                        "m_img": "https://piccdn.igetget.com/img/201607/21/201607211459324001046457.png",
-                        "m_url": "",
-                        "m_id": 0,
-                        "m_from": ""
-                    },
-                    {
-                        "m_type": 4,
-                        "m_isSubscribe": 0,
-                        "m_title": "精选系列",
-                        "m_img": "https://piccdn.igetget.com/img/201607/21/201607211459324244505273.png",
-                        "m_url": "",
-                        "m_id": 0,
-                        "m_from": ""
-                    }
-                ]
+                         {
+                         "m_type": 1,
+                         "m_isSubscribe": 0,
+                         "m_title": "有料音频",
+                         "m_img": "https://piccdn.igetget.com/img/201607/21/201607211459322605981806.png",
+                         "m_url": "",
+                         "m_id": 0,
+                         "m_from": ""
+                         },
+                         {
+                         "m_type": 2,
+                         "m_isSubscribe": 0,
+                         "m_title": "干货图书",
+                         "m_img": "https://piccdn.igetget.com/img/201607/21/201607211459322917557273.png",
+                         "m_url": "",
+                         "m_id": 0,
+                         "m_from": ""
+                         },
+                         {
+                         "m_type": 3,
+                         "m_isSubscribe": 0,
+                         "m_title": "全本图书",
+                         "m_img": "https://piccdn.igetget.com/img/201607/21/201607211459324001046457.png",
+                         "m_url": "",
+                         "m_id": 0,
+                         "m_from": ""
+                         },
+                         {
+                         "m_type": 4,
+                         "m_isSubscribe": 0,
+                         "m_title": "精选系列",
+                         "m_img": "https://piccdn.igetget.com/img/201607/21/201607211459324244505273.png",
+                         "m_url": "",
+                         "m_id": 0,
+                         "m_from": ""
+                         }
+                         ]
             },
             "freeAudio": {
                 "count": 0,
                 "title": "知识新闻  | 免费",
                 "rightTitle": "查看全部",
                 "list": [
-                    {
-                        "id": 0,
-                        "alias_id": "7kfJJM8R6lLeF1gCV3YD",
-                        "extraInfo": "",
-                        "class_id": 0,
-                        "title": "周其仁：创新既能上行也能下行",
-                        "share_title": "周其仁：创新既能上行也能下行",
-                        "mp3_play_url": "http://igetoss.cdn.igetget.com/aac/201703/02/64000_201703021818072466406869.m4a",
-                        "duration": 199,
-                        "schedule": 2399,
-                        "topic_id": 2399,
-                        "summary": "",
-                        "price": 0,
-                        "icon": "",
-                        "size": 1227371,
-                        "share_summary": "经济学家周其仁对创新的最新理解",
-                        "collection": 0,
-                        "count": 445,
-                        "bored_count": 0,
-                        "audio_type": 1,
-                        "tag": [
-                            {
-                                "id": 9,
-                                "name": "商业"
-                            },
-                            {
-                                "id": 8,
-                                "name": "经济学"
-                            }
-                        ],
-                        "audio_list_icon": "https://piccdn.igetget.com/img/201703/03/201703030045310229128285.jpg@360w",
-                        "topic_duration": 0
-                    },
-                    {
-                        "id": 0,
-                        "alias_id": "9SBgFvHmq9CAO8ochQ2v",
-                        "extraInfo": "",
-                        "class_id": 0,
-                        "title": "感官营销：实体商业的机会窗口",
-                        "share_title": "感官营销：实体商业的机会窗口",
-                        "mp3_play_url": "http://igetoss.cdn.igetget.com/aac/201703/02/64000_201703021819491870883764.m4a",
-                        "duration": 283,
-                        "schedule": 2399,
-                        "topic_id": 2399,
-                        "summary": "",
-                        "price": 0,
-                        "icon": "",
-                        "size": 1751098,
-                        "share_summary": "利用视觉、听觉、嗅觉等五感来影响行为",
-                        "collection": 0,
-                        "count": 670,
-                        "bored_count": 0,
-                        "audio_type": 1,
-                        "tag": [
-                            {
-                                "id": 9,
-                                "name": "商业"
-                            },
-                            {
-                                "id": 2,
-                                "name": "方法技能"
-                            }
-                        ],
-                        "audio_list_icon": "https://piccdn.igetget.com/img/201703/03/201703030045310229128285.jpg@360w",
-                        "topic_duration": 0
-                    },
-                    {
-                        "id": 0,
-                        "alias_id": "QOUny9NufjRBqrLVNLqQ",
-                        "extraInfo": "",
-                        "class_id": 0,
-                        "title": "报告解读：所有家庭已完全连通",
-                        "share_title": "报告解读：所有家庭已完全连通",
-                        "mp3_play_url": "http://igetoss.cdn.igetget.com/aac/201703/02/64000_201703021821279858862430.m4a",
-                        "duration": 263,
-                        "schedule": 2399,
-                        "topic_id": 2399,
-                        "summary": "",
-                        "price": 0,
-                        "icon": "",
-                        "size": 1623903,
-                        "share_summary": "网上的社会并不是一个完整的社会",
-                        "collection": 0,
-                        "count": 308,
-                        "bored_count": 0,
-                        "audio_type": 1,
-                        "tag": [
-                            {
-                                "id": 27,
-                                "name": "社科"
-                            },
-                            {
-                                "id": 14,
-                                "name": "互联网"
-                            }
-                        ],
-                        "audio_list_icon": "https://piccdn.igetget.com/img/201703/03/201703030045310229128285.jpg@360w",
-                        "topic_duration": 0
-                    },
-                    {
-                        "id": 0,
-                        "alias_id": "LRAscoUWxgCmnMgL1ZYu",
-                        "extraInfo": "",
-                        "class_id": 0,
-                        "title": "好好说话：怎么说话不得罪人？",
-                        "share_title": "好好说话：怎么说话不得罪人？",
-                        "mp3_play_url": "http://igetoss.cdn.igetget.com/aac/201703/02/64000_201703021826490599451694.m4a",
-                        "duration": 246,
-                        "schedule": 2399,
-                        "topic_id": 2399,
-                        "summary": "",
-                        "price": 0,
-                        "icon": "",
-                        "size": 1518102,
-                        "share_summary": "三种语言暗示最容易让人觉得不舒服",
-                        "collection": 0,
-                        "count": 2363,
-                        "bored_count": 2,
-                        "audio_type": 1,
-                        "tag": [
-                            {
-                                "id": 3,
-                                "name": "自我管理"
-                            },
-                            {
-                                "id": 2,
-                                "name": "方法技能"
-                            }
-                        ],
-                        "audio_list_icon": "https://piccdn.igetget.com/img/201703/03/201703030045310229128285.jpg@360w",
-                        "topic_duration": 0
-                    },
-                    {
-                        "id": 0,
-                        "alias_id": "3u6XaioEqNSlL5CuwW2L",
-                        "extraInfo": "",
-                        "class_id": 0,
-                        "title": "李飞飞：云的灵魂是人工智能",
-                        "share_title": "李飞飞：云的灵魂是人工智能",
-                        "mp3_play_url": "http://igetoss.cdn.igetget.com/aac/201703/02/64000_201703021828249531165578.m4a",
-                        "duration": 237,
-                        "schedule": 2399,
-                        "topic_id": 2399,
-                        "summary": "",
-                        "price": 0,
-                        "icon": "",
-                        "size": 1463079,
-                        "share_summary": "人工智能是云的战略布局，是新的计算",
-                        "collection": 0,
-                        "count": 442,
-                        "bored_count": 1,
-                        "audio_type": 1,
-                        "tag": [
-                            {
-                                "id": 23,
-                                "name": "科技"
-                            },
-                            {
-                                "id": 15,
-                                "name": "创业"
-                            }
-                        ],
-                        "audio_list_icon": "https://piccdn.igetget.com/img/201703/03/201703030045310229128285.jpg@360w",
-                        "topic_duration": 0
-                    }
-                ],
+                         {
+                         "id": 0,
+                         "alias_id": "S2cAFVy7YMBbeDBueu7o",
+                         "extraInfo": "",
+                         "class_id": 0,
+                         "title": "新榜单丨全球十大突破性技术",
+                         "share_title": "新榜单丨全球十大突破性技术",
+                         "mp3_play_url": "http://igetoss.cdn.igetget.com/aac/201703/12/64000_201703122153230078829776.m4a",
+                         "duration": 328,
+                         "schedule": 2422,
+                         "topic_id": 2422,
+                         "summary": "",
+                         "price": 0,
+                         "icon": "",
+                         "size": 2026898,
+                         "share_summary": "2017年《麻省理工科技评论》全球十大突破性技术榜单。",
+                         "collection": 0,
+                         "count": 1110,
+                         "bored_count": 0,
+                         "audio_type": 1,
+                         "tag": [
+                                 {
+                                 "id": 23,
+                                 "name": "科技"
+                                 }
+                                 ],
+                         "audio_list_icon": "https://piccdn.igetget.com/img/201703/03/201703030045310229128285.jpg@360w",
+                         "topic_duration": 0
+                         },
+                         {
+                         "id": 0,
+                         "alias_id": "XatEcM6rj7U2PoYaKaYd",
+                         "extraInfo": "",
+                         "class_id": 0,
+                         "title": "陈安妮：漫画市场一直被低估",
+                         "share_title": "陈安妮：漫画市场一直被低估",
+                         "mp3_play_url": "http://igetoss.cdn.igetget.com/aac/201703/12/64000_201703122154253919184977.m4a",
+                         "duration": 283,
+                         "schedule": 2422,
+                         "topic_id": 2422,
+                         "summary": "",
+                         "price": 0,
+                         "icon": "",
+                         "size": 1747425,
+                         "share_summary": "独家专访陈安妮：漫画一定会成为很重要的IP载体。",
+                         "collection": 0,
+                         "count": 443,
+                         "bored_count": 0,
+                         "audio_type": 1,
+                         "tag": [
+                                 {
+                                 "id": 24,
+                                 "name": "文化艺术"
+                                 },
+                                 {
+                                 "id": 9,
+                                 "name": "商业"
+                                 }
+                                 ],
+                         "audio_list_icon": "https://piccdn.igetget.com/img/201703/03/201703030045310229128285.jpg@360w",
+                         "topic_duration": 0
+                         },
+                         {
+                         "id": 0,
+                         "alias_id": "NE9wUU4LclMhIrfwBVrw",
+                         "extraInfo": "",
+                         "class_id": 0,
+                         "title": "阿里CMO：当前五大消费趋势",
+                         "share_title": "阿里CMO：当前五大消费趋势",
+                         "mp3_play_url": "http://igetoss.cdn.igetget.com/aac/201703/12/64000_201703122155104242631359.m4a",
+                         "duration": 274,
+                         "schedule": 2422,
+                         "topic_id": 2422,
+                         "summary": "",
+                         "price": 0,
+                         "icon": "",
+                         "size": 1694756,
+                         "share_summary": "阿里首席市场官总结五大消费趋势；阿里副总裁解读阿里如何配合新",
+                         "collection": 0,
+                         "count": 653,
+                         "bored_count": 3,
+                         "audio_type": 1,
+                         "tag": [
+                                 {
+                                 "id": 9,
+                                 "name": "商业"
+                                 }
+                                 ],
+                         "audio_list_icon": "https://piccdn.igetget.com/img/201703/03/201703030045310229128285.jpg@360w",
+                         "topic_duration": 0
+                         },
+                         {
+                         "id": 0,
+                         "alias_id": "CQUlJYeN0V0chwmDmN8q",
+                         "extraInfo": "",
+                         "class_id": 0,
+                         "title": "耐心和步调：创业最终两个问题",
+                         "share_title": "耐心和步调：创业最终两个问题",
+                         "mp3_play_url": "http://igetoss.cdn.igetget.com/aac/201703/12/64000_201703122155482849339018.m4a",
+                         "duration": 256,
+                         "schedule": 2422,
+                         "topic_id": 2422,
+                         "summary": "",
+                         "price": 0,
+                         "icon": "",
+                         "size": 1583324,
+                         "share_summary": "硅谷投资人解读公司发展的五个不同阶段，需要吸引不同的用户。",
+                         "collection": 0,
+                         "count": 1204,
+                         "bored_count": 0,
+                         "audio_type": 1,
+                         "tag": [
+                                 {
+                                 "id": 15,
+                                 "name": "创业"
+                                 },
+                                 {
+                                 "id": 9,
+                                 "name": "商业"
+                                 }
+                                 ],
+                         "audio_list_icon": "https://piccdn.igetget.com/img/201703/03/201703030045310229128285.jpg@360w",
+                         "topic_duration": 0
+                         },
+                         {
+                         "id": 0,
+                         "alias_id": "YNPgBhEFNGPJAOc3WrAf",
+                         "extraInfo": "",
+                         "class_id": 0,
+                         "title": "反思：快速学习内功修炼之道",
+                         "share_title": "反思：快速学习内功修炼之道",
+                         "mp3_play_url": "http://igetoss.cdn.igetget.com/aac/201703/12/64000_201703122156297140529030.m4a",
+                         "duration": 265,
+                         "schedule": 2422,
+                         "topic_id": 2422,
+                         "summary": "",
+                         "price": 0,
+                         "icon": "",
+                         "size": 1638359,
+                         "share_summary": "反思的三步顺序：观察结果、研究原来的假设、反思校正假设。",
+                         "collection": 0,
+                         "count": 2324,
+                         "bored_count": 1,
+                         "audio_type": 1,
+                         "tag": [
+                                 {
+                                 "id": 3,
+                                 "name": "自我管理"
+                                 }
+                                 ],
+                         "audio_list_icon": "https://piccdn.igetget.com/img/201703/03/201703030045310229128285.jpg@360w",
+                         "topic_duration": 0
+                         }
+                         ],
                 "column_id": 1
             },
             "column": {
@@ -271,273 +250,273 @@
                 "rightTitle": "",
                 "count": 19,
                 "list": [
-                    {
-                        "m_id": 18,
-                        "m_img": "https://piccdn.igetget.com/img/201609/23/201609232129287091543913.jpg@400w_1l_",
-                        "m_title": "5分钟商学院",
-                        "m_image": "https://piccdn.igetget.com/img/201609/23/201609232129287091543913.jpg@400w_1l_",
-                        "m_price": 199,
-                        "m_intro": "帮你当好自己的CEO",
-                        "m_price_desc": "年",
-                        "m_orders": 0,
-                        "m_article_title": "客座教授｜投资人最大的价值是提高赢的概率",
-                        "m_article_time": "1小时前更新",
-                        "m_isSubscribe": 0
-                    },
-                    {
-                        "m_id": 19,
-                        "m_img": "https://piccdn.igetget.com/img/201611/28/201611282014407856133926.jpg@400w_1l_",
-                        "m_title": "吴军 · 硅谷来信",
-                        "m_image": "https://piccdn.igetget.com/img/201611/28/201611282014407856133926.jpg@400w_1l_",
-                        "m_price": 199,
-                        "m_intro": "每日深谈，像时代领航者一样思考",
-                        "m_price_desc": "年",
-                        "m_orders": 1,
-                        "m_article_title": "第142封信丨什么算是内幕交易？",
-                        "m_article_time": "23小时前更新",
-                        "m_isSubscribe": 0
-                    },
-                    {
-                        "m_id": 15,
-                        "m_img": "https://piccdn.igetget.com/img/201609/03/201609032139593857795336.jpg@400w_1l_",
-                        "m_title": "王烁 · 大学 · 问",
-                        "m_image": "https://piccdn.igetget.com/img/201609/03/201609032139593857795336.jpg@400w_1l_",
-                        "m_price": 199,
-                        "m_intro": "带你共读美国名校",
-                        "m_price_desc": "9个月",
-                        "m_orders": 2,
-                        "m_article_title": "马云、刘强东答错了",
-                        "m_article_time": "昨天更新",
-                        "m_isSubscribe": 0
-                    },
-                    {
-                        "m_id": 13,
-                        "m_img": "https://piccdn.igetget.com/img/201608/10/201608102015088452121721.jpg@400w_1l_",
-                        "m_title": "万维钢 · 精英日课",
-                        "m_image": "https://piccdn.igetget.com/img/201608/10/201608102015088452121721.jpg@400w_1l_",
-                        "m_price": 199,
-                        "m_intro": "帮你和全球精英大脑同步",
-                        "m_price_desc": "年",
-                        "m_orders": 3,
-                        "m_article_title": "日课138 | 《俭省》解读2 ： “有差别的”人类劳动",
-                        "m_article_time": "1小时前更新",
-                        "m_isSubscribe": 0
-                    },
-                    {
-                        "m_id": 23,
-                        "m_img": "https://piccdn.igetget.com/img/201612/25/201612251303427324412153.jpg@400w_1l_",
-                        "m_title": "关系攻略",
-                        "m_image": "https://piccdn.igetget.com/img/201612/25/201612251303427324412153.jpg@400w_1l_",
-                        "m_price": 199,
-                        "m_intro": "残酷社会生存法则",
-                        "m_price_desc": "年",
-                        "m_orders": 4,
-                        "m_article_title": "脾气坏就是人坏，不要替他找借口了",
-                        "m_article_time": "14分钟前更新",
-                        "m_isSubscribe": 0
-                    },
-                    {
-                        "m_id": 25,
-                        "m_img": "https://piccdn.igetget.com/img/201702/23/201702231554239673437870.jpg@400w_1l_",
-                        "m_title": "薛兆丰的北大经济学课",
-                        "m_image": "https://piccdn.igetget.com/img/201702/23/201702231554239673437870.jpg@400w_1l_",
-                        "m_price": 199,
-                        "m_intro": "只给你地道的经济学思维",
-                        "m_price_desc": "年",
-                        "m_orders": 5,
-                        "m_article_title": "第2周问答丨帮助弱者，才叫慈善",
-                        "m_article_time": "16小时前更新",
-                        "m_isSubscribe": 0
-                    },
-                    {
-                        "m_id": 20,
-                        "m_img": "https://piccdn.igetget.com/img/201610/20/201610201321086748666597.jpg@400w_1l_",
-                        "m_title": "伯凡 · 日知录",
-                        "m_image": "https://piccdn.igetget.com/img/201610/20/201610201321086748666597.jpg@400w_1l_",
-                        "m_price": 199,
-                        "m_intro": "自我迭代者的学习小组",
-                        "m_price_desc": "年",
-                        "m_orders": 6,
-                        "m_article_title": "本周问答丨如果你追求伟大，那就别害羞",
-                        "m_article_time": "7小时前更新",
-                        "m_isSubscribe": 0
-                    },
-                    {
-                        "m_id": 4,
-                        "m_img": "https://piccdn.igetget.com/img/201607/26/201607262004204898746842.jpg@400w_1l_",
-                        "m_title": "李翔商业内参",
-                        "m_image": "https://piccdn.igetget.com/img/201607/26/201607262004204898746842.jpg@400w_1l_",
-                        "m_price": 199,
-                        "m_intro": "你的私家商业知识秘书",
-                        "m_price_desc": "年",
-                        "m_orders": 7,
-                        "m_article_title": "3月4日｜本周金句&问题风暴",
-                        "m_article_time": "4小时前更新",
-                        "m_isSubscribe": 0
-                    },
-                    {
-                        "m_id": 6,
-                        "m_img": "https://piccdn.igetget.com/img/201609/18/201609181314157059278762.jpg@400w_1l_",
-                        "m_title": "槽边往事",
-                        "m_image": "https://piccdn.igetget.com/img/201609/18/201609181314157059278762.jpg@400w_1l_",
-                        "m_price": 199,
-                        "m_intro": "请你相信，我所说的都是错的",
-                        "m_price_desc": "年",
-                        "m_orders": 8,
-                        "m_article_title": "奥斯卡荐片",
-                        "m_article_time": "2月27日更新",
-                        "m_isSubscribe": 0
-                    },
-                    {
-                        "m_id": 7,
-                        "m_img": "https://piccdn.igetget.com/img/201607/26/201607262004428899125439.jpg@400w_1l_",
-                        "m_title": "卓老板聊科技",
-                        "m_image": "https://piccdn.igetget.com/img/201607/26/201607262004428899125439.jpg@400w_1l_",
-                        "m_price": 199,
-                        "m_intro": "给想抓住未来机会的聪明人",
-                        "m_price_desc": "年",
-                        "m_orders": 9,
-                        "m_article_title": "小小细胞里有比战斗机还强劲的驱动力",
-                        "m_article_time": "4小时前更新",
-                        "m_isSubscribe": 0
-                    },
-                    {
-                        "m_id": 21,
-                        "m_img": "https://piccdn.igetget.com/img/201610/20/201610201501093332554623.jpg@400w_1l_",
-                        "m_title": "超级个体",
-                        "m_image": "https://piccdn.igetget.com/img/201610/20/201610201501093332554623.jpg@400w_1l_",
-                        "m_price": 199,
-                        "m_intro": "提升你的职业竞争力",
-                        "m_price_desc": "年",
-                        "m_orders": 10,
-                        "m_article_title": "精华 | 搞清价值观，这10点必知 19-5",
-                        "m_article_time": "17小时前更新",
-                        "m_isSubscribe": 0
-                    },
-                    {
-                        "m_id": 3,
-                        "m_img": "https://piccdn.igetget.com/img/201608/04/201608041608036852693788.jpg@400w_1l_",
-                        "m_title": "通往财富自由之路",
-                        "m_image": "https://piccdn.igetget.com/img/201608/04/201608041608036852693788.jpg@400w_1l_",
-                        "m_price": 199,
-                        "m_intro": "人人都有至少一次机会",
-                        "m_price_desc": "年",
-                        "m_orders": 11,
-                        "m_article_title": "我们重新认识了“双倍”",
-                        "m_article_time": "16小时前更新",
-                        "m_isSubscribe": 0
-                    },
-                    {
-                        "m_id": 22,
-                        "m_img": "https://piccdn.igetget.com/img/201612/15/201612150202174994062103.jpg@400w_1l_",
-                        "m_title": "老浦识字",
-                        "m_image": "https://piccdn.igetget.com/img/201612/15/201612150202174994062103.jpg@400w_1l_",
-                        "m_price": 199,
-                        "m_intro": "每个字都让你恍然大悟",
-                        "m_price_desc": "年",
-                        "m_orders": 12,
-                        "m_article_title": "【安】关于房子的梦想",
-                        "m_article_time": "4小时前更新",
-                        "m_isSubscribe": 0
-                    },
-                    {
-                        "m_id": 24,
-                        "m_img": "https://piccdn.igetget.com/img/201612/28/201612280028474012859015.jpg@400w_1l_",
-                        "m_title": "郝广才·今天",
-                        "m_image": "https://piccdn.igetget.com/img/201612/28/201612280028474012859015.jpg@400w_1l_",
-                        "m_price": 199,
-                        "m_intro": "真故事滋养好作文",
-                        "m_price_desc": "年",
-                        "m_orders": 13,
-                        "m_article_title": "第062天丨黑暗中的光明",
-                        "m_article_time": "17小时前更新",
-                        "m_isSubscribe": 0
-                    },
-                    {
-                        "m_id": 17,
-                        "m_img": "https://piccdn.igetget.com/img/201609/09/201609091842493638964403.jpg@400w_1l_",
-                        "m_title": "何帆大局观",
-                        "m_image": "https://piccdn.igetget.com/img/201609/09/201609091842493638964403.jpg@400w_1l_",
-                        "m_price": 199,
-                        "m_intro": "有趣有温度的经济学课",
-                        "m_price_desc": "年",
-                        "m_orders": 14,
-                        "m_article_title": "周末荐文丨客途秋恨（极简香港百年经济史）",
-                        "m_article_time": "15小时前更新",
-                        "m_isSubscribe": 0
-                    },
-                    {
-                        "m_id": 8,
-                        "m_img": "https://piccdn.igetget.com/img/201607/26/201607262004538765273482.jpg@400w_1l_",
-                        "m_title": "樊登速读",
-                        "m_image": "https://piccdn.igetget.com/img/201607/26/201607262004538765273482.jpg@400w_1l_",
-                        "m_price": 199,
-                        "m_intro": "更少时间，更多干货",
-                        "m_price_desc": "年",
-                        "m_orders": 15,
-                        "m_article_title": "问答：读书记不住内容，概括能力差，该怎么办？",
-                        "m_article_time": "10小时前更新",
-                        "m_isSubscribe": 0
-                    },
-                    {
-                        "m_id": 10,
-                        "m_img": "https://piccdn.igetget.com/img/201608/04/201608041608207375641867.jpg@400w_1l_",
-                        "m_title": "前哨 · 王煜全",
-                        "m_image": "https://piccdn.igetget.com/img/201608/04/201608041608207375641867.jpg@400w_1l_",
-                        "m_price": 199,
-                        "m_intro": "你的全球科技创新侦察兵",
-                        "m_price_desc": "年",
-                        "m_orders": 16,
-                        "m_article_title": "前哨科技创新地图｜自由空间光通信行业的现在与未来",
-                        "m_article_time": "23小时前更新",
-                        "m_isSubscribe": 0
-                    },
-                    {
-                        "m_id": 2,
-                        "m_img": "https://piccdn.igetget.com/img/201607/26/201607262004046501622208.jpg@400w_1l_",
-                        "m_title": "雪枫音乐会",
-                        "m_image": "https://piccdn.igetget.com/img/201607/26/201607262004046501622208.jpg@400w_1l_",
-                        "m_price": 199,
-                        "m_intro": "带你听懂260首古典音乐",
-                        "m_price_desc": "年",
-                        "m_orders": 17,
-                        "m_article_title": "歌剧《奥菲欧》：聆听和诠释历史的变化",
-                        "m_article_time": "23小时前更新",
-                        "m_isSubscribe": 0
-                    },
-                    {
-                        "m_id": 14,
-                        "m_img": "https://piccdn.igetget.com/img/201609/09/201609091117285405994378.jpg@400w_1l_",
-                        "m_title": "罗辑思维",
-                        "m_image": "https://piccdn.igetget.com/img/201609/09/201609091117285405994378.jpg@400w_1l_",
-                        "m_price": 1,
-                        "m_intro": "死磕自己，愉悦大家",
-                        "m_price_desc": "四年",
-                        "m_orders": 18,
-                        "m_article_title": "「得到」例会 | 罗胖的产品心法",
-                        "m_article_time": "2月16日更新",
-                        "m_isSubscribe": 0
-                    }
-                ]
+                         {
+                         "m_id": 19,
+                         "m_img": "https://piccdn.igetget.com/img/201611/28/201611282014407856133926.jpg@400w_1l_",
+                         "m_title": "吴军 · 硅谷来信",
+                         "m_image": "https://piccdn.igetget.com/img/201611/28/201611282014407856133926.jpg@400w_1l_",
+                         "m_price": 199,
+                         "m_intro": "每日深谈，像时代领航者一样思考",
+                         "m_price_desc": "年",
+                         "m_orders": 0,
+                         "m_article_title": "第152封信丨围绕目的进行资产配置",
+                         "m_article_time": "15小时前更新",
+                         "m_isSubscribe": 0
+                         },
+                         {
+                         "m_id": 25,
+                         "m_img": "https://piccdn.igetget.com/img/201702/23/201702231554239673437870.jpg@400w_1l_",
+                         "m_title": "薛兆丰的北大经济学课",
+                         "m_image": "https://piccdn.igetget.com/img/201702/23/201702231554239673437870.jpg@400w_1l_",
+                         "m_price": 199,
+                         "m_intro": "只给你地道的经济学思维",
+                         "m_price_desc": "年",
+                         "m_orders": 1,
+                         "m_article_title": "第013讲丨一句话给成本下定义",
+                         "m_article_time": "8小时前更新",
+                         "m_isSubscribe": 0
+                         },
+                         {
+                         "m_id": 3,
+                         "m_img": "https://piccdn.igetget.com/img/201608/04/201608041608036852693788.jpg@400w_1l_",
+                         "m_title": "通往财富自由之路",
+                         "m_image": "https://piccdn.igetget.com/img/201608/04/201608041608036852693788.jpg@400w_1l_",
+                         "m_price": 199,
+                         "m_intro": "人人都有至少一次机会",
+                         "m_price_desc": "年",
+                         "m_orders": 2,
+                         "m_article_title": "为什么你一定要学会写作？",
+                         "m_article_time": "8小时前更新",
+                         "m_isSubscribe": 0
+                         },
+                         {
+                         "m_id": 13,
+                         "m_img": "https://piccdn.igetget.com/img/201608/10/201608102015088452121721.jpg@400w_1l_",
+                         "m_title": "万维钢 · 精英日课",
+                         "m_image": "https://piccdn.igetget.com/img/201608/10/201608102015088452121721.jpg@400w_1l_",
+                         "m_price": 199,
+                         "m_intro": "帮你和全球精英大脑同步",
+                         "m_price_desc": "年",
+                         "m_orders": 3,
+                         "m_article_title": "周末小议｜量子纠缠",
+                         "m_article_time": "16小时前更新",
+                         "m_isSubscribe": 0
+                         },
+                         {
+                         "m_id": 22,
+                         "m_img": "https://piccdn.igetget.com/img/201612/15/201612150202174994062103.jpg@400w_1l_",
+                         "m_title": "老浦识字",
+                         "m_image": "https://piccdn.igetget.com/img/201612/15/201612150202174994062103.jpg@400w_1l_",
+                         "m_price": 199,
+                         "m_intro": "每个字都让你恍然大悟",
+                         "m_price_desc": "年",
+                         "m_orders": 4,
+                         "m_article_title": "【人】人字的结构不是相互支撑",
+                         "m_article_time": "3月10日更新",
+                         "m_isSubscribe": 0
+                         },
+                         {
+                         "m_id": 18,
+                         "m_img": "https://piccdn.igetget.com/img/201609/23/201609232129287091543913.jpg@400w_1l_",
+                         "m_title": "5分钟商学院",
+                         "m_image": "https://piccdn.igetget.com/img/201609/23/201609232129287091543913.jpg@400w_1l_",
+                         "m_price": 199,
+                         "m_intro": "帮你当好自己的CEO",
+                         "m_price_desc": "年",
+                         "m_orders": 5,
+                         "m_article_title": "116｜优质、快速或廉价，只能选两样",
+                         "m_article_time": "17小时前更新",
+                         "m_isSubscribe": 0
+                         },
+                         {
+                         "m_id": 14,
+                         "m_img": "https://piccdn.igetget.com/img/201609/09/201609091117285405994378.jpg@400w_1l_",
+                         "m_title": "罗辑思维",
+                         "m_image": "https://piccdn.igetget.com/img/201609/09/201609091117285405994378.jpg@400w_1l_",
+                         "m_price": 1,
+                         "m_intro": "死磕自己，愉悦大家",
+                         "m_price_desc": "四年",
+                         "m_orders": 6,
+                         "m_article_title": "罗胖精选 | 聪明人都爱经济学",
+                         "m_article_time": "3月9日更新",
+                         "m_isSubscribe": 0
+                         },
+                         {
+                         "m_id": 20,
+                         "m_img": "https://piccdn.igetget.com/img/201610/20/201610201321086748666597.jpg@400w_1l_",
+                         "m_title": "伯凡 · 日知录",
+                         "m_image": "https://piccdn.igetget.com/img/201610/20/201610201321086748666597.jpg@400w_1l_",
+                         "m_price": 199,
+                         "m_intro": "自我迭代者的学习小组",
+                         "m_price_desc": "年",
+                         "m_orders": 7,
+                         "m_article_title": "本周预告丨“善”的经济学解释",
+                         "m_article_time": "23小时前更新",
+                         "m_isSubscribe": 0
+                         },
+                         {
+                         "m_id": 21,
+                         "m_img": "https://piccdn.igetget.com/img/201610/20/201610201501093332554623.jpg@400w_1l_",
+                         "m_title": "超级个体",
+                         "m_image": "https://piccdn.igetget.com/img/201610/20/201610201501093332554623.jpg@400w_1l_",
+                         "m_price": 199,
+                         "m_intro": "提升你的职业竞争力",
+                         "m_price_desc": "年",
+                         "m_orders": 8,
+                         "m_article_title": "功利读书法，五倍提升认知效率 21-1",
+                         "m_article_time": "8小时前更新",
+                         "m_isSubscribe": 0
+                         },
+                         {
+                         "m_id": 15,
+                         "m_img": "https://piccdn.igetget.com/img/201609/03/201609032139593857795336.jpg@400w_1l_",
+                         "m_title": "王烁 · 大学 · 问",
+                         "m_image": "https://piccdn.igetget.com/img/201609/03/201609032139593857795336.jpg@400w_1l_",
+                         "m_price": 199,
+                         "m_intro": "带你共读美国名校",
+                         "m_price_desc": "9个月",
+                         "m_orders": 9,
+                         "m_article_title": "第26周问答｜风险、活力与监管的金融困难三角",
+                         "m_article_time": "3月10日更新",
+                         "m_isSubscribe": 0
+                         },
+                         {
+                         "m_id": 23,
+                         "m_img": "https://piccdn.igetget.com/img/201612/25/201612251303427324412153.jpg@400w_1l_",
+                         "m_title": "关系攻略",
+                         "m_image": "https://piccdn.igetget.com/img/201612/25/201612251303427324412153.jpg@400w_1l_",
+                         "m_price": 199,
+                         "m_intro": "残酷社会生存法则",
+                         "m_price_desc": "年",
+                         "m_orders": 10,
+                         "m_article_title": "分手这件事，要当面说吗？",
+                         "m_article_time": "3月10日更新",
+                         "m_isSubscribe": 0
+                         },
+                         {
+                         "m_id": 4,
+                         "m_img": "https://piccdn.igetget.com/img/201607/26/201607262004204898746842.jpg@400w_1l_",
+                         "m_title": "李翔商业内参",
+                         "m_image": "https://piccdn.igetget.com/img/201607/26/201607262004204898746842.jpg@400w_1l_",
+                         "m_price": 199,
+                         "m_intro": "你的私家商业知识秘书",
+                         "m_price_desc": "年",
+                         "m_orders": 11,
+                         "m_article_title": "3月13日｜一个既不做电商也不开实体店的服装品牌",
+                         "m_article_time": "19小时前更新",
+                         "m_isSubscribe": 0
+                         },
+                         {
+                         "m_id": 6,
+                         "m_img": "https://piccdn.igetget.com/img/201609/18/201609181314157059278762.jpg@400w_1l_",
+                         "m_title": "槽边往事",
+                         "m_image": "https://piccdn.igetget.com/img/201609/18/201609181314157059278762.jpg@400w_1l_",
+                         "m_price": 199,
+                         "m_intro": "请你相信，我所说的都是错的",
+                         "m_price_desc": "年",
+                         "m_orders": 12,
+                         "m_article_title": "一次风波",
+                         "m_article_time": "21小时前更新",
+                         "m_isSubscribe": 0
+                         },
+                         {
+                         "m_id": 7,
+                         "m_img": "https://piccdn.igetget.com/img/201607/26/201607262004428899125439.jpg@400w_1l_",
+                         "m_title": "卓老板聊科技",
+                         "m_image": "https://piccdn.igetget.com/img/201607/26/201607262004428899125439.jpg@400w_1l_",
+                         "m_price": 199,
+                         "m_intro": "给想抓住未来机会的聪明人",
+                         "m_price_desc": "年",
+                         "m_orders": 13,
+                         "m_article_title": "从基因角度看儿童教育",
+                         "m_article_time": "3月10日更新",
+                         "m_isSubscribe": 0
+                         },
+                         {
+                         "m_id": 24,
+                         "m_img": "https://piccdn.igetget.com/img/201612/28/201612280028474012859015.jpg@400w_1l_",
+                         "m_title": "郝广才·今天",
+                         "m_image": "https://piccdn.igetget.com/img/201612/28/201612280028474012859015.jpg@400w_1l_",
+                         "m_price": 199,
+                         "m_intro": "真故事滋养好作文",
+                         "m_price_desc": "年",
+                         "m_orders": 14,
+                         "m_article_title": "第072天丨三十八位目击者",
+                         "m_article_time": "9小时前更新",
+                         "m_isSubscribe": 0
+                         },
+                         {
+                         "m_id": 17,
+                         "m_img": "https://piccdn.igetget.com/img/201609/09/201609091842493638964403.jpg@400w_1l_",
+                         "m_title": "何帆大局观",
+                         "m_image": "https://piccdn.igetget.com/img/201609/09/201609091842493638964403.jpg@400w_1l_",
+                         "m_price": 199,
+                         "m_intro": "有趣有温度的经济学课",
+                         "m_price_desc": "年",
+                         "m_orders": 15,
+                         "m_article_title": "道德的“积极清单”和“负面清单”",
+                         "m_article_time": "7小时前更新",
+                         "m_isSubscribe": 0
+                         },
+                         {
+                         "m_id": 8,
+                         "m_img": "https://piccdn.igetget.com/img/201607/26/201607262004538765273482.jpg@400w_1l_",
+                         "m_title": "樊登速读",
+                         "m_image": "https://piccdn.igetget.com/img/201607/26/201607262004538765273482.jpg@400w_1l_",
+                         "m_price": 199,
+                         "m_intro": "更少时间，更多干货",
+                         "m_price_desc": "年",
+                         "m_orders": 16,
+                         "m_article_title": "速读好书：《认同》",
+                         "m_article_time": "18小时前更新",
+                         "m_isSubscribe": 0
+                         },
+                         {
+                         "m_id": 10,
+                         "m_img": "https://piccdn.igetget.com/img/201608/04/201608041608207375641867.jpg@400w_1l_",
+                         "m_title": "前哨 · 王煜全",
+                         "m_image": "https://piccdn.igetget.com/img/201608/04/201608041608207375641867.jpg@400w_1l_",
+                         "m_price": 199,
+                         "m_intro": "你的全球科技创新侦察兵",
+                         "m_price_desc": "年",
+                         "m_orders": 17,
+                         "m_article_title": "科技概念股｜IT教育：前沿教育和入门培训",
+                         "m_article_time": "15小时前更新",
+                         "m_isSubscribe": 0
+                         },
+                         {
+                         "m_id": 2,
+                         "m_img": "https://piccdn.igetget.com/img/201607/26/201607262004046501622208.jpg@400w_1l_",
+                         "m_title": "雪枫音乐会",
+                         "m_image": "https://piccdn.igetget.com/img/201607/26/201607262004046501622208.jpg@400w_1l_",
+                         "m_price": 199,
+                         "m_intro": "带你听懂260首古典音乐",
+                         "m_price_desc": "年",
+                         "m_orders": 18,
+                         "m_article_title": "贝多芬：最伟大的小提琴协奏曲",
+                         "m_article_time": "14小时前更新",
+                         "m_isSubscribe": 0
+                         }
+                         ]
             },
             "storytell": {
                 "count": 156,
                 "title": "每天听本书",
                 "data": {
-                    "m_title": "伯罗奔尼撒战争2",
-                    "m_duration": 1573,
-                    "m_img": "https://piccdn.igetget.com/img/201703/02/201703021730049016263751.jpg@533w_1l_",
-                    "m_id": 2398,
-                    "m_description": "别让你对未知的恐惧，影响你现在的决策。还原当时的情景，这场战争给我们带来的启发超出想象。",
+                    "m_title": "坚持,一种可以养成的习惯",
+                    "m_duration": 1479,
+                    "m_img": "https://piccdn.igetget.com/img/201703/12/201703122257477269562527.jpg@533w_1l_",
+                    "m_id": 2423,
+                    "m_description": "要把好习惯坚持下去，你需要的不是意志力，而是正确的方法。",
                     "m_type": 13,
                     "m_price": 4.99,
                     "m_buy": 0,
-                    "m_date": "2017-03-03",
+                    "m_date": "2017-03-13",
                     "m_info": {
-                        "id": 5,
-                        "avatar": "https://piccdn.igetget.com/img/201609/22/201609222138258971031123.png",
-                        "name": "孙潇",
-                        "intro": "毕业于中国传媒大学播音与主持艺术学院，播音主持艺术专业，现就职于北京人民广播电台，交通广播《警法时空》节目栏目主持人，得到专栏《李翔商业内参》音频转述师。"
+                        "id": 7,
+                        "avatar": "https://piccdn.igetget.com/img/201609/22/201609222128552214095330.png",
+                        "name": "成甲",
+                        "intro": "创业者，也是读书人，白手起家带领公司年营业额过千万，多次受邀在清华MBA、第九课堂、多角度沙龙担任演讲嘉宾或客座讲师。得到音频“成甲说书”主讲，《好好学习:个人知识管理精进指南》作者。"
                     }
                 }
             },
@@ -546,17 +525,17 @@
                 "title": "马徐骏说杂志",
                 "intro": "查看3月杂志包",
                 "data": {
-                    "m_title": "卡乐星母公司CEO的崛起之路",
-                    "m_duration": 638,
-                    "m_img": "https://piccdn.igetget.com/img/201703/02/201703022211030647616543.jpg@533w_1l_",
-                    "m_id": 2397,
-                    "m_description": "为何特朗普中意的劳工部长——卡乐星母公司的CEO会放弃提名？",
+                    "m_title": "彼得蒂尔：高等教育的谎言",
+                    "m_duration": 845,
+                    "m_img": "https://piccdn.igetget.com/img/201703/12/201703122314554571107204.jpg@533w_1l_",
+                    "m_id": 2424,
+                    "m_description": "为什么彼得•蒂尔会创立1517基金鼓励大学生辍学创业？",
                     "m_type": 14,
                     "m_price": 18,
-                    "m_source": "《彭博商业周刊》2月13日刊",
+                    "m_source": "《新闻周刊》3月3日刊",
                     "m_buy": 0,
-                    "m_notbuy_image": "https://piccdn.igetget.com/img/201703/02/201703022359523288674941.jpg",
-                    "m_date": "2017-03-03",
+                    "m_notbuy_image": "https://piccdn.igetget.com/img/201703/13/201703130000303359631728.png",
+                    "m_date": "2017-03-13",
                     "m_monthly_id": 6,
                     "m_info": {
                         "id": 1,
@@ -568,99 +547,99 @@
                 }
             },
             "new": {
-                "count": 15,
+                "count": 19,
                 "title": "热门排行榜",
-                "rightTitle": "查看全部15条",
+                "rightTitle": "查看全部19条",
                 "list": [
-                    {
-                        "m_type": 13,
-                        "m_title": "巴菲特法则",
-                        "m_duration": 997,
-                        "m_img": "https://piccdn.igetget.com/img/201702/28/201702281621156456463935.jpg@533w_1l_",
-                        "m_id": 2390
-                    },
-                    {
-                        "m_type": 2,
-                        "m_title": "斯坦福极简经济学",
-                        "m_author": "[美] 蒂莫西·泰勒",
-                        "m_style": 1,
-                        "m_count": "",
-                        "m_book_type": 1,
-                        "m_img": "https://piccdn.igetget.com/img/201607/21/201607211352163429261598.jpg@533w_1l_",
-                        "m_id": 324
-                    },
-                    {
-                        "m_type": 13,
-                        "m_title": "日本制造",
-                        "m_duration": 1876,
-                        "m_img": "https://piccdn.igetget.com/img/201702/27/201702272236458144453799.jpg@533w_1l_",
-                        "m_id": 2388
-                    },
-                    {
-                        "m_type": 13,
-                        "m_title": "所谓情商高，就是会说话",
-                        "m_duration": 1387,
-                        "m_img": "https://piccdn.igetget.com/img/201702/12/201702121720272850842374.jpg@533w_1l_",
-                        "m_id": 2349
-                    }
-                ]
+                         {
+                         "m_type": 1,
+                         "m_title": "关于电动车的未来，你知道多少",
+                         "m_duration": 1375,
+                         "m_img": "https://piccdn.igetget.com/img/201703/08/201703081311499039923207.jpg@533w_1l_",
+                         "m_id": 2409
+                         },
+                         {
+                         "m_type": 2,
+                         "m_title": "斯坦福极简经济学",
+                         "m_author": "[美] 蒂莫西·泰勒",
+                         "m_style": 1,
+                         "m_count": "",
+                         "m_book_type": 1,
+                         "m_img": "https://piccdn.igetget.com/img/201607/21/201607211352163429261598.jpg@533w_1l_",
+                         "m_id": 324
+                         },
+                         {
+                         "m_type": 13,
+                         "m_title": "1493：物种大交换开创的世界史",
+                         "m_duration": 1368,
+                         "m_img": "https://piccdn.igetget.com/img/201703/03/201703032150180296627325.jpg@533w_1l_",
+                         "m_id": 2400
+                         },
+                         {
+                         "m_type": 13,
+                         "m_title": "所谓情商高，就是会说话",
+                         "m_duration": 1387,
+                         "m_img": "https://piccdn.igetget.com/img/201702/12/201702121720272850842374.jpg@533w_1l_",
+                         "m_id": 2349
+                         }
+                         ]
             },
             "subject": {
                 "count": 4,
                 "title": "",
                 "rightTitle": "",
                 "list": [
-                    {
-                        "m_type": 1,
-                        "m_isSubscribe": 0,
-                        "m_title": "【活动】论历史",
-                        "m_img": "https://piccdn.igetget.com/img/201609/14/201609142338573772051868.jpg@587w_1l_",
-                        "m_url": "",
-                        "m_id": 775,
-                        "m_from": ""
-                    },
-                    {
-                        "m_type": 3,
-                        "m_isSubscribe": 0,
-                        "m_title": "五年后什么最好卖",
-                        "m_img": "https://piccdn.igetget.com/img/201703/03/201703031906101780129712.png@587w_1l_",
-                        "m_url": "https://m.igetget.com/activity/consume/?from=dedaoc",
-                        "m_id": 0,
-                        "m_from": ""
-                    },
-                    {
-                        "m_type": 3,
-                        "m_isSubscribe": 0,
-                        "m_title": "他也在看「得到」",
-                        "m_img": "https://piccdn.igetget.com/img/201702/28/201702281700457111425738.png@587w_1l_",
-                        "m_url": "https://zt.igetget.com/h5/pic/?alias=YJovgZRrkjC28pnn5nNG",
-                        "m_id": 0,
-                        "m_from": ""
-                    },
-                    {
-                        "m_type": 3,
-                        "m_isSubscribe": 0,
-                        "m_title": "快刀青衣在「得到」看什么",
-                        "m_img": "https://piccdn.igetget.com/img/201703/01/201703012029224181632437.png@587w_1l_",
-                        "m_url": "https://zt.igetget.com/h5/pic/?alias=DOMM7zXj9lhGkXlrBxlw",
-                        "m_id": 0,
-                        "m_from": ""
-                    }
-                ]
+                         {
+                         "m_type": 1,
+                         "m_isSubscribe": 0,
+                         "m_title": "【活动】为何家会伤人",
+                         "m_img": "https://piccdn.igetget.com/img/201609/14/201609142338573772051868.jpg@587w_1l_",
+                         "m_url": "",
+                         "m_id": 787,
+                         "m_from": ""
+                         },
+                         {
+                         "m_type": 3,
+                         "m_isSubscribe": 0,
+                         "m_title": "五年后什么最好卖",
+                         "m_img": "https://piccdn.igetget.com/img/201703/03/201703031906101780129712.png@587w_1l_",
+                         "m_url": "https://m.igetget.com/activity/consume/?from=dedaoc",
+                         "m_id": 0,
+                         "m_from": "promise"
+                         },
+                         {
+                         "m_type": 3,
+                         "m_isSubscribe": 0,
+                         "m_title": "【小banner】卧底经济学",
+                         "m_img": "https://piccdn.igetget.com/img/201703/11/201703112043292904666568.jpg@587w_1l_",
+                         "m_url": "https://h5.sao.cn/product/detail?alias=i47iuyb4tnmv&spm=ddsyxftg",
+                         "m_id": 0,
+                         "m_from": "shzf"
+                         },
+                         {
+                         "m_type": 3,
+                         "m_isSubscribe": 0,
+                         "m_title": "随时随地读耶鲁",
+                         "m_img": "https://piccdn.igetget.com/img/201703/07/201703071139227408976446.jpg@587w_1l_",
+                         "m_url": "https://zt.igetget.com/h5/pic/?alias=gq1xZ2lLgVHZkwoo8omy",
+                         "m_id": 0,
+                         "m_from": ""
+                         }
+                         ]
             },
             "verse": {
                 "count": 0,
                 "title": "看金句",
                 "rightTitle": "查看全部",
                 "data": {
-                    "m_id": 1482,
-                    "m_source": "《老浦识字》",
-                    "m_content": "要想成事，一定是厚积薄發。而發那一下，必须一往无前。——浦寅",
-                    "m_count": 1494,
+                    "m_id": 1486,
+                    "m_source": "《万维钢·精英日课》",
+                    "m_content": "整天问自己喜欢什么，永远都在做选择，没有长性，这种生活其实并不愉快。自己亲手创造一个更好的关系，一个更好的事业，乃至一个更好的自己，这种成就才最值得追求。——万维钢",
+                    "m_count": 189,
                     "m_book_id": 0,
                     "m_topic_id": 0,
                     "m_type": 0,
-                    "m_ctime": "2017-03-01 16:45:25",
+                    "m_ctime": "2017-03-10 19:01:04",
                     "m_collection": 0
                 }
             },
@@ -669,45 +648,48 @@
                 "title": "猜你喜欢",
                 "rightTitle": "",
                 "list": [
-                    {
-                        "m_type": 2,
-                        "m_title": "爱的艺术",
-                        "m_author": "",
-                        "m_style": 5,
-                        "m_count": "1.3万字干货",
-                        "m_book_type": 2,
-                        "m_img": "https://piccdn.igetget.com/img/201607/21/201607211219218100682074.jpg@533w_1l_",
-                        "m_id": 40
-                    },
-                    {
-                        "m_type": 2,
-                        "m_title": "知识分子与社会(解读版)",
-                        "m_author": "",
-                        "m_style": 1,
-                        "m_count": "6千字干货",
-                        "m_book_type": 2,
-                        "m_img": "https://piccdn.igetget.com/img/201607/21/201607211352155200858279.jpg@533w_1l_",
-                        "m_id": 317
-                    },
-                    {
-                        "m_type": 1,
-                        "m_title": "樊登速读:关键对话",
-                        "m_duration": 1956,
-                        "m_img": "https://piccdn.igetget.com/img/201608/27/201608271112286049241958.jpg@533w_1l_",
-                        "m_id": 1917
-                    },
-                    {
-                        "m_type": 1,
-                        "m_title": "没时间,怎么高质量陪孩子?",
-                        "m_duration": 547,
-                        "m_img": "https://piccdn.igetget.com/img/201607/21/201607211730393477233426.jpg@533w_1l_",
-                        "m_id": 1213
-                    }
-                ],
-                "requestId": "2ce1d47c876d42c28522b4f20a119226"
+                         {
+                         "m_type": 2,
+                         "m_title": "海洋帝国(解读版)",
+                         "m_author": "",
+                         "m_style": 1,
+                         "m_count": "6千字干货",
+                         "m_book_type": 2,
+                         "m_img": "https://piccdn.igetget.com/img/201609/18/201609181806589400538495.jpg@533w_1l_",
+                         "m_id": 558
+                         },
+                         {
+                         "m_type": 2,
+                         "m_title": "被驯化的大脑(解读版)",
+                         "m_author": "",
+                         "m_style": 1,
+                         "m_count": "6千字干货",
+                         "m_book_type": 2,
+                         "m_img": "https://piccdn.igetget.com/img/201609/27/201609271920306910851648.jpg@533w_1l_",
+                         "m_id": 580
+                         },
+                         {
+                         "m_type": 2,
+                         "m_title": "权力的终结(解读版)",
+                         "m_author": "",
+                         "m_style": 1,
+                         "m_count": "8千字干货",
+                         "m_book_type": 2,
+                         "m_img": "https://piccdn.igetget.com/img/201609/01/201609011746477624052522.jpg@533w_1l_",
+                         "m_id": 530
+                         },
+                         {
+                         "m_type": 1,
+                         "m_title": "樊登速读:斯坦福大学最受欢迎的创意课",
+                         "m_duration": 1822,
+                         "m_img": "https://piccdn.igetget.com/img/201610/09/201610091652558998812515.jpg@533w_1l_",
+                         "m_id": 2008
+                         }
+                         ],
+                "requestId": "bba95de1dbce47228b3872c481ad0c91"
             }
         },
         "ios_column_switch": 0,
-        "now": "2017-03-03"
+        "now": "2017-03-13"
     }
 }

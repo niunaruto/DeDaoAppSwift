@@ -8,6 +8,8 @@
 
 import UIKit
 import SnapKit
+import UIColor_Hex_Swift
+
 class DDBaseTableViewCell: UITableViewCell {
 
     override func awakeFromNib() {

@@ -8,20 +8,21 @@
 
 
 protocol NNBannerScrollViewDelegate : class {
-     func bannerScrollViewDidSelectItemAt(index : NSInteger)
+    func bannerScrollViewDidSelectItemAt(index : NSInteger)
 }
 
 import UIKit
 import Kingfisher
 class NNBannerScrollView: UIView {
     
-     lazy var scrollTimer : TimeInterval = 2.0
- 
+    lazy var scrollTimer : TimeInterval = 2.0
+    
     weak var delegate : NNBannerScrollViewDelegate?
-      var imageUrlArray : Array<String>?{
+    var imageUrlArray : Array<String>?{
         didSet{
             
             collectionView.reloadData()
+            collectionView.contentOffset.x = 10 * CGFloat((imageUrlArray?.count) ?? 0)
             scrollAuto()
             removeTimer()
             addTimer()
@@ -44,7 +45,7 @@ class NNBannerScrollView: UIView {
         collectionView.dataSource = self
         collectionView.register(NNBannerScrollViewCell.classForCoder(), forCellWithReuseIdentifier: NNBannerScrollViewCell.cellIdentifier())
         return collectionView
-    }()
+        }()
     
     
     init(frame: CGRect,
@@ -64,7 +65,7 @@ class NNBannerScrollView: UIView {
         fatalError("init(coder:) has not been implemented")
     }
     
-
+    
 }
 // MARK: 视图相关方法
 extension NNBannerScrollView {
@@ -76,28 +77,34 @@ extension NNBannerScrollView {
     
     
     func scrollAuto(){
-        guard imageUrlArray != nil else {
+        guard imageUrlArray != nil && imageUrlArray?.count ?? 0 != 0 else {
             return
         }
         let currentIndex = imageUrlArray?.count ?? 0;
-        let indexPath = IndexPath(item: currentIndex * 10, section: 0)
+        let indexPath = IndexPath(item: currentIndex * 10 * currentIndex, section: 0)
         collectionView.scrollToItem(at: indexPath, at: .left, animated: false)
         
+        print("scrollAuto")
+
     }
     
 }
 
 // MARK: - 定时器相关方法
 extension NNBannerScrollView {
-  
+    
     func addTimer() {
         self.timer = Timer.init(timeInterval: self.scrollTimer, target: self, selector: #selector(scrollNext), userInfo: nil, repeats: true)
         RunLoop.main.add(self.timer!, forMode: .commonModes)
+        print("addTimer")
+
     }
     
     func removeTimer()  {
         timer?.invalidate()
         timer = nil
+        print("removeTimer")
+
     }
     
     func scrollNext()  {
@@ -105,9 +112,14 @@ extension NNBannerScrollView {
         let offsetX = currentOffsetX + collectionView.bounds.width
         collectionView.setContentOffset(CGPoint(x: offsetX, y: 0), animated: true)
         guard imageUrlArray != nil else {
-           return
+            return
         }
         
+        if offsetX > frame.size.width * CGFloat(200 - 50) * CGFloat(imageUrlArray?.count ?? 0) {
+            scrollAuto()
+        }
+        
+        print("scrollNext")
         
     }
     
@@ -116,7 +128,7 @@ extension NNBannerScrollView {
 // MARK: - UICollectionViewDataSource,UICollectionViewDelegate
 extension NNBannerScrollView : UICollectionViewDataSource,UICollectionViewDelegate{
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return (imageUrlArray?.count ?? 0) * 100
+        return (imageUrlArray?.count ?? 0) * 200
     }
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: NNBannerScrollViewCell.cellIdentifier(), for: indexPath) as! NNBannerScrollViewCell
@@ -133,7 +145,7 @@ extension NNBannerScrollView : UICollectionViewDataSource,UICollectionViewDelega
     }
     
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
-
+        
         
     }
     

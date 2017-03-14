@@ -41,6 +41,12 @@
 		CE7C12451E6EB81400067BFB /* DDViewModelServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7C12441E6EB81400067BFB /* DDViewModelServices.swift */; };
 		CE7C13111E72753200067BFB /* NNBannerScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7C130F1E72753200067BFB /* NNBannerScrollView.swift */; };
 		CE7C13121E72753200067BFB /* NNBannerScrollViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7C13101E72753200067BFB /* NNBannerScrollViewCell.swift */; };
+		CE7C13141E763C9400067BFB /* DDHomeIndexCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7C13131E763C9400067BFB /* DDHomeIndexCell.swift */; };
+		CE7C13161E76452700067BFB /* UIColor_Hex_Swift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE7C13151E76452700067BFB /* UIColor_Hex_Swift.framework */; };
+		CE7C13181E764A2B00067BFB /* UIButton+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7C13171E764A2B00067BFB /* UIButton+Extension.swift */; };
+		CE7C131C1E767D4100067BFB /* DDHomeFreeAudioCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7C131B1E767D4100067BFB /* DDHomeFreeAudioCell.swift */; };
+		CE7C131F1E76953800067BFB /* NNAlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7C131E1E76953800067BFB /* NNAlertView.swift */; };
+		CE7C13231E769D7500067BFB /* DDBaseTableViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7C13221E769D7500067BFB /* DDBaseTableViewModel.swift */; };
 		CEB18E081E6711AE001653AD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB18E071E6711AE001653AD /* AppDelegate.swift */; };
 		CEB18E0F1E6711AE001653AD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEB18E0E1E6711AE001653AD /* Assets.xcassets */; };
 		CEB18E121E6711AE001653AD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEB18E101E6711AE001653AD /* LaunchScreen.storyboard */; };
@@ -113,6 +119,12 @@
 		CE7C12441E6EB81400067BFB /* DDViewModelServices.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DDViewModelServices.swift; sourceTree = "<group>"; };
 		CE7C130F1E72753200067BFB /* NNBannerScrollView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NNBannerScrollView.swift; sourceTree = "<group>"; };
 		CE7C13101E72753200067BFB /* NNBannerScrollViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NNBannerScrollViewCell.swift; sourceTree = "<group>"; };
+		CE7C13131E763C9400067BFB /* DDHomeIndexCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DDHomeIndexCell.swift; sourceTree = "<group>"; };
+		CE7C13151E76452700067BFB /* UIColor_Hex_Swift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIColor_Hex_Swift.framework; path = "../../Library/Developer/Xcode/DerivedData/DeDaoSwift-epadcgrmirgswpdzquunptpotfgw/Build/Products/Debug-iphonesimulator/UIColor_Hex_Swift/UIColor_Hex_Swift.framework"; sourceTree = "<group>"; };
+		CE7C13171E764A2B00067BFB /* UIButton+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIButton+Extension.swift"; sourceTree = "<group>"; };
+		CE7C131B1E767D4100067BFB /* DDHomeFreeAudioCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DDHomeFreeAudioCell.swift; sourceTree = "<group>"; };
+		CE7C131E1E76953800067BFB /* NNAlertView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NNAlertView.swift; sourceTree = "<group>"; };
+		CE7C13221E769D7500067BFB /* DDBaseTableViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DDBaseTableViewModel.swift; sourceTree = "<group>"; };
 		CEB18E041E6711AE001653AD /* DeDaoSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DeDaoSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEB18E071E6711AE001653AD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CEB18E0E1E6711AE001653AD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -135,6 +147,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE7C13161E76452700067BFB /* UIColor_Hex_Swift.framework in Frameworks */,
 				CE7C12431E6E916600067BFB /* RxSwift.framework in Frameworks */,
 				CE7C12411E6E87FB00067BFB /* Alamofire.framework in Frameworks */,
 				CE7C123F1E6E87F500067BFB /* MJRefresh.framework in Frameworks */,
@@ -177,6 +190,7 @@
 		C894F4DA47B26F5A07FA3A0F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				CE7C13151E76452700067BFB /* UIColor_Hex_Swift.framework */,
 				CE7C12421E6E916600067BFB /* RxSwift.framework */,
 				CE7C12401E6E87FB00067BFB /* Alamofire.framework */,
 				CE7C123E1E6E87F500067BFB /* MJRefresh.framework */,
@@ -205,6 +219,7 @@
 				CE708D191E6914B300F4DF5D /* DDBaseTableViewController.swift */,
 				CE708D1A1E6914B300F4DF5D /* DDBaseViewController.swift */,
 				CE708D1B1E6914B300F4DF5D /* DDBaseViewModel.swift */,
+				CE7C13221E769D7500067BFB /* DDBaseTableViewModel.swift */,
 				CE708D351E69454200F4DF5D /* DDNetworkTools.swift */,
 				CE708D391E694D0E00F4DF5D /* DDScrollBannerView.swift */,
 				CE7C12241E6E558200067BFB /* DDBaseTableViewCell.swift */,
@@ -221,6 +236,7 @@
 				CE7C12221E6D648D00067BFB /* UIImageView+Extension.swift */,
 				CE7C122A1E6E599000067BFB /* UIView+Extension.swift */,
 				CE7C11E61E6D09B900067BFB /* DDTool.swift */,
+				CE7C13171E764A2B00067BFB /* UIButton+Extension.swift */,
 			);
 			name = UIKitExtension;
 			path = Home/UIKitExtension;
@@ -229,6 +245,7 @@
 		CE7C120A1E6D623600067BFB /* Vendors */ = {
 			isa = PBXGroup;
 			children = (
+				CE7C131D1E76951E00067BFB /* NNAlertView */,
 				CE7C130E1E72753200067BFB /* NNBannerScrollView */,
 			);
 			path = Vendors;
@@ -249,6 +266,14 @@
 				CE7C13101E72753200067BFB /* NNBannerScrollViewCell.swift */,
 			);
 			path = NNBannerScrollView;
+			sourceTree = "<group>";
+		};
+		CE7C131D1E76951E00067BFB /* NNAlertView */ = {
+			isa = PBXGroup;
+			children = (
+				CE7C131E1E76953800067BFB /* NNAlertView.swift */,
+			);
+			path = NNAlertView;
 			sourceTree = "<group>";
 		};
 		CEB18DFB1E6711AE001653AD = {
@@ -351,6 +376,8 @@
 			isa = PBXGroup;
 			children = (
 				CE7C12261E6E586C00067BFB /* DDHomeBannerCell.swift */,
+				CE7C13131E763C9400067BFB /* DDHomeIndexCell.swift */,
+				CE7C131B1E767D4100067BFB /* DDHomeFreeAudioCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -701,12 +728,16 @@
 				CE708D281E6929A800F4DF5D /* UIImage+Extension.swift in Sources */,
 				CE7C12251E6E558200067BFB /* DDBaseTableViewCell.swift in Sources */,
 				CE7C13121E72753200067BFB /* NNBannerScrollViewCell.swift in Sources */,
+				CE7C131F1E76953800067BFB /* NNAlertView.swift in Sources */,
 				CE7C11FB1E6D395000067BFB /* DDHomeFreeAudioModel.swift in Sources */,
 				CE7C12231E6D648D00067BFB /* UIImageView+Extension.swift in Sources */,
 				CEE4DE6A1E684A9B0093558C /* DDTabBarViewController.swift in Sources */,
 				CE7C13111E72753200067BFB /* NNBannerScrollView.swift in Sources */,
 				CE7C12011E6D433600067BFB /* DDHomeNewModel.swift in Sources */,
 				CEE4DE7F1E684DA60093558C /* DDTableViewController.swift in Sources */,
+				CE7C13141E763C9400067BFB /* DDHomeIndexCell.swift in Sources */,
+				CE7C13181E764A2B00067BFB /* UIButton+Extension.swift in Sources */,
+				CE7C13231E769D7500067BFB /* DDBaseTableViewModel.swift in Sources */,
 				CE708D3A1E694D0E00F4DF5D /* DDScrollBannerView.swift in Sources */,
 				CE708D201E6914D100F4DF5D /* DDNavigationProtocol.swift in Sources */,
 				CE708D1C1E6914B300F4DF5D /* DDBaseTableViewController.swift in Sources */,
@@ -725,6 +756,7 @@
 				CE7C12271E6E586C00067BFB /* DDHomeBannerCell.swift in Sources */,
 				CE7C11EB1E6D0E5700067BFB /* DDHomeModel.swift in Sources */,
 				CE708D361E69454200F4DF5D /* DDNetworkTools.swift in Sources */,
+				CE7C131C1E767D4100067BFB /* DDHomeFreeAudioCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

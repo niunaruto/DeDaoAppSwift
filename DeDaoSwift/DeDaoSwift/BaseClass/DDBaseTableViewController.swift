@@ -11,40 +11,34 @@ import SnapKit
 import ObjectMapper
 import MJRefresh
 import ReactiveSwift
-import ReactiveCocoa
+//import ReactiveCocoa
+
+
+
 class DDBaseTableViewController: DDBaseViewController {
 
     
-    /// 设置tableViewStyle 默认plain
-    var tableViewStyle : UITableViewStyle?
-    
-    /// 有几个section 默认为1
-    var sectionCount = 1
-    
-    var viewModel = DDBaseViewModel()
-    
-    var useRefreshControl = true
-    
-    var useLoadMoreControl = true
-    
-    
-    
+    lazy var tabViewModel : DDBaseTableViewModel =  { [unowned self] in
+        let  tabViewModel  = DDBaseTableViewModel()
+        return tabViewModel
+    }()
     
    public lazy var tableView : UITableView = { [unowned self] in
-        let tableView = UITableView(frame: self.view.bounds, style: self.tableViewStyle!)
+        let tableView = UITableView(frame: self.view.bounds, style: self.tabViewModel.tableViewStyle!)
         tableView.estimatedRowHeight = 140
-
-        tableView.delegate = self
-        tableView.dataSource = self
+        tableView.delegate = self.tabViewModel
+        tableView.dataSource = self.tabViewModel
         tableView.separatorStyle = .none
         return tableView;
         
     }()
     
-     init(viewMode : DDBaseViewModel) {
+     init(viewMode : DDBaseTableViewModel) {
 
         super.init(nibName: nil, bundle: nil)
-        viewModel = viewMode
+        self.tabViewModel = viewMode
+        self.viewModel = self.tabViewModel
+
 
     }
     
@@ -57,60 +51,52 @@ class DDBaseTableViewController: DDBaseViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        initialize()
+        view.addSubview(tableView)
+        if tabViewModel.useRefreshControl {
+            
+            tableView.mj_header = MJRefreshNormalHeader.init(refreshingTarget: self, refreshingAction: #selector(pullRefresh))
+            tableView.mj_header.beginRefreshing()
+        }
         
+        if tabViewModel.useLoadMoreControl {
+            tableView.mj_footer = MJRefreshAutoNormalFooter.init(refreshingTarget: self, refreshingAction: #selector(loadMoreMoreData))
+            
+        }
 
-        
-    
     }
-    
+}
+
+extension DDBaseTableViewController{
     override func initialize() {
         super.initialize()
     }
-    override func initializeData() {
-        super.initializeData()
-        
-        if let style =  tableViewStyle{
-            tableViewStyle = style
-        }else{
-            tableViewStyle = UITableViewStyle.plain
-        }
-    }
-    override func initializeUI() {
-        super.initializeUI()
-        registerCells()
-        view.addSubview(tableView)
+}
 
-    }
-
-    func registerCells()  {
-     
-        tableView.register(UITableViewCell.classForCoder(), forCellReuseIdentifier: "cell")
-    }
+// MARK: - 刷新数据相关方法
+extension DDBaseTableViewController {
+    
     
     /// 下拉刷新
     func pullRefresh() {
         
-        
+        tabViewModel.refreshData({ (array) in
+
+            tableView.mj_header.endRefreshing()
+            tableView.reloadData()
+            tabViewModel.delegate?.loadDataFinished(tabViewModel, .success)
+            
+            
+        }) { (errorMessege) in
+            tableView.mj_header.endRefreshing()
+            tabViewModel.delegate?.loadDataFinished(tabViewModel, .error)
+
+        }
     }
     
     func loadMoreMoreData() {
         
     }
-    
 }
 
 
-
-extension DDBaseTableViewController : UITableViewDataSource,UITableViewDelegate {
-    func numberOfSections(in tableView: UITableView) -> Int {
-        return sectionCount
-    }
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 0;
-    }
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
-        return cell
-        
-    }
-}
