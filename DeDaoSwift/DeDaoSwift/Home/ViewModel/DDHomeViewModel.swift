@@ -141,10 +141,15 @@ extension DDHomeViewModel{
             cell.setCellsViewModel(dataModel?.dataMiningAduioOrBook)
             
             return cell
+        }else if type == "new" {
+            
+            let cell = tableView.dequeueReusableCell(withIdentifier: DDHomeHotAndGustCell.cellIdentifier(), for: indexPath) as! DDHomeHotAndGustCell
+            cell.setCellsViewModel(dataModel?.new)
+            return cell
         }else{
             
-            let cell = tableView.dequeueReusableCell(withIdentifier: DDHomeBannerCell.cellIdentifier(), for: indexPath) as! DDHomeBannerCell
-            cell.setCellsViewModel(dataModel?.slider)
+            let cell = tableView.dequeueReusableCell(withIdentifier: DDHomeSubjectCell.cellIdentifier(), for: indexPath) as! DDHomeSubjectCell
+            cell.setCellsViewModel(dataModel?.subject)
             return cell
         }
         

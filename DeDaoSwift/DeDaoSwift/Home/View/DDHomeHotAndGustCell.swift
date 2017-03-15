@@ -12,14 +12,14 @@ class DDHomeHotAndGustCell: DDBaseTableViewCell {
 //dataMiningAduioOrBook
     override func setCellsViewModel(_ model: Any?) {
         if let modelT = model as? DDHomeSliderModel {
-            guard modelT.list?.count ?? 0 >= 3  && LabelArray.count >= 3 && imageArray.count >= 3 else {
+            guard modelT.list?.count ?? 0 >= 3  && contentsArray.count >= 3 else {
                 return
             }
             if let list =  modelT.list{
                 
                 for i in 0...2 {
-                    LabelArray[i].text = list[i].m_title
-                    let img : UIImageView = imageArray[i]
+                    contentsArray[i].titleLabel.text = list[i].m_title
+                    let img : UIImageView = contentsArray[i].infoImageView
                     img.kf.setImage(with: URL(string: list[i].m_img))
                 }
                 
@@ -29,45 +29,81 @@ class DDHomeHotAndGustCell: DDBaseTableViewCell {
         }
     }
     
-    lazy var imageArray = Array<UIImageView>()
-    lazy var LabelArray = Array<UILabel>()
+    lazy var contentsArray = Array<DDHomeHotAndGustView>()
     
     
     override func setUI() {
         let backView = UIView()
+        let backViewH : CGFloat = 200
+        
         contentView.addSubview(backView)
         backView.snp.makeConstraints({ (make) in
             make.edges.equalToSuperview()
-            make.height.equalTo(160)
+            make.height.equalTo(backViewH)
         })
         
         
         for i in 0...2 {
-            let itemButton = UIButton()
-            contentView.addSubview(itemButton)
-            let staY : CGFloat = 10
-            let itemH : CGFloat = 140
-            let itemW = UIView.screenWidth / 3.0
-            itemButton.frame = CGRect(x: CGFloat(i) * itemW , y: staY, width: itemW, height: itemH)
-            let infoImageViewW : CGFloat  = 100
-            let infoImageViewGap : CGFloat = 10
+            let itemView = DDHomeHotAndGustView()
             
-            let infoImageView = UIImageView(frame: CGRect(x: 10, y: 0, width: itemW - infoImageViewGap - infoImageViewGap, height: infoImageViewW))
-            itemButton.addSubview(infoImageView)
+            backView.addSubview(itemView)
+            let itemsW = UIView.screenWidth / CGFloat(3)
             
-            let titleLabelY = infoImageView.frame.origin.y + infoImageView.frame.size.height + 5.0
+            itemView.frame = CGRect(x: CGFloat(i) * itemsW, y: 0, width: itemsW, height: backViewH)
             
-            let titleLabel = UILabel(frame: CGRect(x: infoImageView.frame.origin.x, y: titleLabelY, width: infoImageView.frame.size.width, height: itemButton.frame.size.height - titleLabelY))
-            titleLabel.textColor = UIColor.init("#999999")
-            titleLabel.numberOfLines = 2
-            titleLabel.font = UIFont.systemFont(ofSize: 10)
-            
-            itemButton.addSubview(titleLabel)
-            imageArray.append(infoImageView)
-            LabelArray.append(titleLabel)
-            backView.addSubview(itemButton)
-
+            contentsArray.append(itemView)
         }
         
+    }
+}
+
+
+class DDHomeHotAndGustView: UIView {
+    
+
+    
+    
+    lazy var infoImageView : UIImageView = {
+        let infoImageView = UIImageView()
+        infoImageView.contentMode = .scaleAspectFill
+        infoImageView.clipsToBounds = true
+        return infoImageView
+    }()
+    
+    lazy var titleLabel : UILabel = {
+        let titleLabel = UILabel()
+        titleLabel.textColor = UIColor.init("#666666")
+        titleLabel.numberOfLines = 2
+        titleLabel.font = UIFont.systemFont(ofSize: 11)
+        return titleLabel
+    }()
+    
+    override init(frame: CGRect) {
+        super.init(frame: frame)
+        setUI()
+        let tap = UITapGestureRecognizer(target: self, action: #selector(clickImageView))
+        addGestureRecognizer(tap)
+    }
+    func clickImageView() {
+        
+    }
+    
+    required init?(coder aDecoder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+    
+    func setUI() {
+        addSubview(infoImageView)
+        addSubview(titleLabel)
+        infoImageView.snp.makeConstraints { (make) in
+            make.left.top.equalToSuperview().offset(10)
+            make.height.equalTo(140)
+            make.right.equalToSuperview().offset(-10)
+        }
+        titleLabel.snp.makeConstraints { (make) in
+            make.left.right.equalTo(infoImageView)
+            make.right.equalTo(infoImageView)
+            make.top.equalTo(infoImageView.snp.bottom).offset(8)
+        }
     }
 }

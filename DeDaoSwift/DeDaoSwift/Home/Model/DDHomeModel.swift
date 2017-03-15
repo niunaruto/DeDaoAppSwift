@@ -17,7 +17,7 @@ class DDHomeDataModel: Mappable {
     var column                  : DDHomeColumnModel?
     var storytell               : DDHomeStorytellModel?
     var magazine                : DDHomeStorytellModel?
-    var new                     : DDHomeNewModel?
+    var new                     : DDHomeSliderModel?
     var subject                 : DDHomeSubjectModel?
     var verse                   : DDHomeVerseModel?
     var dataMiningAduioOrBook   : DDHomeSliderModel?

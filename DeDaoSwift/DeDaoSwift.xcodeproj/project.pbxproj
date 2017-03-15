@@ -15,6 +15,7 @@
 		CE0CE3111E7908D900CC8C54 /* DDHomeMagazineCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0CE3101E7908D900CC8C54 /* DDHomeMagazineCell.swift */; };
 		CE0CE3131E790BCD00CC8C54 /* DDHomePositionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0CE3121E790BCD00CC8C54 /* DDHomePositionModel.swift */; };
 		CE0CE3151E7940DF00CC8C54 /* DDHomeHotAndGustCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0CE3141E7940DF00CC8C54 /* DDHomeHotAndGustCell.swift */; };
+		CE0CE3171E79704600CC8C54 /* DDHomeSubjectCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0CE3161E79704600CC8C54 /* DDHomeSubjectCell.swift */; };
 		CE708D1C1E6914B300F4DF5D /* DDBaseTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE708D191E6914B300F4DF5D /* DDBaseTableViewController.swift */; };
 		CE708D1D1E6914B300F4DF5D /* DDBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE708D1A1E6914B300F4DF5D /* DDBaseViewController.swift */; };
 		CE708D1E1E6914B300F4DF5D /* DDBaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE708D1B1E6914B300F4DF5D /* DDBaseViewModel.swift */; };
@@ -95,6 +96,7 @@
 		CE0CE3101E7908D900CC8C54 /* DDHomeMagazineCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DDHomeMagazineCell.swift; sourceTree = "<group>"; };
 		CE0CE3121E790BCD00CC8C54 /* DDHomePositionModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DDHomePositionModel.swift; sourceTree = "<group>"; };
 		CE0CE3141E7940DF00CC8C54 /* DDHomeHotAndGustCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DDHomeHotAndGustCell.swift; sourceTree = "<group>"; };
+		CE0CE3161E79704600CC8C54 /* DDHomeSubjectCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DDHomeSubjectCell.swift; sourceTree = "<group>"; };
 		CE708D191E6914B300F4DF5D /* DDBaseTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DDBaseTableViewController.swift; sourceTree = "<group>"; };
 		CE708D1A1E6914B300F4DF5D /* DDBaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DDBaseViewController.swift; sourceTree = "<group>"; };
 		CE708D1B1E6914B300F4DF5D /* DDBaseViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DDBaseViewModel.swift; sourceTree = "<group>"; };
@@ -408,6 +410,7 @@
 				CE0CE30C1E78ED6E00CC8C54 /* DDHomeStorytellCell.swift */,
 				CE0CE3101E7908D900CC8C54 /* DDHomeMagazineCell.swift */,
 				CE0CE3141E7940DF00CC8C54 /* DDHomeHotAndGustCell.swift */,
+				CE0CE3161E79704600CC8C54 /* DDHomeSubjectCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -775,6 +778,7 @@
 				CE7C13141E763C9400067BFB /* DDHomeIndexCell.swift in Sources */,
 				CE7C13181E764A2B00067BFB /* UIButton+Extension.swift in Sources */,
 				CE7C13231E769D7500067BFB /* DDBaseTableViewModel.swift in Sources */,
+				CE0CE3171E79704600CC8C54 /* DDHomeSubjectCell.swift in Sources */,
 				CE708D3A1E694D0E00F4DF5D /* DDScrollBannerView.swift in Sources */,
 				CE708D201E6914D100F4DF5D /* DDNavigationProtocol.swift in Sources */,
 				CE708D1C1E6914B300F4DF5D /* DDBaseTableViewController.swift in Sources */,

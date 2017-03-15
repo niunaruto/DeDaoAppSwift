@@ -45,7 +45,7 @@ class DDHomeSubjectModel: Mappable {
     var title = ""
     var rightTitle = ""
     
-    var list : DDHomeSubjectListModel?
+    var list : Array<DDHomeSubjectListModel>?
     
     required init?(map : Map) {
         

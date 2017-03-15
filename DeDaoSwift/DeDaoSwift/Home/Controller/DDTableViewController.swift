@@ -17,6 +17,7 @@ class DDTableViewController: DDBaseTableViewController {
         super.viewDidLoad()
         setLeftSearchNavItem()
         
+        tableView.register(DDHomeSubjectCell.classForCoder(), forCellReuseIdentifier: DDHomeSubjectCell.cellIdentifier())
         tableView.register(DDHomeHotAndGustCell.classForCoder(), forCellReuseIdentifier: DDHomeHotAndGustCell.cellIdentifier())
         tableView.register(DDHomeMagazineCell.classForCoder(), forCellReuseIdentifier: DDHomeMagazineCell.cellIdentifier())
         tableView.register(DDHomeStorytellCell.classForCoder(), forCellReuseIdentifier: DDHomeStorytellCell.cellIdentifier())
@@ -32,7 +33,7 @@ class DDTableViewController: DDBaseTableViewController {
     
     override func initialize() {
         super.initialize()
-        tabViewModel.title = "首页"
+        tabViewModel.title = "发现"
     }
     
     

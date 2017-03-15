@@ -2,13 +2,13 @@
     "h": {
         "c": 0,
         "e": "",
-        "t": 0.243567943573,
-        "s": 1489548471
+        "t": 0.19836211204529,
+        "s": 1489580007
     },
     "c": {
         "data": {
             "slider": {
-                "count": 3,
+                "count": 4,
                 "title": "",
                 "rightTitle": "",
                 "list": [
@@ -22,10 +22,19 @@
                          "m_from": ""
                          },
                          {
+                         "m_type": 7,
+                         "m_isSubscribe": 0,
+                         "m_title": "马化腾推荐薛兆丰",
+                         "m_img": "https://piccdn.igetget.com/img/201702/24/201702240135250708297084.jpg@960w_1l_",
+                         "m_url": "",
+                         "m_id": 25,
+                         "m_from": ""
+                         },
+                         {
                          "m_type": 3,
                          "m_isSubscribe": 0,
                          "m_title": "即学即用的管理准则",
-                         "m_img": "https://piccdn.igetget.com/img/201703/14/201703141924336754523623.jpg@960w_1l_",
+                         "m_img": "https://piccdn.igetget.com/img/201703/15/201703151349456875936180.jpg@960w_1l_",
                          "m_url": "https://zt.igetget.com/h5/pic/?alias=WEko3JPORjCo2k9o9NVy",
                          "m_id": 0,
                          "m_from": ""
@@ -86,9 +95,9 @@
             },
             "live": {
                 "data": {
-                    "status": 0,
-                    "online_num": "",
-                    "reservation_num": 38021,
+                    "status": 1,
+                    "online_num": 30477,
+                    "reservation_num": 0,
                     "title": "[晚8点]薛兆丰:复杂世界,怎么做个明白人",
                     "room_id": 42,
                     "type": "null",
@@ -111,17 +120,17 @@
                          "class_id": 0,
                          "title": "杨浩涌：我的两次创业实战",
                          "share_title": "杨浩涌：我的两次创业实战",
-                         "mp3_play_url": "http://igetoss.cdn.igetget.com/aac/201703/14/64000_201703142132535319057708.m4a",
+                         "mp3_play_url": "",
                          "duration": 259,
                          "schedule": 2428,
                          "topic_id": 2428,
                          "summary": "",
                          "price": 0,
                          "icon": "",
-                         "size": 1599224,
+                         "size": 1602959,
                          "share_summary": "决定一个公司生死的不是长板，反而是短板。",
                          "collection": 0,
-                         "count": 707,
+                         "count": 1068,
                          "bored_count": 0,
                          "audio_type": 1,
                          "tag": [
@@ -154,8 +163,8 @@
                          "size": 1746708,
                          "share_summary": "商品要具备两种实力：一种是商品力，制造一种概念；另一种是要求",
                          "collection": 0,
-                         "count": 753,
-                         "bored_count": 0,
+                         "count": 1114,
+                         "bored_count": 1,
                          "audio_type": 1,
                          "tag": [
                                  {
@@ -183,7 +192,7 @@
                          "size": 1524276,
                          "share_summary": "智力型公司过去要想做大，它就必须运用杠杆。",
                          "collection": 0,
-                         "count": 494,
+                         "count": 789,
                          "bored_count": 0,
                          "audio_type": 1,
                          "tag": [
@@ -212,8 +221,8 @@
                          "size": 2057712,
                          "share_summary": "不知应用、数据孤岛、组织架构不合理，如何解决这些难题？",
                          "collection": 0,
-                         "count": 456,
-                         "bored_count": 0,
+                         "count": 659,
+                         "bored_count": 1,
                          "audio_type": 1,
                          "tag": [
                                  {
@@ -245,7 +254,7 @@
                          "size": 1580171,
                          "share_summary": "头部自媒体最好的时代已经过去了，垂直自媒体会有很多机会。",
                          "collection": 0,
-                         "count": 664,
+                         "count": 994,
                          "bored_count": 0,
                          "audio_type": 1,
                          "tag": [
@@ -270,6 +279,19 @@
                 "count": 20,
                 "list": [
                          {
+                         "m_id": 25,
+                         "m_img": "https://piccdn.igetget.com/img/201702/23/201702231554239673437870.jpg@400w_1l_",
+                         "m_title": "薛兆丰的北大经济学课",
+                         "m_image": "https://piccdn.igetget.com/img/201702/23/201702231554239673437870.jpg@400w_1l_",
+                         "m_price": 199,
+                         "m_intro": "只给你地道的经济学思维",
+                         "m_price_desc": "年",
+                         "m_orders": 0,
+                         "m_article_title": "第015讲丨别只盯着钱",
+                         "m_article_time": "13小时前更新",
+                         "m_isSubscribe": 0
+                         },
+                         {
                          "m_id": 26,
                          "m_img": "https://piccdn.igetget.com/img/201703/14/201703141339215848609681.jpg@400w_1l_",
                          "m_title": "Dr.魏的家庭教育宝典",
@@ -277,9 +299,9 @@
                          "m_price": 199,
                          "m_intro": "让你的孩子享受最新脑科学研究成果",
                          "m_price_desc": "年",
-                         "m_orders": 0,
-                         "m_article_title": "创意脑｜大脑“暗能量”，打开创造力",
-                         "m_article_time": "昨天更新",
+                         "m_orders": 1,
+                         "m_article_title": "情绪脑｜坚持这三步，搞定发脾气的娃",
+                         "m_article_time": "3小时前更新",
                          "m_isSubscribe": 0
                          },
                          {
@@ -290,22 +312,9 @@
                          "m_price": 199,
                          "m_intro": "帮你和全球精英大脑同步",
                          "m_price_desc": "年",
-                         "m_orders": 1,
-                         "m_article_title": "特别放送丨放诸古今皆准的权力规则",
-                         "m_article_time": "5小时前更新",
-                         "m_isSubscribe": 0
-                         },
-                         {
-                         "m_id": 25,
-                         "m_img": "https://piccdn.igetget.com/img/201702/23/201702231554239673437870.jpg@400w_1l_",
-                         "m_title": "薛兆丰的北大经济学课",
-                         "m_image": "https://piccdn.igetget.com/img/201702/23/201702231554239673437870.jpg@400w_1l_",
-                         "m_price": 199,
-                         "m_intro": "只给你地道的经济学思维",
-                         "m_price_desc": "年",
                          "m_orders": 2,
-                         "m_article_title": "第015讲丨别只盯着钱",
-                         "m_article_time": "4小时前更新",
+                         "m_article_title": "特别放送丨放诸古今皆准的权力规则",
+                         "m_article_time": "13小时前更新",
                          "m_isSubscribe": 0
                          },
                          {
@@ -318,7 +327,7 @@
                          "m_price_desc": "年",
                          "m_orders": 3,
                          "m_article_title": "费曼技巧：一张白纸提高学习效率 21-3",
-                         "m_article_time": "5小时前更新",
+                         "m_article_time": "13小时前更新",
                          "m_isSubscribe": 0
                          },
                          {
@@ -331,7 +340,7 @@
                          "m_price_desc": "年",
                          "m_orders": 4,
                          "m_article_title": "孔子是怎么看待当官这件事的",
-                         "m_article_time": "3小时前更新",
+                         "m_article_time": "12小时前更新",
                          "m_isSubscribe": 0
                          },
                          {
@@ -343,8 +352,8 @@
                          "m_intro": "自我迭代者的学习小组",
                          "m_price_desc": "年",
                          "m_orders": 5,
-                         "m_article_title": "3.14丨经济学中的“外部性”真的存在吗？",
-                         "m_article_time": "19小时前更新",
+                         "m_article_title": "3.15丨“善”的经济学分析",
+                         "m_article_time": "4小时前更新",
                          "m_isSubscribe": 0
                          },
                          {
@@ -357,7 +366,7 @@
                          "m_price_desc": "年",
                          "m_orders": 6,
                          "m_article_title": "第154封信丨我的金钱观（上）",
-                         "m_article_time": "11小时前更新",
+                         "m_article_time": "20小时前更新",
                          "m_isSubscribe": 0
                          },
                          {
@@ -370,7 +379,7 @@
                          "m_price_desc": "年",
                          "m_orders": 7,
                          "m_article_title": "问答02 | 为什么你一定要学会写作？",
-                         "m_article_time": "4小时前更新",
+                         "m_article_time": "13小时前更新",
                          "m_isSubscribe": 0
                          },
                          {
@@ -382,8 +391,8 @@
                          "m_intro": "每个字都让你恍然大悟",
                          "m_price_desc": "年",
                          "m_orders": 8,
-                         "m_article_title": "【众】乌合之众",
-                         "m_article_time": "昨天更新",
+                         "m_article_title": "【射】射字和矮字真的搞反了？",
+                         "m_article_time": "1小时前更新",
                          "m_isSubscribe": 0
                          },
                          {
@@ -396,7 +405,7 @@
                          "m_price_desc": "年",
                          "m_orders": 9,
                          "m_article_title": "118｜能用数字讲故事的三张报表",
-                         "m_article_time": "13小时前更新",
+                         "m_article_time": "22小时前更新",
                          "m_isSubscribe": 0
                          },
                          {
@@ -435,7 +444,7 @@
                          "m_price_desc": "年",
                          "m_orders": 12,
                          "m_article_title": "自习课｜分手要狠，离开要快",
-                         "m_article_time": "11小时前更新",
+                         "m_article_time": "20小时前更新",
                          "m_isSubscribe": 0
                          },
                          {
@@ -447,8 +456,8 @@
                          "m_intro": "你的私家商业知识秘书",
                          "m_price_desc": "年",
                          "m_orders": 13,
-                         "m_article_title": "3月15日｜把工作和压力同时分发出去",
-                         "m_article_time": "15小时前更新",
+                         "m_article_title": "3月16日｜淘宝如何构建协同网络",
+                         "m_article_time": "44分钟前更新",
                          "m_isSubscribe": 0
                          },
                          {
@@ -473,8 +482,8 @@
                          "m_intro": "给想抓住未来机会的聪明人",
                          "m_price_desc": "年",
                          "m_orders": 15,
-                         "m_article_title": "蛋白质和基因，谁先出现？",
-                         "m_article_time": "16小时前更新",
+                         "m_article_title": "问答：杨振宁提出的宇称不守恒定律是什么？",
+                         "m_article_time": "57分钟前更新",
                          "m_isSubscribe": 0
                          },
                          {
@@ -487,7 +496,7 @@
                          "m_price_desc": "年",
                          "m_orders": 16,
                          "m_article_title": "第074天丨弃医从文",
-                         "m_article_time": "5小时前更新",
+                         "m_article_time": "14小时前更新",
                          "m_isSubscribe": 0
                          },
                          {
@@ -500,7 +509,7 @@
                          "m_price_desc": "年",
                          "m_orders": 17,
                          "m_article_title": "问答：如何优雅地拒绝别人？",
-                         "m_article_time": "14小时前更新",
+                         "m_article_time": "23小时前更新",
                          "m_isSubscribe": 0
                          },
                          {
@@ -513,7 +522,7 @@
                          "m_price_desc": "年",
                          "m_orders": 18,
                          "m_article_title": "产业理解｜山寨的弱点",
-                         "m_article_time": "11小时前更新",
+                         "m_article_time": "20小时前更新",
                          "m_isSubscribe": 0
                          },
                          {
@@ -526,7 +535,7 @@
                          "m_price_desc": "年",
                          "m_orders": 19,
                          "m_article_title": "贝多芬：独奏小提琴战胜了强大的乐队",
-                         "m_article_time": "11小时前更新",
+                         "m_article_time": "19小时前更新",
                          "m_isSubscribe": 0
                          }
                          ]
@@ -579,9 +588,9 @@
                 }
             },
             "new": {
-                "count": 22,
+                "count": 17,
                 "title": "热门排行榜",
-                "rightTitle": "查看全部22条",
+                "rightTitle": "查看全部17条",
                 "list": [
                          {
                          "m_type": 13,
@@ -592,13 +601,13 @@
                          },
                          {
                          "m_type": 2,
-                         "m_title": "当呼吸化为空气",
+                         "m_title": "创京东",
                          "m_author": "",
-                         "m_style": 1,
+                         "m_style": 2,
                          "m_count": "",
                          "m_book_type": 1,
-                         "m_img": "https://piccdn.igetget.com/img/201703/09/201703091207041844279127.jpg@533w_1l_",
-                         "m_id": 782
+                         "m_img": "https://piccdn.igetget.com/img/201703/15/201703150004074671759714.jpg@533w_1l_",
+                         "m_id": 789
                          },
                          {
                          "m_type": 13,
@@ -633,18 +642,18 @@
                          {
                          "m_type": 3,
                          "m_isSubscribe": 0,
-                         "m_title": "五年后什么最好卖",
-                         "m_img": "https://piccdn.igetget.com/img/201703/03/201703031906101780129712.png@587w_1l_",
-                         "m_url": "https://m.igetget.com/activity/consume/?from=dedaoc",
+                         "m_title": "战争与战略",
+                         "m_img": "https://piccdn.igetget.com/img/201703/10/201703102037296434712421.jpg@587w_1l_",
+                         "m_url": "https://zt.igetget.com/h5/pic/?alias=XGmkOgWvlkuoJD88m8qY",
                          "m_id": 0,
-                         "m_from": "promise"
+                         "m_from": ""
                          },
                          {
                          "m_type": 3,
                          "m_isSubscribe": 0,
-                         "m_title": "【小专题banner】家庭实验室",
-                         "m_img": "https://piccdn.igetget.com/img/201703/14/201703142114388253865964.jpg@587w_1l_",
-                         "m_url": "https://h5.sao.cn/product/detail?alias=6vx24dmw2w0m&spm=ddsyxftg",
+                         "m_title": "【小专题banner】365儿童百科",
+                         "m_img": "https://piccdn.igetget.com/img/201703/15/201703151936471850293402.jpg@587w_1l_",
+                         "m_url": "https://h5.sao.cn/product/detail?alias=p515k6f1xekl&spm=ddsyxftg",
                          "m_id": 0,
                          "m_from": "shzf"
                          },
@@ -665,41 +674,44 @@
                 "rightTitle": "",
                 "list": [
                          {
-                         "m_type": 2,
-                         "m_title": "MBA教不了的创富课(解读版)",
-                         "m_author": "",
-                         "m_style": 1,
-                         "m_count": "1万字干货",
-                         "m_book_type": 2,
-                         "m_img": "https://piccdn.igetget.com/img/201607/21/201607211351396804479915.jpg@533w_1l_",
-                         "m_id": 175
-                         },
-                         {
                          "m_type": 1,
-                         "m_title": "成甲说书:情商",
-                         "m_duration": 1253,
-                         "m_img": "https://piccdn.igetget.com/img/201607/21/201607211731167003115967.jpg@533w_1l_",
-                         "m_id": 1789
-                         },
-                         {
-                         "m_type": 1,
-                         "m_title": "于浩\u001b\u001b说书版:显微镜下的大明",
-                         "m_duration": 8838,
-                         "m_img": "https://piccdn.igetget.com/img/201612/13/201612132015541370092530.jpg@533w_1l_",
-                         "m_id": 2173
+                         "m_title": "如何三分钟打动谈话对象?",
+                         "m_duration": 1457,
+                         "m_img": "https://piccdn.igetget.com/img/201607/21/201607211730557841884940.jpg@533w_1l_",
+                         "m_id": 1483
                          },
                          {
                          "m_type": 2,
-                         "m_title": "超越智商(解读版)",
+                         "m_title": "不懂带人你就自己干到死",
                          "m_author": "",
                          "m_style": 1,
-                         "m_count": "8千字干货",
+                         "m_count": "1.3万字干货",
                          "m_book_type": 2,
-                         "m_img": "https://piccdn.igetget.com/img/201609/20/201609202254240377783587.jpg@533w_1l_",
-                         "m_id": 569
+                         "m_img": "https://piccdn.igetget.com/img/201607/21/201607211352161770684077.jpg@533w_1l_",
+                         "m_id": 323
+                         },
+                         {
+                         "m_type": 2,
+                         "m_title": "海洋帝国(解读版)",
+                         "m_author": "",
+                         "m_style": 1,
+                         "m_count": "6千字干货",
+                         "m_book_type": 2,
+                         "m_img": "https://piccdn.igetget.com/img/201609/18/201609181806589400538495.jpg@533w_1l_",
+                         "m_id": 558
+                         },
+                         {
+                         "m_type": 2,
+                         "m_title": "国家的品格(解读版)",
+                         "m_author": "",
+                         "m_style": 1,
+                         "m_count": "5千字干货",
+                         "m_book_type": 2,
+                         "m_img": "https://piccdn.igetget.com/img/201609/18/201609181800319279299429.jpg@533w_1l_",
+                         "m_id": 559
                          }
                          ],
-                "requestId": "dac7c98f2ab34c3ab72b6c947ac26a86"
+                "requestId": "3c8359206ad24005a9d1a841302b2b04"
             },
             "freecolumn": {
                 "count": 1,
