@@ -24,11 +24,13 @@ class DDBaseTableViewModel: DDBaseViewModel {
     /// 有几个section 默认为1
     lazy var sectionCount = 1
     
-    lazy var sectionFooterHeight = 0.0001
     
     lazy var useRefreshControl = true
     
+    lazy var dataSource = Array<Any>()
+    
     lazy var useLoadMoreControl = true
+    
     
     weak var delegate : viewModelDelegate?
     
@@ -57,17 +59,32 @@ extension DDBaseTableViewModel {
 // MARK: - UITableViewDataSource,UITableViewDelegate
 extension DDBaseTableViewModel : UITableViewDataSource,UITableViewDelegate {
     func numberOfSections(in tableView: UITableView) -> Int {
+       
         return sectionCount
     }
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        let rowArray = dataSource[section] as? Array<Any>
+        if let temp = rowArray {
+            return temp.count
+        }
         return 0;
     }
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
+        
+        let rowArray = dataSource[indexPath.section] as? Array<Any>
+        
+        configureCell(cell: cell, atIndexPath: indexPath, object: rowArray?[indexPath.row])
         return cell
         
     }
+    
+    func configureCell(cell : UITableViewCell,atIndexPath: IndexPath,object : Any? )  {
+        
+    }
 }
+
+
 
 
 // MARK: 子类需要重写的方法 获取网络数据

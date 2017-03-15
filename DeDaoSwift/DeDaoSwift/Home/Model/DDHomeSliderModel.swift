@@ -44,7 +44,7 @@ class DDHomeSliderListModel: Mappable {
 }
 
 
-class DDHomeSliderModel: Mappable {
+class DDHomeSliderModel: NSObject ,Mappable {
     var count = 0
     var title = ""
     var rightTitle = ""

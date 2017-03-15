@@ -47,6 +47,7 @@ class DDHomeVerseModel: Mappable {
     var count = 0
     var title = ""
     var rightTitle = ""
+    var image = ""
     
     var data :DDHomeVerseDataModel?
     
@@ -58,6 +59,7 @@ class DDHomeVerseModel: Mappable {
         
         count           <- map["count"]
         title           <- map["title"]
+        image           <- map["image"]
         rightTitle           <- map["rightTitle"]
         data            <- map["data"]
     }

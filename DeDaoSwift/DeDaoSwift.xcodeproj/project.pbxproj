@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CE0CE3031E78CFCF00CC8C54 /* homePositionData.json in Resources */ = {isa = PBXBuildFile; fileRef = CE0CE3021E78CFCE00CC8C54 /* homePositionData.json */; };
+		CE0CE3051E78D52200CC8C54 /* DDHomeFreeColumnCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0CE3041E78D52200CC8C54 /* DDHomeFreeColumnCell.swift */; };
+		CE0CE3071E78D6E100CC8C54 /* DDHomeLiveCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0CE3061E78D6E100CC8C54 /* DDHomeLiveCell.swift */; };
+		CE0CE3091E78D91200CC8C54 /* DDHomeColumnCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0CE3081E78D91200CC8C54 /* DDHomeColumnCell.swift */; };
+		CE0CE30E1E78ED6E00CC8C54 /* DDHomeStorytellCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0CE30C1E78ED6E00CC8C54 /* DDHomeStorytellCell.swift */; };
+		CE0CE3111E7908D900CC8C54 /* DDHomeMagazineCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0CE3101E7908D900CC8C54 /* DDHomeMagazineCell.swift */; };
+		CE0CE3131E790BCD00CC8C54 /* DDHomePositionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0CE3121E790BCD00CC8C54 /* DDHomePositionModel.swift */; };
+		CE0CE3151E7940DF00CC8C54 /* DDHomeHotAndGustCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0CE3141E7940DF00CC8C54 /* DDHomeHotAndGustCell.swift */; };
 		CE708D1C1E6914B300F4DF5D /* DDBaseTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE708D191E6914B300F4DF5D /* DDBaseTableViewController.swift */; };
 		CE708D1D1E6914B300F4DF5D /* DDBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE708D1A1E6914B300F4DF5D /* DDBaseViewController.swift */; };
 		CE708D1E1E6914B300F4DF5D /* DDBaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE708D1B1E6914B300F4DF5D /* DDBaseViewModel.swift */; };
@@ -52,6 +60,8 @@
 		CEB18E121E6711AE001653AD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEB18E101E6711AE001653AD /* LaunchScreen.storyboard */; };
 		CEB18E1D1E6711AE001653AD /* DeDaoSwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB18E1C1E6711AE001653AD /* DeDaoSwiftTests.swift */; };
 		CEB18E281E6711AE001653AD /* DeDaoSwiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB18E271E6711AE001653AD /* DeDaoSwiftUITests.swift */; };
+		CEB550A01E7779C90001BEC0 /* DDHomeTableHeadView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB5509F1E7779C90001BEC0 /* DDHomeTableHeadView.swift */; };
+		CEB550A21E7779F60001BEC0 /* DDBaseTableHeaderFooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB550A11E7779F60001BEC0 /* DDBaseTableHeaderFooterView.swift */; };
 		CEE4DE6A1E684A9B0093558C /* DDTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE4DE691E684A9B0093558C /* DDTabBarViewController.swift */; };
 		CEE4DE7F1E684DA60093558C /* DDTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE4DE7E1E684DA60093558C /* DDTableViewController.swift */; };
 		EB70D11DC41422F772F8819C /* Pods_DeDaoSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D88A0070B2B8B67E8338D85 /* Pods_DeDaoSwift.framework */; };
@@ -77,6 +87,14 @@
 /* Begin PBXFileReference section */
 		0D88A0070B2B8B67E8338D85 /* Pods_DeDaoSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DeDaoSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5EF831CD7B9695B76DF1DAE /* Pods-DeDaoSwift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DeDaoSwift.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DeDaoSwift/Pods-DeDaoSwift.debug.xcconfig"; sourceTree = "<group>"; };
+		CE0CE3021E78CFCE00CC8C54 /* homePositionData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = homePositionData.json; sourceTree = "<group>"; };
+		CE0CE3041E78D52200CC8C54 /* DDHomeFreeColumnCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DDHomeFreeColumnCell.swift; sourceTree = "<group>"; };
+		CE0CE3061E78D6E100CC8C54 /* DDHomeLiveCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DDHomeLiveCell.swift; sourceTree = "<group>"; };
+		CE0CE3081E78D91200CC8C54 /* DDHomeColumnCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DDHomeColumnCell.swift; sourceTree = "<group>"; };
+		CE0CE30C1E78ED6E00CC8C54 /* DDHomeStorytellCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DDHomeStorytellCell.swift; sourceTree = "<group>"; };
+		CE0CE3101E7908D900CC8C54 /* DDHomeMagazineCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DDHomeMagazineCell.swift; sourceTree = "<group>"; };
+		CE0CE3121E790BCD00CC8C54 /* DDHomePositionModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DDHomePositionModel.swift; sourceTree = "<group>"; };
+		CE0CE3141E7940DF00CC8C54 /* DDHomeHotAndGustCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DDHomeHotAndGustCell.swift; sourceTree = "<group>"; };
 		CE708D191E6914B300F4DF5D /* DDBaseTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DDBaseTableViewController.swift; sourceTree = "<group>"; };
 		CE708D1A1E6914B300F4DF5D /* DDBaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DDBaseViewController.swift; sourceTree = "<group>"; };
 		CE708D1B1E6914B300F4DF5D /* DDBaseViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DDBaseViewModel.swift; sourceTree = "<group>"; };
@@ -136,6 +154,8 @@
 		CEB18E231E6711AE001653AD /* DeDaoSwiftUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DeDaoSwiftUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEB18E271E6711AE001653AD /* DeDaoSwiftUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeDaoSwiftUITests.swift; sourceTree = "<group>"; };
 		CEB18E291E6711AE001653AD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CEB5509F1E7779C90001BEC0 /* DDHomeTableHeadView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DDHomeTableHeadView.swift; sourceTree = "<group>"; };
+		CEB550A11E7779F60001BEC0 /* DDBaseTableHeaderFooterView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DDBaseTableHeaderFooterView.swift; sourceTree = "<group>"; };
 		CEE4DE691E684A9B0093558C /* DDTabBarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DDTabBarViewController.swift; sourceTree = "<group>"; };
 		CEE4DE7D1E684C6A0093558C /* DeDaoSwift-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DeDaoSwift-Bridging-Header.h"; sourceTree = "<group>"; };
 		CEE4DE7E1E684DA60093558C /* DDTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DDTableViewController.swift; sourceTree = "<group>"; };
@@ -225,6 +245,7 @@
 				CE7C12241E6E558200067BFB /* DDBaseTableViewCell.swift */,
 				CE708D1F1E6914D100F4DF5D /* DDNavigationProtocol.swift */,
 				CE7C12441E6EB81400067BFB /* DDViewModelServices.swift */,
+				CEB550A11E7779F60001BEC0 /* DDBaseTableHeaderFooterView.swift */,
 			);
 			path = BaseClass;
 			sourceTree = "<group>";
@@ -302,6 +323,7 @@
 			isa = PBXGroup;
 			children = (
 				CE708D411E69CD0500F4DF5D /* homeJsonData.json */,
+				CE0CE3021E78CFCE00CC8C54 /* homePositionData.json */,
 				CEB18E071E6711AE001653AD /* AppDelegate.swift */,
 				CEE4DE691E684A9B0093558C /* DDTabBarViewController.swift */,
 				CEE4DE7D1E684C6A0093558C /* DeDaoSwift-Bridging-Header.h */,
@@ -368,6 +390,7 @@
 				CE7C12001E6D433600067BFB /* DDHomeNewModel.swift */,
 				CE7C12021E6D441300067BFB /* DDHomeSubjectModel.swift */,
 				CE7C12041E6D44B800067BFB /* DDHomeVerseModel.swift */,
+				CE0CE3121E790BCD00CC8C54 /* DDHomePositionModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -378,6 +401,13 @@
 				CE7C12261E6E586C00067BFB /* DDHomeBannerCell.swift */,
 				CE7C13131E763C9400067BFB /* DDHomeIndexCell.swift */,
 				CE7C131B1E767D4100067BFB /* DDHomeFreeAudioCell.swift */,
+				CEB5509F1E7779C90001BEC0 /* DDHomeTableHeadView.swift */,
+				CE0CE3041E78D52200CC8C54 /* DDHomeFreeColumnCell.swift */,
+				CE0CE3061E78D6E100CC8C54 /* DDHomeLiveCell.swift */,
+				CE0CE3081E78D91200CC8C54 /* DDHomeColumnCell.swift */,
+				CE0CE30C1E78ED6E00CC8C54 /* DDHomeStorytellCell.swift */,
+				CE0CE3101E7908D900CC8C54 /* DDHomeMagazineCell.swift */,
+				CE0CE3141E7940DF00CC8C54 /* DDHomeHotAndGustCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -651,6 +681,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CE708D421E69CD0500F4DF5D /* homeJsonData.json in Resources */,
+				CE0CE3031E78CFCF00CC8C54 /* homePositionData.json in Resources */,
 				CEB18E121E6711AE001653AD /* LaunchScreen.storyboard in Resources */,
 				CEB18E0F1E6711AE001653AD /* Assets.xcassets in Resources */,
 			);
@@ -727,14 +758,20 @@
 			files = (
 				CE708D281E6929A800F4DF5D /* UIImage+Extension.swift in Sources */,
 				CE7C12251E6E558200067BFB /* DDBaseTableViewCell.swift in Sources */,
+				CE0CE3051E78D52200CC8C54 /* DDHomeFreeColumnCell.swift in Sources */,
+				CE0CE3131E790BCD00CC8C54 /* DDHomePositionModel.swift in Sources */,
 				CE7C13121E72753200067BFB /* NNBannerScrollViewCell.swift in Sources */,
 				CE7C131F1E76953800067BFB /* NNAlertView.swift in Sources */,
+				CE0CE30E1E78ED6E00CC8C54 /* DDHomeStorytellCell.swift in Sources */,
 				CE7C11FB1E6D395000067BFB /* DDHomeFreeAudioModel.swift in Sources */,
+				CE0CE3111E7908D900CC8C54 /* DDHomeMagazineCell.swift in Sources */,
 				CE7C12231E6D648D00067BFB /* UIImageView+Extension.swift in Sources */,
 				CEE4DE6A1E684A9B0093558C /* DDTabBarViewController.swift in Sources */,
 				CE7C13111E72753200067BFB /* NNBannerScrollView.swift in Sources */,
 				CE7C12011E6D433600067BFB /* DDHomeNewModel.swift in Sources */,
+				CE0CE3091E78D91200CC8C54 /* DDHomeColumnCell.swift in Sources */,
 				CEE4DE7F1E684DA60093558C /* DDTableViewController.swift in Sources */,
+				CEB550A21E7779F60001BEC0 /* DDBaseTableHeaderFooterView.swift in Sources */,
 				CE7C13141E763C9400067BFB /* DDHomeIndexCell.swift in Sources */,
 				CE7C13181E764A2B00067BFB /* UIButton+Extension.swift in Sources */,
 				CE7C13231E769D7500067BFB /* DDBaseTableViewModel.swift in Sources */,
@@ -745,15 +782,18 @@
 				CE708D1E1E6914B300F4DF5D /* DDBaseViewModel.swift in Sources */,
 				CE708D1D1E6914B300F4DF5D /* DDBaseViewController.swift in Sources */,
 				CE7C11FF1E6D3D2F00067BFB /* DDHomeStorytellModel.swift in Sources */,
+				CE0CE3151E7940DF00CC8C54 /* DDHomeHotAndGustCell.swift in Sources */,
 				CE7C122B1E6E599000067BFB /* UIView+Extension.swift in Sources */,
 				CE7C12051E6D44B800067BFB /* DDHomeVerseModel.swift in Sources */,
 				CE7C12331E6E5FEC00067BFB /* DDHomeViewModel.swift in Sources */,
 				CE7C11F91E6D387E00067BFB /* DDHomeSliderModel.swift in Sources */,
 				CE7C11FD1E6D3C2B00067BFB /* DDHomeColumnModel.swift in Sources */,
 				CEB18E081E6711AE001653AD /* AppDelegate.swift in Sources */,
+				CEB550A01E7779C90001BEC0 /* DDHomeTableHeadView.swift in Sources */,
 				CE7C11E71E6D09B900067BFB /* DDTool.swift in Sources */,
 				CE7C12031E6D441300067BFB /* DDHomeSubjectModel.swift in Sources */,
 				CE7C12271E6E586C00067BFB /* DDHomeBannerCell.swift in Sources */,
+				CE0CE3071E78D6E100CC8C54 /* DDHomeLiveCell.swift in Sources */,
 				CE7C11EB1E6D0E5700067BFB /* DDHomeModel.swift in Sources */,
 				CE708D361E69454200F4DF5D /* DDNetworkTools.swift in Sources */,
 				CE7C131C1E767D4100067BFB /* DDHomeFreeAudioCell.swift in Sources */,

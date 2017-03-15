@@ -9,13 +9,20 @@
 import UIKit
 import SnapKit
 import UIColor_Hex_Swift
+import ObjectMapper
 
 class DDBaseTableViewCell: UITableViewCell {
 
+    
+    
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
+        selectionStyle = .none
+
+        setUI()
+        setLayout()
     }
+    
     
     
 
@@ -26,6 +33,7 @@ class DDBaseTableViewCell: UITableViewCell {
     }
     override init(style: UITableViewCellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
+        selectionStyle = .none
         setUI()
         setLayout()
     }
@@ -36,8 +44,17 @@ class DDBaseTableViewCell: UITableViewCell {
     
 
 }
+extension DDBaseTableViewCell {
+    
+    /// 子类需要对传入的model类型进行判断
+    ///
+    /// - Parameter model: 数据model
+    func setCellsViewModel(_ model : Any?) {
+        
+    }
+}
 
-extension DDBaseTableViewCell{
+extension UIView{
     
     /// 提供个方便注册cell的方法
     ///
@@ -46,6 +63,11 @@ extension DDBaseTableViewCell{
         return NSStringFromClass(self.classForCoder())
     }
     
+   
+    
+}
+
+extension DDBaseTableViewCell{
     func setUI() {
         
     }
@@ -53,6 +75,5 @@ extension DDBaseTableViewCell{
     func setLayout() {
         
     }
-    
 }
 

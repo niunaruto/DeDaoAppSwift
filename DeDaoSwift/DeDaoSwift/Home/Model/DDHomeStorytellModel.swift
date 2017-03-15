@@ -36,10 +36,10 @@ class DDHomeStorytellDataModel: Mappable {
     var m_title = ""
     var m_img = ""
     var m_type = 0
-    var m_duration = 0
+    var m_duration : CGFloat = 0
     var m_id = 0
     var m_description = ""
-    var m_price = 0
+    var m_price : CGFloat = 0
     var m_buy = 0
     var m_date = ""
     var m_notbuy_image = ""
@@ -68,6 +68,7 @@ class DDHomeStorytellDataModel: Mappable {
         m_date            <- map["m_date"]
         m_info            <- map["m_info"]
         m_notbuy_image            <- map["m_notbuy_image"]
+        m_title            <- map["m_title"]
         m_source            <- map["m_source"]
     }
     

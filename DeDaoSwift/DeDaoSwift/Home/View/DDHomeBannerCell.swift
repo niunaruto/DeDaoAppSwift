@@ -7,16 +7,22 @@
 //
 
 import UIKit
-
 class DDHomeBannerCell: DDBaseTableViewCell {
-
+   
     
-    var imageArray : Array<String> = []{
-        didSet{
-            banner.imageUrlArray =  imageArray
+    override func setCellsViewModel(_ model: Any?) {
+        
+        if let modelT = model as? DDHomeSliderModel {
+            var tempArray = Array<String> ()
+            if let listTemp = modelT.list {
+                for  list in listTemp {
+                    tempArray.append(list.m_img) //append追加
+                }
+            }
+            banner.imageUrlArray = tempArray
         }
+        
     }
-    
     
     lazy var banner: NNBannerScrollView = {
          let banner = NNBannerScrollView(frame: CGRect(x: 0, y: 0, width: UIScreen.main.bounds.size.width, height: 140), nil, self, nil)

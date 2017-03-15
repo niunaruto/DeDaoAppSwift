@@ -12,6 +12,6 @@ pod 'Alamofire'
 pod 'MJRefresh'
 pod 'CYLTabBarController'
 pod 'RxSwift'
-pod 'ReactiveCocoa'
+#pod 'ReactiveCocoa'
 pod 'UIColor_Hex_Swift', '~> 3.0.2'
 end

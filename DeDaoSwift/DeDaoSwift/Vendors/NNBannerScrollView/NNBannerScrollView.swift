@@ -84,7 +84,6 @@ extension NNBannerScrollView {
         let indexPath = IndexPath(item: currentIndex * 10 * currentIndex, section: 0)
         collectionView.scrollToItem(at: indexPath, at: .left, animated: false)
         
-        print("scrollAuto")
 
     }
     
@@ -96,14 +95,12 @@ extension NNBannerScrollView {
     func addTimer() {
         self.timer = Timer.init(timeInterval: self.scrollTimer, target: self, selector: #selector(scrollNext), userInfo: nil, repeats: true)
         RunLoop.main.add(self.timer!, forMode: .commonModes)
-        print("addTimer")
 
     }
     
     func removeTimer()  {
         timer?.invalidate()
         timer = nil
-        print("removeTimer")
 
     }
     
@@ -119,7 +116,6 @@ extension NNBannerScrollView {
             scrollAuto()
         }
         
-        print("scrollNext")
         
     }
     

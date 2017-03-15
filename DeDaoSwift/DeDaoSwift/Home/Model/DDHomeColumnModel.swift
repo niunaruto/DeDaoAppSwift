@@ -38,6 +38,7 @@ class DDHomeColumnListModel: Mappable {
         m_title            <- map["m_title"]
         m_img            <- map["m_img"]
         m_id            <- map["m_id"]
+        m_intro            <- map["m_intro"]
     }
     
     

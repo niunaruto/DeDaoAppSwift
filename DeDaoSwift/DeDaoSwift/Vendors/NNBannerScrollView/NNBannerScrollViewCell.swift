@@ -25,10 +25,4 @@ class NNBannerScrollViewCell: UICollectionViewCell {
         
     }
     
-    /// 提供个方便注册cell的方法
-    ///
-    /// - Returns: class字符串
-    class func cellIdentifier() ->String{
-        return NSStringFromClass(self.classForCoder())
-    }
 }

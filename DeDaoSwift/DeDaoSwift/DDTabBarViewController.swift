@@ -37,20 +37,25 @@ UITabBarControllerDelegate {
     func setupViewController() {
         
         let tabbarAttributes = [
-            [CYLTabBarItemImage:"pad_tabbar_index_1",
-             CYLTabBarItemSelectedImage:"pad_tabbar_index_1_light"],
-            [CYLTabBarItemImage:"pad_tabbar_index_2",
-             CYLTabBarItemSelectedImage:"pad_tabbar_index_2_light"],
-            [CYLTabBarItemImage:"pad_tabbar_icon_hear",
-             CYLTabBarItemSelectedImage:"pad_tabbar_icon_hear_light"],
-            [CYLTabBarItemImage:"pad_tabbar_index_3",
-             CYLTabBarItemSelectedImage:"pad_tabbar_index_3_light"],
-            [CYLTabBarItemImage:"pad_tabbar_index_4",
-             CYLTabBarItemSelectedImage:"pad_tabbar_index_4_light"]];
+            [CYLTabBarItemImage:"tabbar_index_1",
+             CYLTabBarItemTitle:"发现",
+             CYLTabBarItemSelectedImage:"tabbar_index_select_1"],
+            [CYLTabBarItemImage:"tabbar_index_2",
+             CYLTabBarItemTitle:"今日学习",
+             CYLTabBarItemSelectedImage:"tabbar_index_select_2"],
+            [CYLTabBarItemImage:"tabbar_index_3",
+             CYLTabBarItemTitle:"随时听",
+             CYLTabBarItemSelectedImage:"tabbar_index_select_3"],
+            [CYLTabBarItemImage:"tabbar_index_4",
+             CYLTabBarItemTitle:"已购",
+             CYLTabBarItemSelectedImage:"tabbar_index_select_4"],
+            [CYLTabBarItemImage:"tabbar_index_5",
+             CYLTabBarItemTitle:"我的",
+             CYLTabBarItemSelectedImage:"tabbar_index_select_5"]];
 
         
         tabBarItemsAttributes = tabbarAttributes
-        imageInsets = UIEdgeInsetsMake(8, 0, -8, 0)
+        tabBar.tintColor = UIColor.orange
         let hoemViewModel = DDHomeViewModel()
         
         let home = CYLBaseNavigationController(rootViewController: DDTableViewController.init(viewMode: hoemViewModel))
