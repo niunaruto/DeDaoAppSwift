@@ -50,11 +50,22 @@ extension DDBaseViewController {
         self.navigationItem.leftBarButtonItem =  LeftBar
         
     }
-    func setRightNavItems() {
+    
+    /// 设置右侧navItem 默认一个play
+    func setRightNavItems(_ itemsImageName:Array<String>? = nil) {
+        var rightBarButtonItems = Array<UIBarButtonItem>()
         
-        let videoItem = UIBarButtonItem(image: UIImage.setNavItemWithImageName(imageName: "golden_card_playing_btn"), style: .plain, target: self, action: #selector(clickVideoPlayItem))
+        if let imageArray =  itemsImageName{
+            
+            for i in 0...(imageArray.count - 1) {
+                let videoItem = UIBarButtonItem(image: UIImage.setNavItemWithImageName(imageName: imageArray[i]), style: .plain, target: self, action: #selector(clickVideoPlayItem))
+                rightBarButtonItems.append(videoItem)
+            }
+        }
         
-        self.navigationItem.rightBarButtonItems = [videoItem]
+        let videoItem = UIBarButtonItem(image: UIImage.setNavItemWithImageName(imageName: "navbar_playing_icon_anim_1"), style: .plain, target: self, action: #selector(clickVideoPlayItem))
+        rightBarButtonItems.insert(videoItem, at: 0)
+        self.navigationItem.rightBarButtonItems = rightBarButtonItems
     }
 }
 // MARK: 处理navItem点击事件
