@@ -22,18 +22,7 @@ class DDHomeFreeAudioCell: DDBaseTableViewCell {
                     let indef = "▶ "
                     let cont = list[i].title
                     
-                    let attributedText = NSMutableAttributedString(string: (indef + cont))
-                    attributedText.addAttribute(NSForegroundColorAttributeName, value: UIColor.init("#999999"), range: NSRange.init(location: 0, length: indef.characters.count))
-                    attributedText.addAttribute(NSForegroundColorAttributeName, value: UIColor.init("#666666"), range: NSRange.init(location: indef.characters.count, length: cont.characters.count))
-                    
-                    
-                    attributedText.addAttribute(NSFontAttributeName, value: UIFont.systemFont(ofSize: 8), range: NSRange.init(location: 0, length: indef.characters.count))
-                    
-                    
-                    attributedText.addAttribute(NSFontAttributeName, value: UIFont.systemFont(ofSize: 13), range: NSRange.init(location: indef.characters.count, length: cont.characters.count))
-                    
-                    
-                labelArray[i].attributedText = attributedText
+                    labelArray[i].attributedText = DDTool.setLabelAttributedString(indef, cont, UIColor.init("#999999"), UIColor.init("#666666"), UIFont.systemFont(ofSize: 8), UIFont.systemFont(ofSize: 13))
                     
                     
                     

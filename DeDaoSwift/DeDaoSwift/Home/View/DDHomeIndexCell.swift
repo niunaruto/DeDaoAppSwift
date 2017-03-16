@@ -20,7 +20,7 @@ class DDHomeIndexCell: DDBaseTableViewCell {
             
             let button = UIButton()
             let w = UIScreen.main.bounds.size.width / CGFloat(titleArray.count)
-            button.frame = CGRect(x: w * CGFloat(i), y: 0, width: w, height: 60)
+            button.frame = CGRect(x: w * CGFloat(i), y: 5, width: w, height: 60)
             button.setTitle(titleArray[i], for: .normal)
             contentView.addSubview(button)
             button.setTitleColor(UIColor.init("#333333"), for: .normal)

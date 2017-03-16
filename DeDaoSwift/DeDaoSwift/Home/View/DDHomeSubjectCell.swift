@@ -38,7 +38,8 @@ class DDHomeSubjectCell: DDBaseTableViewCell {
         
         contentView.addSubview(backView)
         backView.snp.makeConstraints({ (make) in
-            make.edges.equalToSuperview()
+            make.left.right.bottom.equalToSuperview()
+            make.top.equalToSuperview().offset(10)
             make.height.equalTo(backViewH)
         })
 
