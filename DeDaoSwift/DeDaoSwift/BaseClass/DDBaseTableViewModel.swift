@@ -14,22 +14,25 @@ public enum loadDataFinishedStatus : Int {
     case error
 }
 protocol viewModelDelegate : class {
-      func loadDataFinished(_ vm : DDBaseTableViewModel, _ status : loadDataFinishedStatus)
+      func loadDataFinished(_ vm : Any, _ status : loadDataFinishedStatus)
 }
 class DDBaseTableViewModel: DDBaseViewModel {
     
     /// 设置tableViewStyle 默认plain
     var tableViewStyle : UITableViewStyle?
     
-    /// 有几个section 默认为1
-    lazy var sectionCount = 1
-    
+    lazy var dataArray = Array<Any>()
     
     lazy var useRefreshControl = true
     
-    lazy var dataSource = Array<Any>()
-    
     lazy var useLoadMoreControl = true
+    
+    var cellClass : AnyClass?
+    var headFootViewClass : AnyClass?
+    
+    var model : Any?
+    var headFootModel : Any?
+    
     
     
     weak var delegate : viewModelDelegate?
@@ -44,8 +47,10 @@ class DDBaseTableViewModel: DDBaseViewModel {
         initViewModel()
     }
     
-    
-    
+    init(_ model : Any? = nil ,_ cellClass : AnyClass? = nil) {
+        self.model = model
+        self.cellClass = cellClass
+    }
     
 }
 
@@ -58,32 +63,72 @@ extension DDBaseTableViewModel {
 
 // MARK: - UITableViewDataSource,UITableViewDelegate
 extension DDBaseTableViewModel : UITableViewDataSource,UITableViewDelegate {
-    func numberOfSections(in tableView: UITableView) -> Int {
-       
-        return sectionCount
-    }
+   
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        let rowArray = dataSource[section] as? Array<Any>
-        if let temp = rowArray {
-            return temp.count
-        }
-        return 0;
+       
+        return dataArray.count;
     }
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
         
-        let rowArray = dataSource[indexPath.section] as? Array<Any>
-        
-        configureCell(cell: cell, atIndexPath: indexPath, object: rowArray?[indexPath.row])
+        let vm = dataAtIndexPath(indexPath)
+        let cell: DDBaseTableViewCell = tableView.cellForIndexPath(indexPath, cellClass: vm.cellClass)!
+        cell.setCellsViewModel(vm.model)
         return cell
-        
     }
     
-    func configureCell(cell : UITableViewCell,atIndexPath: IndexPath,object : Any? )  {
+    
+    
+    func dataAtIndexPath(_ indexPath : IndexPath) -> DDBaseTableViewModel {
         
+        return DDBaseTableViewModel.init()
+    }
+    
+    
+}
+
+
+// MARK: - 提供给控制器的刷新 方法
+extension DDBaseTableViewModel {
+    func refreshNewData() {
+        refreshData({ (list) in
+            dataArray.removeAll()
+            for i in 0...(list.count - 1) {
+                
+                /// 数据包装成model
+                let vm = createViewModelWithModel(list[i])
+                dataArray.append(vm)
+            }
+            
+            delegate?.loadDataFinished(list, .success)
+
+        }) { (errorMessege) in
+            
+            delegate?.loadDataFinished(errorMessege, .error)
+
+        }
+    }
+    
+    func loadMoreData() {
+        
+        refreshMoreData({ (list) in
+            
+            delegate?.loadDataFinished(list, .success)
+
+            
+        }) { (errorMessege) in
+            delegate?.loadDataFinished(errorMessege, .error)
+
+        }
     }
 }
 
+extension DDBaseTableViewModel {
+    func createViewModelWithModel(_ model : Any? = nil ,_ cellClass : AnyClass? = nil) -> DDBaseTableViewModel{
+        
+        return DDBaseTableViewModel.init(model, cellClass)
+    }
+    
+}
 
 
 
@@ -95,7 +140,7 @@ extension DDBaseTableViewModel {
     /// - Parameters:
     ///   - success: 请求成功的回调
     ///   - failure: 失败回调
-    func  refreshData(_ array: (Array<Any>) -> (), _ error : ((String?) -> ())) {
+    func  refreshData(_ array: (Array<Any>) -> (), _ error : ((String) -> ())) {
         
     }
     
@@ -104,7 +149,7 @@ extension DDBaseTableViewModel {
     /// - Parameters:
     ///   - success: 请求成功的回调
     ///   - failure: 失败回调
-    func refreshMoreData(_:(_ list : Array<Any>)->(),_:((_ erroeMessege:String?)->())) {
+    func refreshMoreData(_:(_ list : Array<Any>)->(),_:((_ erroeMessege:String)->())) {
         
     }
     

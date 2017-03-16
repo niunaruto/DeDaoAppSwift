@@ -10,6 +10,9 @@ import UIKit
 
 class DDBaseTableHeaderFooterView: UITableViewHeaderFooterView {
 
+    
+    
+    
     override init(reuseIdentifier: String?) {
         super.init(reuseIdentifier: reuseIdentifier)
         contentView.backgroundColor = UIColor.white
@@ -34,5 +37,14 @@ extension DDBaseTableHeaderFooterView {
     func setLayout() {
         
     }
+
+
+    /// 子类需要对传入的model类型进行判断
+    ///
+    /// - Parameter model: 数据model
+    func setHeadFootViewModel(_ model : Any? = nil) {
+        
+    }
+
 }
  

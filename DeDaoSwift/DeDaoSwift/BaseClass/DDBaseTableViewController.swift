@@ -33,11 +33,17 @@ class DDBaseTableViewController: DDBaseViewController {
         
     }()
     
-     init(viewMode : DDBaseTableViewModel) {
+    
+    
+    
+     init(_ viewMode : DDBaseTableViewModel? = nil) {
 
         super.init(nibName: nil, bundle: nil)
-        self.tabViewModel = viewMode
-        self.viewModel = self.tabViewModel
+        if let vm =  viewMode{
+            
+            self.tabViewModel = vm
+            self.viewModel = self.tabViewModel
+        }
 
 
     }
@@ -53,6 +59,8 @@ class DDBaseTableViewController: DDBaseViewController {
         super.viewDidLoad()
         initialize()
         view.addSubview(tableView)
+        tabViewModel.delegate = self
+
         if tabViewModel.useRefreshControl {
             
             tableView.mj_header = MJRefreshNormalHeader.init(refreshingTarget: self, refreshingAction: #selector(pullRefresh))
@@ -79,26 +87,38 @@ extension DDBaseTableViewController {
     
     /// 下拉刷新
     func pullRefresh() {
-        
-        tabViewModel.refreshData({ (array) in
-
-            tableView.mj_header.endRefreshing()
-            tableView.reloadData()
-            tabViewModel.delegate?.loadDataFinished(tabViewModel, .success)
-            
-            
-        }) { (errorMessege) in
-            tableView.mj_header.endRefreshing()
-            tabViewModel.delegate?.loadDataFinished(tabViewModel, .error)
-
-        }
+        tabViewModel.refreshNewData()
     }
     
-    func loadMoreMoreData() {
-        
+    func loadMoreMoreData() {        
+        tabViewModel.loadMoreData()
     }
 }
 
 
+extension DDBaseTableViewController : viewModelDelegate {
+    
+    func loadDataFinished(_ vm: Any, _ status: loadDataFinishedStatus) {
+
+        guard status == .success else {
+            
+            tableView.mj_header.endRefreshing()
+            tableView.mj_footer.endRefreshing()
+            return
+        }
+        if tabViewModel.useRefreshControl {
+            tableView.mj_header.endRefreshing()
+        }
+        
+        if tabViewModel.useLoadMoreControl {
+            tableView.mj_footer.endRefreshing()
+        }
+        tableView.reloadData()
+        
+    }
+
+    
+    
+}
 
 

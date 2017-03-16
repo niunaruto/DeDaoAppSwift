@@ -88,7 +88,7 @@ class DDHomeModel: Mappable {
 }
 class DDHomeLiveDataModel: Mappable {
     var status = 0
-    var online_num = ""
+    var online_num = 0
     var reservation_num = 0
     var title = ""
     var room_id = 0

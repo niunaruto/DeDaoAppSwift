@@ -19,7 +19,24 @@ class DDHomeFreeAudioCell: DDBaseTableViewCell {
             if let list =  modelT.list{
                 
                 for i in 0...(list.count - 1) {
-                    labelArray[i].text = list[i].title
+                    let indef = "▶ "
+                    let cont = list[i].title
+                    
+                    let attributedText = NSMutableAttributedString(string: (indef + cont))
+                    attributedText.addAttribute(NSForegroundColorAttributeName, value: UIColor.init("#999999"), range: NSRange.init(location: 0, length: indef.characters.count))
+                    attributedText.addAttribute(NSForegroundColorAttributeName, value: UIColor.init("#666666"), range: NSRange.init(location: indef.characters.count, length: cont.characters.count))
+                    
+                    
+                    attributedText.addAttribute(NSFontAttributeName, value: UIFont.systemFont(ofSize: 8), range: NSRange.init(location: 0, length: indef.characters.count))
+                    
+                    
+                    attributedText.addAttribute(NSFontAttributeName, value: UIFont.systemFont(ofSize: 13), range: NSRange.init(location: indef.characters.count, length: cont.characters.count))
+                    
+                    
+                labelArray[i].attributedText = attributedText
+                    
+                    
+                    
                 }
                 
             }
@@ -51,16 +68,9 @@ class DDHomeFreeAudioCell: DDBaseTableViewCell {
             let contentLable = UILabel()
             let height : CGFloat = 14
             let starY : CGFloat = 18
+
             
-            let tmepLabel = UILabel()
-            tmepLabel.text = "▶ "
-            tmepLabel.textColor = UIColor.init("#999999")
-
-            tmepLabel.font = UIFont.systemFont(ofSize: 8)
-            contentView.addSubview(tmepLabel)
-            tmepLabel.frame = CGRect(x: 10, y: starY + CGFloat(i) * height + CGFloat(10 * i) , width: 8 , height: height)
-
-            contentLable.frame = CGRect(x: tmepLabel.frame.size.width+tmepLabel.frame.origin.x, y: starY + CGFloat(i) * height + CGFloat(10 * i), width: UIView.screenWidth - playBtnW , height: height)
+            contentLable.frame = CGRect(x: 10, y: starY + CGFloat(i) * height + CGFloat(10 * i), width: UIView.screenWidth - playBtnW , height: height)
             contentLable.font = UIFont.systemFont(ofSize: 13)
             contentLable.textColor = UIColor.init("#666666")
 

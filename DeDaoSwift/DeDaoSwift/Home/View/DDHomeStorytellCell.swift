@@ -57,8 +57,10 @@ class DDHomeStorytellCell: DDBaseTableViewCell {
     lazy var infoLable : UILabel = {
         
         let titleLabel = UILabel()
+        titleLabel.numberOfLines = 2
+
         titleLabel.textColor = UIColor.init("#999999")
-        titleLabel.font = UIFont.systemFont(ofSize: 12)
+        titleLabel.font = UIFont.systemFont(ofSize: 10)
         return titleLabel
     }()
     
@@ -75,8 +77,9 @@ class DDHomeStorytellCell: DDBaseTableViewCell {
         let buyButton = UIButton()
         
         buyButton.layer.borderColor = UIColor.orange.cgColor
-        buyButton.layer.borderWidth = 0.5
+        buyButton.layer.borderWidth = 0.8
         buyButton.layer.cornerRadius = 12.0
+        
         buyButton.layer.masksToBounds = true
         buyButton.setTitle("购买", for: .normal)
         buyButton.titleLabel?.font = UIFont.systemFont(ofSize: 12)
@@ -112,7 +115,9 @@ class DDHomeStorytellCell: DDBaseTableViewCell {
             make.bottom.equalTo(subDescLabel.snp.top).offset(-6)
         }
         infoLable.snp.makeConstraints { (make) in
-            make.top.equalTo(leftImage.snp.centerY).offset(6)
+            make.top.equalTo(leftImage.snp.centerY).offset(0)
+            make.right.equalToSuperview().offset(-10)
+
             make.left.equalTo(subDescLabel.snp.left)
         }
         
@@ -129,7 +134,7 @@ class DDHomeStorytellCell: DDBaseTableViewCell {
         buyButton.snp.makeConstraints { (make) in
             make.right.equalToSuperview().offset(-10)
             make.centerY.equalTo(moneyLabel.snp.centerY)
-            make.width.equalTo(48)
+            make.width.equalTo(60)
         }
         
         

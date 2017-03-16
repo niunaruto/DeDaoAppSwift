@@ -9,42 +9,44 @@
 import UIKit
 import ObjectMapper
 
+
+public enum structureType : String {
+    
+    case category = "category"
+    case freecolumn = "freecolumn"
+    case live = "live"
+    case freeAudio = "freeAudio"
+    case column = "column"
+    case storytell = "storytell"
+    case magazine = "magazine"
+    case dataMiningAduioOrBook = "dataMiningAduioOrBook"
+    case new = "new"
+    case subject = "subject"
+}
 class DDHomeViewModel: DDBaseTableViewModel {
 
-    var bannerImageUrlArray = Array<String>()
-
-    lazy var  homeModel : Dictionary? = Dictionary<String, Any>()
+    
     
     var dataModel  = Mapper<DDHomeDataModel>().map(JSON : ["":""])
 
     lazy var typeModelArray = Array<DDHomePositionStructureModel>()
+
     
-    override func refreshData(_ array: (Array<Any>) -> (), _ error : ((String?) -> ())) {
+    override func refreshData(_ array: (Array<Any>) -> (), _ error : ((String) -> ())) {
+        
+      
+        let dic = DDTool.getDictionaryWithPatch(fileName:"homeJsonData.json") as? Dictionary<String, Any>
+        let model = Mapper<DDHomeModel>().map(JSON: dic ?? ["":""])
+        dataModel = model?.c?.data
         
         let typeDic = DDTool.getDictionaryWithPatch(fileName: "homePositionData.json") as? Dictionary<String, Any>
         let typeModel = Mapper<DDHomePositionModel>().map(JSON: typeDic ?? ["":""])
         if let tempArray = typeModel?.c?.structure {
             typeModelArray = tempArray
-        }
-        
-        
-        let dic = DDTool.getDictionaryWithPatch(fileName:"homeJsonData.json") as? Dictionary<String, Any>
-        let model = Mapper<DDHomeModel>().map(JSON: dic ?? ["":""])
-        
-        dataModel = model?.c?.data
-        
-        
-        
-        if let listTemp = dataModel?.slider?.list {
-            bannerImageUrlArray.removeAll()
-            for  list in listTemp {
-                bannerImageUrlArray.append(list.m_img) //append追加
-            }
-            array(bannerImageUrlArray)
+            array(typeModelArray)
         }else{
-            error("数据错误")
+            error("数据❎")
         }
-
     }
     override func initViewModel() {
         
@@ -55,128 +57,104 @@ class DDHomeViewModel: DDBaseTableViewModel {
     
 }
 
+
 // MARK: - tabelView的相关方法
 extension DDHomeViewModel{
     
-    override func numberOfSections(in tableView: UITableView) -> Int {
-        guard typeModelArray.count == 0 else {
-            
-            return typeModelArray.count
-        }
-        return 0
+    override func createViewModelWithModel(_ model: Any?, _ cellClass: AnyClass?) -> DDBaseTableViewModel {
+        return DDHomeViewModel.init(model, cellClass)
     }
     
+    override func dataAtIndexPath(_ indexPath: IndexPath) -> DDBaseTableViewModel {
+        
+        let section = indexPath.section
+        let row = indexPath.row
+        let type = typeModelArray[section].type
+
+        
+        if type == structureType.category.rawValue {
+            if row == 0 {
+                return DDBaseTableViewModel.init(dataModel?.slider, DDHomeBannerCell.classForCoder())
+            }else{
+                return DDBaseTableViewModel.init(nil, DDHomeIndexCell.classForCoder())
+            }
+        }else if type == structureType.freecolumn.rawValue{
+            return DDBaseTableViewModel.init(dataModel?.freecolumn, DDHomeFreeColumnCell.classForCoder())
+        }else if type == structureType.live.rawValue{
+            return DDBaseTableViewModel.init(dataModel?.live?.data, DDHomeLiveCell.classForCoder())
+        }else if type == structureType.freeAudio.rawValue{
+            return DDBaseTableViewModel.init(dataModel?.freeAudio, DDHomeFreeAudioCell.classForCoder())
+        }else if type == structureType.column.rawValue{
+            if indexPath.row >= 3  {
+                if let count =  dataModel?.column?.count {
+                    return DDBaseTableViewModel.init("查看全部\(count)个", DDHomeShowMoreCell.classForCoder())
+                }
+                
+            }
+            if let list = dataModel?.column?.list {
+                return DDBaseTableViewModel.init(list[row], DDHomeColumnCell.classForCoder())
+            }
+        }else if type == structureType.magazine.rawValue{
+            return DDBaseTableViewModel.init(dataModel?.magazine?.data, DDHomeMagazineCell.classForCoder())
+        }else if type == structureType.dataMiningAduioOrBook.rawValue{
+            return DDBaseTableViewModel.init(dataModel?.dataMiningAduioOrBook, DDHomeHotAndGustCell.classForCoder())
+        }else if type == structureType.new.rawValue{
+            return DDBaseTableViewModel.init(dataModel?.new, DDHomeHotAndGustCell.classForCoder())
+        }else if type == structureType.subject.rawValue{
+            return DDBaseTableViewModel.init(dataModel?.subject, DDHomeSubjectCell.classForCoder())
+        }else if type == structureType.storytell.rawValue{
+            return DDBaseTableViewModel.init(dataModel?.storytell?.data, DDHomeStorytellCell.classForCoder())
+        }
+
+        return DDBaseTableViewModel.init()
+    }
+    
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return typeModelArray.count
+    }
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
-        
         let type = typeModelArray[section].type
-        if type == "category" {
+        if type == structureType.category.rawValue {
             return 2
-        }else if type == "column" {
-            return 3
+        }else if type == structureType.column.rawValue {
+            return 3 + 1
         }else {
             return 1
         }
     }
     
-    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        
-        let section = indexPath.section
-        let row = indexPath.row
-        
-        let type = typeModelArray[section].type
-
-        if type == "category" {
-            if row == 0 {
-                
-                let cell = tableView.dequeueReusableCell(withIdentifier: DDHomeBannerCell.cellIdentifier(), for: indexPath) as! DDHomeBannerCell
-                cell.setCellsViewModel(dataModel?.slider)
-                return cell
-            }else{
-                
-                
-                let cell = tableView.dequeueReusableCell(withIdentifier: DDHomeIndexCell.cellIdentifier(), for: indexPath) as! DDHomeIndexCell
-                
-                return cell
-            }
-        }else if type == "column" {
-
-            
-            let cell = tableView.dequeueReusableCell(withIdentifier: DDHomeColumnCell.cellIdentifier(), for: indexPath) as! DDHomeColumnCell
-
-            cell.setCellsViewModel(dataModel?.column?.list?[indexPath.row])
-            return cell
-            
-        }else if type == "freecolumn" {
-            
-            let cell = tableView.dequeueReusableCell(withIdentifier: DDHomeFreeColumnCell.cellIdentifier(), for: indexPath) as! DDHomeFreeColumnCell
-            cell.setCellsViewModel(dataModel?.freecolumn)
-            return cell
-            
-        }else if type == "live" {
-            
-            let cell = tableView.dequeueReusableCell(withIdentifier: DDHomeLiveCell.cellIdentifier(), for: indexPath) as! DDHomeLiveCell
-            cell.setCellsViewModel(dataModel?.live?.data)
-            return cell
-        }else if type == "freeAudio" {
-            
-            let cell = tableView.dequeueReusableCell(withIdentifier: DDHomeFreeAudioCell.cellIdentifier(), for: indexPath) as! DDHomeFreeAudioCell
-            cell.setCellsViewModel(dataModel?.freeAudio)
-
-            return cell
-        }else if type == "magazine" {
-            
-            let cell = tableView.dequeueReusableCell(withIdentifier: DDHomeMagazineCell.cellIdentifier(), for: indexPath) as! DDHomeMagazineCell
-            cell.setCellsViewModel(dataModel?.magazine?.data)
-            return cell
-        }else if type == "storytell" {
-            
-            let cell = tableView.dequeueReusableCell(withIdentifier: DDHomeStorytellCell.cellIdentifier(), for: indexPath) as! DDHomeStorytellCell
-            cell.setCellsViewModel(dataModel?.storytell?.data)
-            
-            return cell
-        }else if type == "dataMiningAduioOrBook" {
-            
-            let cell = tableView.dequeueReusableCell(withIdentifier: DDHomeHotAndGustCell.cellIdentifier(), for: indexPath) as! DDHomeHotAndGustCell
-            cell.setCellsViewModel(dataModel?.dataMiningAduioOrBook)
-            
-            return cell
-        }else if type == "new" {
-            
-            let cell = tableView.dequeueReusableCell(withIdentifier: DDHomeHotAndGustCell.cellIdentifier(), for: indexPath) as! DDHomeHotAndGustCell
-            cell.setCellsViewModel(dataModel?.new)
-            return cell
-        }else{
-            
-            let cell = tableView.dequeueReusableCell(withIdentifier: DDHomeSubjectCell.cellIdentifier(), for: indexPath) as! DDHomeSubjectCell
-            cell.setCellsViewModel(dataModel?.subject)
-            return cell
-        }
-        
-        
-       
-        
-    }
-    
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
         
-        guard section == 0 else {
-            
+        let type = typeModelArray[section].type
+       
+        guard currentShowHeadViewType(type) else {
             let view = tableView.dequeueReusableHeaderFooterView(withIdentifier: DDHomeTableHeadView.cellIdentifier()) as! DDHomeTableHeadView
-            
+            view.setHeadFootViewModel([dataModel ?? "",type] as [Any])
             return view
-            
         }
         return nil
+
     }
+    
+    func currentShowHeadViewType(_ type : String) -> Bool {
+        guard
+            type == structureType.freecolumn.rawValue ||
+            type == structureType.magazine.rawValue ||
+            type == structureType.category.rawValue ||
+            type == structureType.subject.rawValue else {
+            
+                return false
+        }
+        return true
+    }
+    
     
     
     
     func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
-        
-        guard section == 0 else {
-            return 44
-        }
+        let type = typeModelArray[section].type
+        guard currentShowHeadViewType(type) else {  return 44 }
         return 0.0001
     }
     

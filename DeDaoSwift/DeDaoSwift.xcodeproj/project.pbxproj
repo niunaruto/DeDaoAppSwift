@@ -56,6 +56,8 @@
 		CE7C131C1E767D4100067BFB /* DDHomeFreeAudioCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7C131B1E767D4100067BFB /* DDHomeFreeAudioCell.swift */; };
 		CE7C131F1E76953800067BFB /* NNAlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7C131E1E76953800067BFB /* NNAlertView.swift */; };
 		CE7C13231E769D7500067BFB /* DDBaseTableViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7C13221E769D7500067BFB /* DDBaseTableViewModel.swift */; };
+		CE82D0171E7A819A000CD6C3 /* UITableView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE82D0161E7A819A000CD6C3 /* UITableView+Extension.swift */; };
+		CE82D0191E7ACD22000CD6C3 /* DDHomeShowMoreCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE82D0181E7ACD22000CD6C3 /* DDHomeShowMoreCell.swift */; };
 		CEB18E081E6711AE001653AD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB18E071E6711AE001653AD /* AppDelegate.swift */; };
 		CEB18E0F1E6711AE001653AD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEB18E0E1E6711AE001653AD /* Assets.xcassets */; };
 		CEB18E121E6711AE001653AD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEB18E101E6711AE001653AD /* LaunchScreen.storyboard */; };
@@ -145,6 +147,9 @@
 		CE7C131B1E767D4100067BFB /* DDHomeFreeAudioCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DDHomeFreeAudioCell.swift; sourceTree = "<group>"; };
 		CE7C131E1E76953800067BFB /* NNAlertView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NNAlertView.swift; sourceTree = "<group>"; };
 		CE7C13221E769D7500067BFB /* DDBaseTableViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DDBaseTableViewModel.swift; sourceTree = "<group>"; };
+		CE82D0101E7A19B2000CD6C3 /* DeDaoSwift.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = DeDaoSwift.entitlements; sourceTree = "<group>"; };
+		CE82D0161E7A819A000CD6C3 /* UITableView+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITableView+Extension.swift"; sourceTree = "<group>"; };
+		CE82D0181E7ACD22000CD6C3 /* DDHomeShowMoreCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DDHomeShowMoreCell.swift; sourceTree = "<group>"; };
 		CEB18E041E6711AE001653AD /* DeDaoSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DeDaoSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEB18E071E6711AE001653AD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CEB18E0E1E6711AE001653AD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -256,6 +261,7 @@
 			isa = PBXGroup;
 			children = (
 				CE708D271E6929A800F4DF5D /* UIImage+Extension.swift */,
+				CE82D0161E7A819A000CD6C3 /* UITableView+Extension.swift */,
 				CE7C12221E6D648D00067BFB /* UIImageView+Extension.swift */,
 				CE7C122A1E6E599000067BFB /* UIView+Extension.swift */,
 				CE7C11E61E6D09B900067BFB /* DDTool.swift */,
@@ -324,6 +330,7 @@
 		CEB18E061E6711AE001653AD /* DeDaoSwift */ = {
 			isa = PBXGroup;
 			children = (
+				CE82D0101E7A19B2000CD6C3 /* DeDaoSwift.entitlements */,
 				CE708D411E69CD0500F4DF5D /* homeJsonData.json */,
 				CE0CE3021E78CFCE00CC8C54 /* homePositionData.json */,
 				CEB18E071E6711AE001653AD /* AppDelegate.swift */,
@@ -411,6 +418,7 @@
 				CE0CE3101E7908D900CC8C54 /* DDHomeMagazineCell.swift */,
 				CE0CE3141E7940DF00CC8C54 /* DDHomeHotAndGustCell.swift */,
 				CE0CE3161E79704600CC8C54 /* DDHomeSubjectCell.swift */,
+				CE82D0181E7ACD22000CD6C3 /* DDHomeShowMoreCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -645,6 +653,14 @@
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = EYJX338JDS;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+							com.apple.Push = {
+								enabled = 0;
+							};
+						};
 					};
 					CEB18E171E6711AE001653AD = {
 						CreatedOnToolsVersion = 8.2.1;
@@ -773,6 +789,7 @@
 				CE7C13111E72753200067BFB /* NNBannerScrollView.swift in Sources */,
 				CE7C12011E6D433600067BFB /* DDHomeNewModel.swift in Sources */,
 				CE0CE3091E78D91200CC8C54 /* DDHomeColumnCell.swift in Sources */,
+				CE82D0171E7A819A000CD6C3 /* UITableView+Extension.swift in Sources */,
 				CEE4DE7F1E684DA60093558C /* DDTableViewController.swift in Sources */,
 				CEB550A21E7779F60001BEC0 /* DDBaseTableHeaderFooterView.swift in Sources */,
 				CE7C13141E763C9400067BFB /* DDHomeIndexCell.swift in Sources */,
@@ -782,6 +799,7 @@
 				CE708D3A1E694D0E00F4DF5D /* DDScrollBannerView.swift in Sources */,
 				CE708D201E6914D100F4DF5D /* DDNavigationProtocol.swift in Sources */,
 				CE708D1C1E6914B300F4DF5D /* DDBaseTableViewController.swift in Sources */,
+				CE82D0191E7ACD22000CD6C3 /* DDHomeShowMoreCell.swift in Sources */,
 				CE7C12451E6EB81400067BFB /* DDViewModelServices.swift in Sources */,
 				CE708D1E1E6914B300F4DF5D /* DDBaseViewModel.swift in Sources */,
 				CE708D1D1E6914B300F4DF5D /* DDBaseViewController.swift in Sources */,
