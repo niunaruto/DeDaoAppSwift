@@ -14,4 +14,5 @@ pod 'CYLTabBarController'
 pod 'RxSwift'
 #pod 'ReactiveCocoa'
 pod 'UIColor_Hex_Swift', '~> 3.0.2'
+pod 'GDPerformanceView-Swift'
 end

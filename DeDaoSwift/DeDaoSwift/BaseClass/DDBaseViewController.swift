@@ -41,30 +41,21 @@ extension DDBaseViewController {
 extension DDBaseViewController {
     func setLeftSearchNavItem() {
         
-        let leftSeacrch = UIButton.init(type: .custom)
-        leftSeacrch.frame = CGRect(x: -15, y: 0, width: 44, height: 44)
-        leftSeacrch.setImage(UIImage(named: "new_main_navbar_search_black-1"), for: .normal)
-        let leftView = UIView(frame: CGRect(x: 0, y: 0, width: 44, height: 44))
-        leftView.addSubview(leftSeacrch)
-        let LeftBar = UIBarButtonItem(customView: leftView)
-        self.navigationItem.leftBarButtonItem =  LeftBar
+        self.navigationItem.leftBarButtonItem =  UIBarButtonItem.creatBarButtonItem("new_main_navbar_search_black-1")
         
     }
     
     /// 设置右侧navItem 默认一个play
     func setRightNavItems(_ itemsImageName:Array<String>? = nil) {
         var rightBarButtonItems = Array<UIBarButtonItem>()
-        
-        if let imageArray =  itemsImageName{
-            
+        if var imageArray =  itemsImageName{
+            imageArray.insert("navbar_playing_icon_anim_1", at: 0)
             for i in 0...(imageArray.count - 1) {
-                let videoItem = UIBarButtonItem(image: UIImage.setNavItemWithImageName(imageName: imageArray[i]), style: .plain, target: self, action: #selector(clickVideoPlayItem))
-                rightBarButtonItems.append(videoItem)
+                rightBarButtonItems.append(UIBarButtonItem.creatBarButtonItem(imageArray[i],-(i+1)))
             }
+        }else{
+        rightBarButtonItems.append(UIBarButtonItem.creatBarButtonItem("navbar_playing_icon_anim_1",-1))
         }
-        
-        let videoItem = UIBarButtonItem(image: UIImage.setNavItemWithImageName(imageName: "navbar_playing_icon_anim_1"), style: .plain, target: self, action: #selector(clickVideoPlayItem))
-        rightBarButtonItems.insert(videoItem, at: 0)
         self.navigationItem.rightBarButtonItems = rightBarButtonItems
     }
 }

@@ -92,13 +92,16 @@ extension DDBaseTableViewModel {
     func refreshNewData() {
         refreshData({ (list) in
             dataArray.removeAll()
-            for i in 0...(list.count - 1) {
+            if list.count > 0 {
                 
-                /// 数据包装成model
-                let vm = createViewModelWithModel(list[i])
-                dataArray.append(vm)
+                for i in 0...(list.count - 1) {
+                    
+                    /// 数据包装成model
+                    let vm = createViewModelWithModel(list[i])
+                    dataArray.append(vm)
+                }
+                
             }
-            
             delegate?.loadDataFinished(list, .success)
 
         }) { (errorMessege) in

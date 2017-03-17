@@ -56,20 +56,21 @@ UITabBarControllerDelegate {
         
         tabBarItemsAttributes = tabbarAttributes
         tabBar.tintColor = UIColor.orange
-        let hoemViewModel = DDHomeViewModel()
+        let homeViewModel = DDHomeViewModel()
+        let studyViewModel = DDStudyViewModel()
         
         
         
-        let home = CYLBaseNavigationController(rootViewController: DDTableViewController(hoemViewModel))
+        let home = CYLBaseNavigationController(rootViewController: DDTableViewController(homeViewModel))
         
         
-        let mine = CYLBaseNavigationController(rootViewController: DDTableViewController(hoemViewModel))
+        let mine = CYLBaseNavigationController(rootViewController: DDStudyViewController(studyViewModel))
         
-        let chat = CYLBaseNavigationController(rootViewController: DDTableViewController(hoemViewModel))
+        let chat = CYLBaseNavigationController(rootViewController: DDTableViewController(homeViewModel))
         
-        let bbs = CYLBaseNavigationController(rootViewController: DDTableViewController(hoemViewModel))
+        let bbs = CYLBaseNavigationController(rootViewController: DDTableViewController(homeViewModel))
         
-        let seven = CYLBaseNavigationController(rootViewController: DDTableViewController(hoemViewModel))
+        let seven = CYLBaseNavigationController(rootViewController: DDTableViewController(homeViewModel))
         
         
         

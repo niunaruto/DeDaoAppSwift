@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		CE0CE3031E78CFCF00CC8C54 /* homePositionData.json in Resources */ = {isa = PBXBuildFile; fileRef = CE0CE3021E78CFCE00CC8C54 /* homePositionData.json */; };
 		CE0CE3051E78D52200CC8C54 /* DDHomeFreeColumnCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0CE3041E78D52200CC8C54 /* DDHomeFreeColumnCell.swift */; };
 		CE0CE3071E78D6E100CC8C54 /* DDHomeLiveCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0CE3061E78D6E100CC8C54 /* DDHomeLiveCell.swift */; };
 		CE0CE3091E78D91200CC8C54 /* DDHomeColumnCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0CE3081E78D91200CC8C54 /* DDHomeColumnCell.swift */; };
@@ -25,7 +24,6 @@
 		CE708D301E6938A800F4DF5D /* Kingfisher.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE708D2F1E6938A800F4DF5D /* Kingfisher.framework */; };
 		CE708D361E69454200F4DF5D /* DDNetworkTools.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE708D351E69454200F4DF5D /* DDNetworkTools.swift */; };
 		CE708D3A1E694D0E00F4DF5D /* DDScrollBannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE708D391E694D0E00F4DF5D /* DDScrollBannerView.swift */; };
-		CE708D421E69CD0500F4DF5D /* homeJsonData.json in Resources */ = {isa = PBXBuildFile; fileRef = CE708D411E69CD0500F4DF5D /* homeJsonData.json */; };
 		CE7C11E71E6D09B900067BFB /* DDTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7C11E61E6D09B900067BFB /* DDTool.swift */; };
 		CE7C11EB1E6D0E5700067BFB /* DDHomeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7C11EA1E6D0E5700067BFB /* DDHomeModel.swift */; };
 		CE7C11F91E6D387E00067BFB /* DDHomeSliderModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7C11F81E6D387E00067BFB /* DDHomeSliderModel.swift */; };
@@ -58,6 +56,14 @@
 		CE7C13231E769D7500067BFB /* DDBaseTableViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7C13221E769D7500067BFB /* DDBaseTableViewModel.swift */; };
 		CE82D0171E7A819A000CD6C3 /* UITableView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE82D0161E7A819A000CD6C3 /* UITableView+Extension.swift */; };
 		CE82D0191E7ACD22000CD6C3 /* DDHomeShowMoreCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE82D0181E7ACD22000CD6C3 /* DDHomeShowMoreCell.swift */; };
+		CE82D01B1E7B7D9F000CD6C3 /* UIBarButtonItem+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE82D01A1E7B7D9F000CD6C3 /* UIBarButtonItem+Extension.swift */; };
+		CE82D0281E7B88BE000CD6C3 /* homeJsonData.json in Resources */ = {isa = PBXBuildFile; fileRef = CE82D0241E7B88BE000CD6C3 /* homeJsonData.json */; };
+		CE82D0291E7B88BE000CD6C3 /* homePositionData.json in Resources */ = {isa = PBXBuildFile; fileRef = CE82D0251E7B88BE000CD6C3 /* homePositionData.json */; };
+		CE82D02A1E7B88BE000CD6C3 /* searchHot.json in Resources */ = {isa = PBXBuildFile; fileRef = CE82D0261E7B88BE000CD6C3 /* searchHot.json */; };
+		CE82D02B1E7B88BE000CD6C3 /* searchTextList.json in Resources */ = {isa = PBXBuildFile; fileRef = CE82D0271E7B88BE000CD6C3 /* searchTextList.json */; };
+		CE82D0321E7B8962000CD6C3 /* DDStudyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE82D0311E7B8962000CD6C3 /* DDStudyViewController.swift */; };
+		CE82D0341E7B8A2F000CD6C3 /* DDStudyTopRemarkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE82D0331E7B8A2F000CD6C3 /* DDStudyTopRemarkView.swift */; };
+		CE82D0361E7B8B49000CD6C3 /* DDStudyViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE82D0351E7B8B49000CD6C3 /* DDStudyViewModel.swift */; };
 		CEB18E081E6711AE001653AD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB18E071E6711AE001653AD /* AppDelegate.swift */; };
 		CEB18E0F1E6711AE001653AD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEB18E0E1E6711AE001653AD /* Assets.xcassets */; };
 		CEB18E121E6711AE001653AD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEB18E101E6711AE001653AD /* LaunchScreen.storyboard */; };
@@ -67,6 +73,8 @@
 		CEB550A21E7779F60001BEC0 /* DDBaseTableHeaderFooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB550A11E7779F60001BEC0 /* DDBaseTableHeaderFooterView.swift */; };
 		CEE4DE6A1E684A9B0093558C /* DDTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE4DE691E684A9B0093558C /* DDTabBarViewController.swift */; };
 		CEE4DE7F1E684DA60093558C /* DDTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE4DE7E1E684DA60093558C /* DDTableViewController.swift */; };
+		CEFEBA891E7BB4E4008FE341 /* DDStudyTopRemarkViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEFEBA881E7BB4E4008FE341 /* DDStudyTopRemarkViewCell.swift */; };
+		CEFEBA8B1E7BC38F008FE341 /* GDPerformanceView_Swift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEFEBA8A1E7BC38F008FE341 /* GDPerformanceView_Swift.framework */; };
 		EB70D11DC41422F772F8819C /* Pods_DeDaoSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D88A0070B2B8B67E8338D85 /* Pods_DeDaoSwift.framework */; };
 /* End PBXBuildFile section */
 
@@ -90,7 +98,6 @@
 /* Begin PBXFileReference section */
 		0D88A0070B2B8B67E8338D85 /* Pods_DeDaoSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DeDaoSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5EF831CD7B9695B76DF1DAE /* Pods-DeDaoSwift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DeDaoSwift.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DeDaoSwift/Pods-DeDaoSwift.debug.xcconfig"; sourceTree = "<group>"; };
-		CE0CE3021E78CFCE00CC8C54 /* homePositionData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = homePositionData.json; sourceTree = "<group>"; };
 		CE0CE3041E78D52200CC8C54 /* DDHomeFreeColumnCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DDHomeFreeColumnCell.swift; sourceTree = "<group>"; };
 		CE0CE3061E78D6E100CC8C54 /* DDHomeLiveCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DDHomeLiveCell.swift; sourceTree = "<group>"; };
 		CE0CE3081E78D91200CC8C54 /* DDHomeColumnCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DDHomeColumnCell.swift; sourceTree = "<group>"; };
@@ -113,7 +120,6 @@
 		CE708D351E69454200F4DF5D /* DDNetworkTools.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DDNetworkTools.swift; sourceTree = "<group>"; };
 		CE708D391E694D0E00F4DF5D /* DDScrollBannerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DDScrollBannerView.swift; sourceTree = "<group>"; };
 		CE708D3C1E69CA0A00F4DF5D /* MJRefresh.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MJRefresh.framework; path = "Pods/../build/Release-iphoneos/MJRefresh/MJRefresh.framework"; sourceTree = "<group>"; };
-		CE708D411E69CD0500F4DF5D /* homeJsonData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = homeJsonData.json; sourceTree = "<group>"; };
 		CE7C11E61E6D09B900067BFB /* DDTool.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DDTool.swift; sourceTree = "<group>"; };
 		CE7C11EA1E6D0E5700067BFB /* DDHomeModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DDHomeModel.swift; sourceTree = "<group>"; };
 		CE7C11EC1E6D0F7B00067BFB /* CYLTabBarController.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CYLTabBarController.framework; path = "Pods/../build/Release-iphoneos/CYLTabBarController/CYLTabBarController.framework"; sourceTree = "<group>"; };
@@ -150,6 +156,14 @@
 		CE82D0101E7A19B2000CD6C3 /* DeDaoSwift.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = DeDaoSwift.entitlements; sourceTree = "<group>"; };
 		CE82D0161E7A819A000CD6C3 /* UITableView+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITableView+Extension.swift"; sourceTree = "<group>"; };
 		CE82D0181E7ACD22000CD6C3 /* DDHomeShowMoreCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DDHomeShowMoreCell.swift; sourceTree = "<group>"; };
+		CE82D01A1E7B7D9F000CD6C3 /* UIBarButtonItem+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIBarButtonItem+Extension.swift"; sourceTree = "<group>"; };
+		CE82D0241E7B88BE000CD6C3 /* homeJsonData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = homeJsonData.json; sourceTree = "<group>"; };
+		CE82D0251E7B88BE000CD6C3 /* homePositionData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = homePositionData.json; sourceTree = "<group>"; };
+		CE82D0261E7B88BE000CD6C3 /* searchHot.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = searchHot.json; sourceTree = "<group>"; };
+		CE82D0271E7B88BE000CD6C3 /* searchTextList.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = searchTextList.json; sourceTree = "<group>"; };
+		CE82D0311E7B8962000CD6C3 /* DDStudyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DDStudyViewController.swift; sourceTree = "<group>"; };
+		CE82D0331E7B8A2F000CD6C3 /* DDStudyTopRemarkView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DDStudyTopRemarkView.swift; sourceTree = "<group>"; };
+		CE82D0351E7B8B49000CD6C3 /* DDStudyViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DDStudyViewModel.swift; sourceTree = "<group>"; };
 		CEB18E041E6711AE001653AD /* DeDaoSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DeDaoSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEB18E071E6711AE001653AD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CEB18E0E1E6711AE001653AD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -166,6 +180,8 @@
 		CEE4DE691E684A9B0093558C /* DDTabBarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DDTabBarViewController.swift; sourceTree = "<group>"; };
 		CEE4DE7D1E684C6A0093558C /* DeDaoSwift-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DeDaoSwift-Bridging-Header.h"; sourceTree = "<group>"; };
 		CEE4DE7E1E684DA60093558C /* DDTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DDTableViewController.swift; sourceTree = "<group>"; };
+		CEFEBA881E7BB4E4008FE341 /* DDStudyTopRemarkViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DDStudyTopRemarkViewCell.swift; sourceTree = "<group>"; };
+		CEFEBA8A1E7BC38F008FE341 /* GDPerformanceView_Swift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GDPerformanceView_Swift.framework; path = "Pods/../build/Debug-iphoneos/GDPerformanceView-Swift/GDPerformanceView_Swift.framework"; sourceTree = "<group>"; };
 		D07FDF203FB69993E2B75B43 /* Pods-DeDaoSwift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DeDaoSwift.release.xcconfig"; path = "Pods/Target Support Files/Pods-DeDaoSwift/Pods-DeDaoSwift.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -174,6 +190,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CEFEBA8B1E7BC38F008FE341 /* GDPerformanceView_Swift.framework in Frameworks */,
 				CE7C13161E76452700067BFB /* UIColor_Hex_Swift.framework in Frameworks */,
 				CE7C12431E6E916600067BFB /* RxSwift.framework in Frameworks */,
 				CE7C12411E6E87FB00067BFB /* Alamofire.framework in Frameworks */,
@@ -217,6 +234,7 @@
 		C894F4DA47B26F5A07FA3A0F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				CEFEBA8A1E7BC38F008FE341 /* GDPerformanceView_Swift.framework */,
 				CE7C13151E76452700067BFB /* UIColor_Hex_Swift.framework */,
 				CE7C12421E6E916600067BFB /* RxSwift.framework */,
 				CE7C12401E6E87FB00067BFB /* Alamofire.framework */,
@@ -266,6 +284,7 @@
 				CE7C122A1E6E599000067BFB /* UIView+Extension.swift */,
 				CE7C11E61E6D09B900067BFB /* DDTool.swift */,
 				CE7C13171E764A2B00067BFB /* UIButton+Extension.swift */,
+				CE82D01A1E7B7D9F000CD6C3 /* UIBarButtonItem+Extension.swift */,
 			);
 			name = UIKitExtension;
 			path = Home/UIKitExtension;
@@ -305,6 +324,61 @@
 			path = NNAlertView;
 			sourceTree = "<group>";
 		};
+		CE82D0231E7B88BE000CD6C3 /* HomeJson */ = {
+			isa = PBXGroup;
+			children = (
+				CE82D0241E7B88BE000CD6C3 /* homeJsonData.json */,
+				CE82D0251E7B88BE000CD6C3 /* homePositionData.json */,
+				CE82D0261E7B88BE000CD6C3 /* searchHot.json */,
+				CE82D0271E7B88BE000CD6C3 /* searchTextList.json */,
+			);
+			path = HomeJson;
+			sourceTree = "<group>";
+		};
+		CE82D02C1E7B88F0000CD6C3 /* Study */ = {
+			isa = PBXGroup;
+			children = (
+				CE82D02D1E7B88F0000CD6C3 /* Controller */,
+				CE82D02E1E7B88F0000CD6C3 /* Model */,
+				CE82D0301E7B88F0000CD6C3 /* ViewModel */,
+				CE82D02F1E7B88F0000CD6C3 /* View */,
+			);
+			name = Study;
+			path = Home/Study;
+			sourceTree = "<group>";
+		};
+		CE82D02D1E7B88F0000CD6C3 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				CE82D0311E7B8962000CD6C3 /* DDStudyViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		CE82D02E1E7B88F0000CD6C3 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CE82D02F1E7B88F0000CD6C3 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CE82D0331E7B8A2F000CD6C3 /* DDStudyTopRemarkView.swift */,
+				CEFEBA881E7BB4E4008FE341 /* DDStudyTopRemarkViewCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CE82D0301E7B88F0000CD6C3 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				CE82D0351E7B8B49000CD6C3 /* DDStudyViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 		CEB18DFB1E6711AE001653AD = {
 			isa = PBXGroup;
 			children = (
@@ -331,17 +405,15 @@
 			isa = PBXGroup;
 			children = (
 				CE82D0101E7A19B2000CD6C3 /* DeDaoSwift.entitlements */,
-				CE708D411E69CD0500F4DF5D /* homeJsonData.json */,
-				CE0CE3021E78CFCE00CC8C54 /* homePositionData.json */,
 				CEB18E071E6711AE001653AD /* AppDelegate.swift */,
 				CEE4DE691E684A9B0093558C /* DDTabBarViewController.swift */,
 				CEE4DE7D1E684C6A0093558C /* DeDaoSwift-Bridging-Header.h */,
+				CE82D02C1E7B88F0000CD6C3 /* Study */,
 				CE7C120A1E6D623600067BFB /* Vendors */,
 				CE708D181E6914B300F4DF5D /* BaseClass */,
 				CEE4DE941E69098A0093558C /* Listen */,
 				CEE4DE991E69098A0093558C /* Mine */,
 				CEE4DE9E1E69098A0093558C /* Purchase */,
-				CEE4DEA31E69098A0093558C /* Subscribe */,
 				CEE4DE651E684A4F0093558C /* Home */,
 				CE708D241E691B3200F4DF5D /* UIKitExtension */,
 				CEB18E0E1E6711AE001653AD /* Assets.xcassets */,
@@ -372,6 +444,7 @@
 		CEE4DE651E684A4F0093558C /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				CE82D0231E7B88BE000CD6C3 /* HomeJson */,
 				CEE4DE661E684A4F0093558C /* Controller */,
 				CE7C12311E6E5FD700067BFB /* ViewModel */,
 				CEE4DE671E684A4F0093558C /* Model */,
@@ -540,45 +613,6 @@
 			path = ViewModel;
 			sourceTree = "<group>";
 		};
-		CEE4DEA31E69098A0093558C /* Subscribe */ = {
-			isa = PBXGroup;
-			children = (
-				CEE4DEA41E69098A0093558C /* Controller */,
-				CEE4DEA51E69098A0093558C /* Model */,
-				CEE4DEA61E69098A0093558C /* View */,
-				CEE4DEA71E69098A0093558C /* ViewModel */,
-			);
-			path = Subscribe;
-			sourceTree = "<group>";
-		};
-		CEE4DEA41E69098A0093558C /* Controller */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Controller;
-			sourceTree = "<group>";
-		};
-		CEE4DEA51E69098A0093558C /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		CEE4DEA61E69098A0093558C /* View */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
-		CEE4DEA71E69098A0093558C /* ViewModel */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = ViewModel;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -699,8 +733,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CE708D421E69CD0500F4DF5D /* homeJsonData.json in Resources */,
-				CE0CE3031E78CFCF00CC8C54 /* homePositionData.json in Resources */,
+				CE82D02B1E7B88BE000CD6C3 /* searchTextList.json in Resources */,
+				CE82D02A1E7B88BE000CD6C3 /* searchHot.json in Resources */,
+				CE82D0281E7B88BE000CD6C3 /* homeJsonData.json in Resources */,
+				CE82D0291E7B88BE000CD6C3 /* homePositionData.json in Resources */,
 				CEB18E121E6711AE001653AD /* LaunchScreen.storyboard in Resources */,
 				CEB18E0F1E6711AE001653AD /* Assets.xcassets in Resources */,
 			);
@@ -782,6 +818,8 @@
 				CE7C13121E72753200067BFB /* NNBannerScrollViewCell.swift in Sources */,
 				CE7C131F1E76953800067BFB /* NNAlertView.swift in Sources */,
 				CE0CE30E1E78ED6E00CC8C54 /* DDHomeStorytellCell.swift in Sources */,
+				CEFEBA891E7BB4E4008FE341 /* DDStudyTopRemarkViewCell.swift in Sources */,
+				CE82D01B1E7B7D9F000CD6C3 /* UIBarButtonItem+Extension.swift in Sources */,
 				CE7C11FB1E6D395000067BFB /* DDHomeFreeAudioModel.swift in Sources */,
 				CE0CE3111E7908D900CC8C54 /* DDHomeMagazineCell.swift in Sources */,
 				CE7C12231E6D648D00067BFB /* UIImageView+Extension.swift in Sources */,
@@ -790,6 +828,7 @@
 				CE7C12011E6D433600067BFB /* DDHomeNewModel.swift in Sources */,
 				CE0CE3091E78D91200CC8C54 /* DDHomeColumnCell.swift in Sources */,
 				CE82D0171E7A819A000CD6C3 /* UITableView+Extension.swift in Sources */,
+				CE82D0321E7B8962000CD6C3 /* DDStudyViewController.swift in Sources */,
 				CEE4DE7F1E684DA60093558C /* DDTableViewController.swift in Sources */,
 				CEB550A21E7779F60001BEC0 /* DDBaseTableHeaderFooterView.swift in Sources */,
 				CE7C13141E763C9400067BFB /* DDHomeIndexCell.swift in Sources */,
@@ -803,6 +842,7 @@
 				CE7C12451E6EB81400067BFB /* DDViewModelServices.swift in Sources */,
 				CE708D1E1E6914B300F4DF5D /* DDBaseViewModel.swift in Sources */,
 				CE708D1D1E6914B300F4DF5D /* DDBaseViewController.swift in Sources */,
+				CE82D0361E7B8B49000CD6C3 /* DDStudyViewModel.swift in Sources */,
 				CE7C11FF1E6D3D2F00067BFB /* DDHomeStorytellModel.swift in Sources */,
 				CE0CE3151E7940DF00CC8C54 /* DDHomeHotAndGustCell.swift in Sources */,
 				CE7C122B1E6E599000067BFB /* UIView+Extension.swift in Sources */,
@@ -817,6 +857,7 @@
 				CE7C12271E6E586C00067BFB /* DDHomeBannerCell.swift in Sources */,
 				CE0CE3071E78D6E100CC8C54 /* DDHomeLiveCell.swift in Sources */,
 				CE7C11EB1E6D0E5700067BFB /* DDHomeModel.swift in Sources */,
+				CE82D0341E7B8A2F000CD6C3 /* DDStudyTopRemarkView.swift in Sources */,
 				CE708D361E69454200F4DF5D /* DDNetworkTools.swift in Sources */,
 				CE7C131C1E767D4100067BFB /* DDHomeFreeAudioCell.swift in Sources */,
 			);
@@ -970,6 +1011,7 @@
 					"$(PROJECT_DIR)/build/Release-iphoneos/CYLTabBarController",
 					"$(PROJECT_DIR)/build/Debug-iphoneos/ObjectMapper",
 					"$(PROJECT_DIR)/build/Debug-iphoneos/ReactiveCocoa",
+					"$(PROJECT_DIR)/build/Debug-iphoneos/GDPerformanceView-Swift",
 				);
 				INFOPLIST_FILE = DeDaoSwift/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
@@ -995,6 +1037,7 @@
 					"$(PROJECT_DIR)/build/Release-iphoneos/CYLTabBarController",
 					"$(PROJECT_DIR)/build/Debug-iphoneos/ObjectMapper",
 					"$(PROJECT_DIR)/build/Debug-iphoneos/ReactiveCocoa",
+					"$(PROJECT_DIR)/build/Debug-iphoneos/GDPerformanceView-Swift",
 				);
 				INFOPLIST_FILE = DeDaoSwift/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;

@@ -16,7 +16,7 @@ class DDTableViewController: DDBaseTableViewController {
 
         super.viewDidLoad()
         setLeftSearchNavItem()
-        setRightNavItems(["navbar_playing_icon_anim_1","navbar_playing_icon_anim_1"])
+        setRightNavItems()
         tableView.register(DDHomeTableHeadView.classForCoder(), forHeaderFooterViewReuseIdentifier: DDHomeTableHeadView.cellIdentifier())
         
         

@@ -24,7 +24,7 @@ class DDBaseTableViewController: DDBaseViewController {
     }()
     
    public lazy var tableView : UITableView = { [unowned self] in
-        let tableView = UITableView(frame: self.view.bounds, style: self.tabViewModel.tableViewStyle!)
+        let tableView = UITableView(frame: CGRect.zero, style: self.tabViewModel.tableViewStyle!)
         tableView.estimatedRowHeight = 140
         tableView.delegate = self.tabViewModel
         tableView.dataSource = self.tabViewModel
@@ -60,19 +60,27 @@ class DDBaseTableViewController: DDBaseViewController {
         initialize()
         view.addSubview(tableView)
         tabViewModel.delegate = self
+        tableView.snp.makeConstraints { (make) in
+            make.edges.equalToSuperview()
+        }
+        
 
         if tabViewModel.useRefreshControl {
             
             tableView.mj_header = MJRefreshNormalHeader.init(refreshingTarget: self, refreshingAction: #selector(pullRefresh))
+
+            
             tableView.mj_header.beginRefreshing()
         }
         
+        
         if tabViewModel.useLoadMoreControl {
             tableView.mj_footer = MJRefreshAutoNormalFooter.init(refreshingTarget: self, refreshingAction: #selector(loadMoreMoreData))
-            
         }
-
+        
     }
+    
+    
 }
 
 extension DDBaseTableViewController{
@@ -101,24 +109,26 @@ extension DDBaseTableViewController : viewModelDelegate {
     func loadDataFinished(_ vm: Any, _ status: loadDataFinishedStatus) {
 
         guard status == .success else {
-            
-            tableView.mj_header.endRefreshing()
-            tableView.mj_footer.endRefreshing()
+            endRefreshing()
             return
         }
+        endRefreshing()
+        tableView.reloadData()
+        
+    }
+    
+    func endRefreshing() {
         if tabViewModel.useRefreshControl {
             tableView.mj_header.endRefreshing()
         }
-        
         if tabViewModel.useLoadMoreControl {
             tableView.mj_footer.endRefreshing()
         }
-        tableView.reloadData()
-        
     }
 
     
     
 }
+
 
 

@@ -7,20 +7,36 @@
 //
 
 import UIKit
-
+import GDPerformanceView_Swift
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
+    var performanceView: GDPerformanceMonitor?
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
+        #if DEBUG
+            GDPerformanceMonitor.sharedInstance.startMonitoring()
+            GDPerformanceMonitor.sharedInstance.configure(configuration: { (textLabel) in
+                textLabel?.backgroundColor = .black
+                textLabel?.textColor = .white
+                textLabel?.layer.borderColor = UIColor.black.cgColor
+            })
+        #endif
+
         setRootController()
 
         return true
     }
    
-    
+    func applicationWillTerminate(_ application: UIApplication) {
+        // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+        #if DEBUG
+            GDPerformanceMonitor.sharedInstance.stopMonitoring()
+        #endif
+        
+    }
 
 }
 

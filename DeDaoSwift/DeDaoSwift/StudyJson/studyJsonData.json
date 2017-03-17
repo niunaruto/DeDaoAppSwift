@@ -1,0 +1,236 @@
+{
+    "h": {
+        "c": 0,
+        "e": "",
+        "t": 0.16984510421753,
+        "s": 1489719412
+    },
+    "c": {
+        "advance": {},
+        "list": [
+            {
+                "date": 20170317,
+                "molecule": 0,
+                "denominator": 0,
+                "feeds": [
+                    {
+                        "fid": 2390,
+                        "id": 28,
+                        "name": "巴菲特法则",
+                        "title": "13",
+                        "summary": "other",
+                        "publish_time": 1489680165,
+                        "aid": "",
+                        "auid": "",
+                        "audio_time": "",
+                        "icon": "https://piccdn.igetget.com/img/201703/17/201703170029013134815734.jpg@960w",
+                        "cover": "",
+                        "type": 26,
+                        "scan": 0,
+                        "rtype": "",
+                        "weight": 2459374
+                    }
+                ]
+            },
+            {
+                "date": 20170316,
+                "molecule": 0,
+                "denominator": 1,
+                "feeds": [
+                    {
+                        "fid": 20,
+                        "id": 3254,
+                        "name": "伯凡 · 日知录",
+                        "title": "3.8丨一个新产品如何能够引爆一个大市场？",
+                        "summary": "找到自己的“诺曼底”，在短时间实现登陆，才有可能拿下整个市场。",
+                        "publish_time": 1489593772,
+                        "aid": "uMayarRJ6nfUc3NwH3rT",
+                        "auid": 7176,
+                        "audio_time": 625,
+                        "icon": "https://piccdn.igetget.com/img/201610/20/201610201347569855231161.jpg@400w",
+                        "cover": "",
+                        "type": 4,
+                        "scan": 0,
+                        "rtype": 1,
+                        "weight": 2527509
+                    }
+                ]
+            },
+            {
+                "date": 20170315,
+                "molecule": 0,
+                "denominator": 1,
+                "feeds": [
+                    {
+                        "fid": 13,
+                        "id": 3370,
+                        "name": "万维钢 · 精英日课",
+                        "title": "特别放送丨放诸古今皆准的权力规则",
+                        "summary": "组织的政治格局不取决于民主还是独裁，而是取决于层层嵌套的三种人：名义选民、实际选民和胜利联盟。",
+                        "publish_time": 1489530384,
+                        "aid": "6qHOBwRDf3Muxg4WENIi",
+                        "auid": 7335,
+                        "audio_time": 1498,
+                        "icon": "https://piccdn.igetget.com/img/201608/09/201608091943116774607380.jpg@400w",
+                        "cover": "",
+                        "type": 4,
+                        "scan": 0,
+                        "rtype": 1,
+                        "weight": 626246557
+                    },
+                    {
+                        "fid": "https://zt.igetget.com/h5/pic/?alias=QxQvXz7K95fnYDlnp9Yj",
+                        "id": 25,
+                        "name": "学习带团队",
+                        "title": "3",
+                        "summary": "other",
+                        "publish_time": 1489507230,
+                        "aid": "",
+                        "auid": "",
+                        "audio_time": "",
+                        "icon": "https://piccdn.igetget.com/img/201703/14/201703142246590119313556.jpg@960w",
+                        "cover": "",
+                        "type": 26,
+                        "scan": 0,
+                        "rtype": "",
+                        "weight": 302262
+                    }
+                ]
+            },
+            {
+                "date": 20170314,
+                "molecule": 0,
+                "denominator": 1,
+                "feeds": [
+                    {
+                        "fid": 26,
+                        "id": 3294,
+                        "name": "Dr.魏的家庭教育宝典",
+                        "title": "发刊词｜让你的孩子享受最新脑科学研究成果",
+                        "summary": "内附全年脑科学育儿手册",
+                        "publish_time": 1489458320,
+                        "aid": "",
+                        "auid": "",
+                        "audio_time": "",
+                        "icon": "https://piccdn.igetget.com/img/201703/11/201703111441288782503330.jpg@400w",
+                        "cover": "",
+                        "type": 4,
+                        "scan": 0,
+                        "rtype": 1,
+                        "weight": 1025201922
+                    },
+                    {
+                        "fid": 183,
+                        "id": 22,
+                        "name": "罗胖推荐哈佛中国史",
+                        "title": "5",
+                        "summary": "other",
+                        "publish_time": 1489443916,
+                        "aid": "",
+                        "auid": "",
+                        "audio_time": "",
+                        "icon": "https://piccdn.igetget.com/img/201703/13/201703131924090646506295.jpg@960w",
+                        "cover": "",
+                        "type": 26,
+                        "scan": 0,
+                        "rtype": "",
+                        "weight": 625162899
+                    },
+                    {
+                        "fid": 141,
+                        "id": 24,
+                        "name": "聪明人的学习之道",
+                        "title": "5",
+                        "summary": "other",
+                        "publish_time": 1489420835,
+                        "aid": "",
+                        "auid": "",
+                        "audio_time": "",
+                        "icon": "https://piccdn.igetget.com/img/201703/13/201703132203114608753059.jpg@960w",
+                        "cover": "",
+                        "type": 26,
+                        "scan": 0,
+                        "rtype": "",
+                        "weight": 351782
+                    }
+                ]
+            },
+            {
+                "date": 20170313,
+                "molecule": 0,
+                "denominator": 2,
+                "feeds": [
+                    {
+                        "fid": 3,
+                        "id": 3255,
+                        "name": "通往财富自由之路",
+                        "title": "加餐 | 百万富翁和亿万富翁到底差在哪里？",
+                        "summary": "向你介绍一位真诚的有钱人和一本必读的“心灵鸡汤”。",
+                        "publish_time": 1489381551,
+                        "aid": "",
+                        "auid": "",
+                        "audio_time": "",
+                        "icon": "https://piccdn.igetget.com/img/201607/29/201607291531138194688262.jpg@400w",
+                        "cover": "",
+                        "type": 4,
+                        "scan": 0,
+                        "rtype": 1,
+                        "weight": 1305519263
+                    },
+                    {
+                        "fid": 3,
+                        "id": 3307,
+                        "name": "通往财富自由之路",
+                        "title": "为什么你一定要学会写作？",
+                        "summary": "在起点上，绝大多数人都只能是普通人。",
+                        "publish_time": 1489359778,
+                        "aid": "",
+                        "auid": "",
+                        "audio_time": "",
+                        "icon": "https://piccdn.igetget.com/img/201607/29/201607291531138194688262.jpg@400w",
+                        "cover": "",
+                        "type": 4,
+                        "scan": 0,
+                        "rtype": 1,
+                        "weight": 702584385
+                    },
+                    {
+                        "fid": "https://zt.igetget.com/h5/pic/?alias=vMXEj3881ytw9nMK4knr",
+                        "id": 20,
+                        "name": "学写作",
+                        "title": "3",
+                        "summary": "other",
+                        "publish_time": 1489359660,
+                        "aid": "",
+                        "auid": "",
+                        "audio_time": "",
+                        "icon": "https://piccdn.igetget.com/img/201703/13/201703131111527254662470.png@960w",
+                        "cover": "",
+                        "type": 26,
+                        "scan": 0,
+                        "rtype": "",
+                        "weight": 701002105
+                    },
+                    {
+                        "fid": "https://m.igetget.com/activity/consume/?from=dedaof",
+                        "id": 21,
+                        "name": "五年后什么最好卖？",
+                        "title": "3",
+                        "summary": "promise",
+                        "publish_time": 1489334649,
+                        "aid": "",
+                        "auid": "",
+                        "audio_time": "",
+                        "icon": "https://piccdn.igetget.com/img/201703/13/201703131135024772237570.jpg@960w",
+                        "cover": "",
+                        "type": 26,
+                        "scan": 0,
+                        "rtype": "",
+                        "weight": 4094509
+                    }
+                ]
+            }
+        ],
+        "ev": "feed_data_server"
+    }
+}
