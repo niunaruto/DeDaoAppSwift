@@ -75,8 +75,8 @@ UITabBarControllerDelegate {
         
         
         viewControllers = [
-            home,
             mine,
+            home,
             chat,
             bbs,
             seven

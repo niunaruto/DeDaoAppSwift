@@ -22,7 +22,7 @@ class DDStudyViewModel: DDBaseTableViewModel {
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 1
+        return 0
     }
     override func createViewModelWithModel(_ model: Any?, _ cellClass: AnyClass?) -> DDBaseTableViewModel {
         return DDStudyViewModel.init(model, cellClass)
