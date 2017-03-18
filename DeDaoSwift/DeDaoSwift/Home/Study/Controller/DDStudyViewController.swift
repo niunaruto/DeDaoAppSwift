@@ -38,6 +38,7 @@ class DDStudyViewController: DDBaseTableViewController,UITableViewDelegate,UITab
 
         
         
+        
         tableView.addSubview(tableView2)
         
         tableView2.addSubview(studyTopRemarkView)
