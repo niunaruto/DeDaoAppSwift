@@ -7,25 +7,37 @@
 //
 
 import UIKit
-
+import ObjectMapper
 class DDTableViewController: DDBaseTableViewController {
 
-   
     
+    lazy var vm = DDHomeViewModel()
+
     override func viewDidLoad() {
 
         super.viewDidLoad()
         setLeftSearchNavItem()
         setRightNavItems()
         tableView.register(DDHomeTableHeadView.classForCoder(), forHeaderFooterViewReuseIdentifier: DDHomeTableHeadView.cellIdentifier())
+
         
         
     }
     
     override func initialize() {
         super.initialize()
-        tabViewModel.title = "发现"
+        self.baseVM = vm
+        navigationItem.title = "发现"
+        tableViewStyle = UITableViewStyle.grouped        
     }
+    
+    
+    
+    
+    
+    
+    
+    
     
     
     

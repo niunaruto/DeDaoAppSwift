@@ -258,6 +258,13 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		CE0A7F301E7FC3DA004A82E7 /* DLIntrospection */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = DLIntrospection;
+			sourceTree = "<group>";
+		};
 		CE708D181E6914B300F4DF5D /* BaseClass */ = {
 			isa = PBXGroup;
 			children = (
@@ -293,6 +300,7 @@
 		CE7C120A1E6D623600067BFB /* Vendors */ = {
 			isa = PBXGroup;
 			children = (
+				CE0A7F301E7FC3DA004A82E7 /* DLIntrospection */,
 				CE7C131D1E76951E00067BFB /* NNAlertView */,
 				CE7C130E1E72753200067BFB /* NNBannerScrollView */,
 			);

@@ -17,17 +17,16 @@ import ReactiveSwift
 
 class DDBaseTableViewController: DDBaseViewController {
 
+    lazy var tableViewStyle = UITableViewStyle.plain
+    lazy var baseVM = DDBaseTableViewModel()
     
-    lazy var tabViewModel : DDBaseTableViewModel =  { [unowned self] in
-        let  tabViewModel  = DDBaseTableViewModel()
-        return tabViewModel
-    }()
-    
-   public lazy var tableView : UITableView = { [unowned self] in
-        let tableView = UITableView(frame: CGRect.zero, style: self.tabViewModel.tableViewStyle!)
+    lazy var tableView : UITableView = { [unowned self] in
+        let tableView = UITableView(frame: CGRect.zero, style: self.tableViewStyle)
         tableView.estimatedRowHeight = 140
-        tableView.delegate = self.tabViewModel
-        tableView.dataSource = self.tabViewModel
+        tableView.register(UITableViewCell.classForCoder(), forCellReuseIdentifier: "cell")
+        
+        tableView.delegate = self.baseVM
+        tableView.dataSource = self.baseVM
         tableView.separatorStyle = .none
         return tableView;
         
@@ -36,52 +35,26 @@ class DDBaseTableViewController: DDBaseViewController {
     
     
     
-     init(_ viewMode : DDBaseTableViewModel? = nil) {
-
-        super.init(nibName: nil, bundle: nil)
-        if let vm =  viewMode{
-            
-            self.tabViewModel = vm
-            self.viewModel = self.tabViewModel
-        }
-
-
-    }
-    
-    required init?(coder aDecoder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
-    }
-    
-    
-    
     
     override func viewDidLoad() {
         super.viewDidLoad()
         initialize()
         view.addSubview(tableView)
-        tabViewModel.delegate = self
         tableView.snp.makeConstraints { (make) in
             make.edges.equalToSuperview()
         }
+        baseVM.delegate = self
+        tableView.mj_header = MJRefreshNormalHeader.init(refreshingTarget: self, refreshingAction: #selector(loadNewData))
         
-
-        if tabViewModel.useRefreshControl {
-            
-            tableView.mj_header = MJRefreshNormalHeader.init(refreshingTarget: self, refreshingAction: #selector(pullRefresh))
-
-            
-            tableView.mj_header.beginRefreshing()
-        }
+        tableView.mj_footer = MJRefreshBackFooter.init(refreshingTarget: self, refreshingAction: #selector(loadMoreData))
         
-        
-        if tabViewModel.useLoadMoreControl {
-            tableView.mj_footer = MJRefreshAutoNormalFooter.init(refreshingTarget: self, refreshingAction: #selector(loadMoreMoreData))
-        }
+        tableView.mj_header.beginRefreshing()
         
     }
     
     
 }
+
 
 extension DDBaseTableViewController{
     override func initialize() {
@@ -94,18 +67,20 @@ extension DDBaseTableViewController {
     
     
     /// 下拉刷新
-    func pullRefresh() {
-        tabViewModel.refreshNewData()
+    func loadNewData() {
+
+        baseVM.refreshNewData()
     }
     
-    func loadMoreMoreData() {        
-        tabViewModel.loadMoreData()
+    func loadMoreData() {        
+        baseVM.loadMoreData()
+
     }
 }
 
 
 extension DDBaseTableViewController : viewModelDelegate {
-    
+
     func loadDataFinished(_ vm: Any, _ status: loadDataFinishedStatus) {
 
         guard status == .success else {
@@ -118,10 +93,10 @@ extension DDBaseTableViewController : viewModelDelegate {
     }
     
     func endRefreshing() {
-        if tabViewModel.useRefreshControl {
+        if baseVM.useRefreshControl {
             tableView.mj_header.endRefreshing()
         }
-        if tabViewModel.useLoadMoreControl {
+        if baseVM.useLoadMoreControl {
             tableView.mj_footer.endRefreshing()
         }
     }

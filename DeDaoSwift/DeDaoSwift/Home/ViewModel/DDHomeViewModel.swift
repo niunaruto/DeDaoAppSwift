@@ -12,20 +12,19 @@ import ObjectMapper
 
 public enum structureType : String {
     
-    case category = "category"
-    case freecolumn = "freecolumn"
-    case live = "live"
-    case freeAudio = "freeAudio"
-    case column = "column"
-    case storytell = "storytell"
-    case magazine = "magazine"
-    case dataMiningAduioOrBook = "dataMiningAduioOrBook"
-    case new = "new"
-    case subject = "subject"
+    case structureTypeCategory = "category"
+    case structureTypeFreecolumn = "freecolumn"
+    case structureTypeLive = "live"
+    case structureTypeFreeAudio = "freeAudio"
+    case structureTypeColumn = "column"
+    case structureTypeStorytell = "storytell"
+    case structureTypeMagazine = "magazine"
+    case structureTypeDataMiningAduioOrBook = "dataMiningAduioOrBook"
+    case structureTypeNew = "new"
+    case structureTypeSubject = "subject"
 }
 class DDHomeViewModel: DDBaseTableViewModel {
 
-    
     
     var dataModel  = Mapper<DDHomeDataModel>().map(JSON : ["":""])
 
@@ -35,8 +34,8 @@ class DDHomeViewModel: DDBaseTableViewModel {
     override func refreshData(_ array: (Array<Any>) -> (), _ error : ((String) -> ())) {
         
       
-        let dic = DDTool.getDictionaryWithPatch(fileName:"homeJsonData.json") as? Dictionary<String, Any>
-        let model = Mapper<DDHomeModel>().map(JSON: dic ?? ["":""])
+        let homeJsonDic = DDTool.getDictionaryWithPatch(fileName:"homeJsonData.json") as? Dictionary<String, Any>
+        let model = Mapper<DDHomeModel>().map(JSON: homeJsonDic ?? ["":""])
         dataModel = model?.c?.data
         
         let typeDic = DDTool.getDictionaryWithPatch(fileName: "homePositionData.json") as? Dictionary<String, Any>
@@ -48,12 +47,7 @@ class DDHomeViewModel: DDBaseTableViewModel {
             error("数据❎")
         }
     }
-    override func initViewModel() {
-        
-        tableViewStyle = .grouped
-        useLoadMoreControl = false
-
-    }
+    
     
 }
 
@@ -72,19 +66,19 @@ extension DDHomeViewModel{
         let type = typeModelArray[section].type
 
         
-        if type == structureType.category.rawValue {
+        if type == structureType.structureTypeCategory.rawValue {
             if row == 0 {
                 return DDBaseTableViewModel.init(dataModel?.slider, DDHomeBannerCell.classForCoder())
             }else{
                 return DDBaseTableViewModel.init(nil, DDHomeIndexCell.classForCoder())
             }
-        }else if type == structureType.freecolumn.rawValue{
+        }else if type == structureType.structureTypeFreecolumn.rawValue{
             return DDBaseTableViewModel.init(dataModel?.freecolumn, DDHomeFreeColumnCell.classForCoder())
-        }else if type == structureType.live.rawValue{
+        }else if type == structureType.structureTypeLive.rawValue{
             return DDBaseTableViewModel.init(dataModel?.live?.data, DDHomeLiveCell.classForCoder())
-        }else if type == structureType.freeAudio.rawValue{
+        }else if type == structureType.structureTypeFreeAudio.rawValue{
             return DDBaseTableViewModel.init(dataModel?.freeAudio, DDHomeFreeAudioCell.classForCoder())
-        }else if type == structureType.column.rawValue{
+        }else if type == structureType.structureTypeColumn.rawValue{
             if indexPath.row >= 3  {
                 if let count =  dataModel?.column?.count {
                     return DDBaseTableViewModel.init("查看全部\(count)个", DDHomeShowMoreCell.classForCoder())
@@ -94,15 +88,15 @@ extension DDHomeViewModel{
             if let list = dataModel?.column?.list {
                 return DDBaseTableViewModel.init(list[row], DDHomeColumnCell.classForCoder())
             }
-        }else if type == structureType.magazine.rawValue{
+        }else if type == structureType.structureTypeMagazine.rawValue{
             return DDBaseTableViewModel.init(dataModel?.magazine?.data, DDHomeMagazineCell.classForCoder())
-        }else if type == structureType.dataMiningAduioOrBook.rawValue{
+        }else if type == structureType.structureTypeDataMiningAduioOrBook.rawValue{
             return DDBaseTableViewModel.init(dataModel?.dataMiningAduioOrBook, DDHomeHotAndGustCell.classForCoder())
-        }else if type == structureType.new.rawValue{
+        }else if type == structureType.structureTypeNew.rawValue{
             return DDBaseTableViewModel.init(dataModel?.new, DDHomeHotAndGustCell.classForCoder())
-        }else if type == structureType.subject.rawValue{
+        }else if type == structureType.structureTypeSubject.rawValue{
             return DDBaseTableViewModel.init(dataModel?.subject, DDHomeSubjectCell.classForCoder())
-        }else if type == structureType.storytell.rawValue{
+        }else if type == structureType.structureTypeStorytell.rawValue{
             return DDBaseTableViewModel.init(dataModel?.storytell?.data, DDHomeStorytellCell.classForCoder())
         }
 
@@ -115,9 +109,9 @@ extension DDHomeViewModel{
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
         let type = typeModelArray[section].type
-        if type == structureType.category.rawValue {
+        if type == structureType.structureTypeCategory.rawValue {
             return 2
-        }else if type == structureType.column.rawValue {
+        }else if type == structureType.structureTypeColumn.rawValue {
             return 3 + 1
         }else {
             return 1
@@ -127,7 +121,6 @@ extension DDHomeViewModel{
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
         
         let type = typeModelArray[section].type
-       
         guard currentShowHeadViewType(type) else {
             let view = tableView.dequeueReusableHeaderFooterView(withIdentifier: DDHomeTableHeadView.cellIdentifier()) as! DDHomeTableHeadView
             view.setHeadFootViewModel([dataModel ?? "",type] as [Any])
@@ -139,10 +132,10 @@ extension DDHomeViewModel{
     
     func currentShowHeadViewType(_ type : String) -> Bool {
         guard
-            type == structureType.freecolumn.rawValue ||
-            type == structureType.magazine.rawValue ||
-            type == structureType.category.rawValue ||
-            type == structureType.subject.rawValue else {
+            type == structureType.structureTypeFreecolumn.rawValue ||
+            type == structureType.structureTypeMagazine.rawValue ||
+            type == structureType.structureTypeCategory.rawValue ||
+            type == structureType.structureTypeSubject.rawValue else {
             
                 return false
         }

@@ -7,16 +7,15 @@
 //
 
 import UIKit
-import MJRefresh
-class DDStudyViewController: DDBaseTableViewController,UITableViewDelegate,UITableViewDataSource {
+
+class DDStudyViewController: DDBaseTableViewController{
 
     
     
      lazy var tableView2 : UITableView = { [unowned self] in
         let tableView = UITableView(frame: CGRect.zero, style: .plain)
  
-        tableView.delegate = self
-        tableView.dataSource = self
+        
         tableView.register(UITableViewCell.classForCoder(), forCellReuseIdentifier: "cell")
         tableView.separatorStyle = .none
         return tableView;
@@ -50,17 +49,6 @@ class DDStudyViewController: DDBaseTableViewController,UITableViewDelegate,UITab
     
         
 
-        
-    
-    }
-    
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 90
-    }
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
-        cell.textLabel?.text = "\(indexPath.row)"
-        return cell
         
     }
   

@@ -10,20 +10,13 @@ import UIKit
 
 class DDBaseViewController: UIViewController {
 
-    lazy var viewModel : DDBaseViewModel = {
-        let viewModel = DDBaseViewModel()
-        
-        return viewModel
-    }()
-    
-    
+   
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = UIColor.white
         initialize()
-        navigationItem.title = viewModel.title
     }
     
     

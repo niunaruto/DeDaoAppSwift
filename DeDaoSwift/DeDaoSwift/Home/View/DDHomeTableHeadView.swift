@@ -127,27 +127,27 @@ class DDHomeTableHeadView: DDBaseTableHeaderFooterView {
     func setSubViewContent(_ type : String?, _ dataModel :DDHomeDataModel? ) {
         var rightText = ""
         var leftText = ""
-        if type == structureType.new.rawValue {
+        if type == structureType.structureTypeNew.rawValue {
             rightText = dataModel?.new?.rightTitle ?? ""
             leftText = dataModel?.new?.title ?? ""
             
-        }else if type == structureType.dataMiningAduioOrBook.rawValue {
+        }else if type == structureType.structureTypeDataMiningAduioOrBook.rawValue {
             leftText = dataModel?.dataMiningAduioOrBook?.title ?? ""
             rightText = (dataModel?.dataMiningAduioOrBook?.rightTitle ?? "").characters.count > 0 ? (dataModel?.dataMiningAduioOrBook?.rightTitle ?? "") : "换一换"
             
             setRightLabelIsChangeUI()
             
             
-        }else if type == structureType.freeAudio.rawValue {
+        }else if type == structureType.structureTypeFreeAudio.rawValue {
             rightText = dataModel?.freeAudio?.rightTitle ?? ""
             leftText = dataModel?.freeAudio?.title ?? ""
-        }else if type == structureType.column.rawValue { //
+        }else if type == structureType.structureTypeColumn.rawValue { //
             rightText = (dataModel?.column?.rightTitle ?? "").characters.count > 0 ? (dataModel?.column?.rightTitle ?? "") : "换一换"
             leftText = dataModel?.column?.title ?? ""
             
             setRightLabelIsChangeUI()
             
-        }else if type == structureType.storytell.rawValue {
+        }else if type == structureType.structureTypeStorytell.rawValue {
             leftText = dataModel?.storytell?.title ?? ""
             rightText = "查看书单"
         }else if type == "live" {
