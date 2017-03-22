@@ -7,8 +7,8 @@
 //
 
 
-protocol NNBannerScrollViewDelegate : class {
-    func bannerScrollViewDidSelectItemAt(index : NSInteger)
+@objc protocol NNBannerScrollViewDelegate : class {
+   @objc optional  func bannerScrollViewDidSelectItemAt(index : NSInteger)
 }
 
 import UIKit
@@ -137,7 +137,7 @@ extension NNBannerScrollView : UICollectionViewDataSource,UICollectionViewDelega
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         
-        delegate?.bannerScrollViewDidSelectItemAt(index: ((indexPath as NSIndexPath).item % imageUrlArray!.count))
+        delegate?.bannerScrollViewDidSelectItemAt!(index: ((indexPath as NSIndexPath).item % imageUrlArray!.count))
     }
     
     func scrollViewDidScroll(_ scrollView: UIScrollView) {

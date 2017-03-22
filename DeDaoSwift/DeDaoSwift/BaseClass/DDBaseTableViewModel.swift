@@ -14,7 +14,7 @@ public enum loadDataFinishedStatus : Int {
     case error
 }
 protocol viewModelDelegate : class {
-      func loadDataFinished(_ vm : Any, _ status : loadDataFinishedStatus)
+    func loadDataFinished(_ vm : Any, _ status : loadDataFinishedStatus)
 }
 class DDBaseTableViewModel: DDBaseViewModel {
     
@@ -31,7 +31,7 @@ class DDBaseTableViewModel: DDBaseViewModel {
     var headFootViewClass : AnyClass?
     
     var model : Any?
-    var headFootModel : Any?
+    
     
     
     
@@ -61,11 +61,11 @@ extension DDBaseTableViewModel {
 }
 
 
-// MARK: - UITableViewDataSource,UITableViewDelegate
+// MARK: - DDBaseTableViewModel,UITableViewDataSource
 extension DDBaseTableViewModel : UITableViewDataSource,UITableViewDelegate {
-   
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-       
+        
         return dataArray.count;
     }
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -73,6 +73,7 @@ extension DDBaseTableViewModel : UITableViewDataSource,UITableViewDelegate {
         let vm = dataAtIndexPath(indexPath)
         let cell: DDBaseTableViewCell = tableView.cellForIndexPath(indexPath, cellClass: vm.cellClass)!
         cell.setCellsViewModel(vm.model)
+        cell.delegate = self
         return cell
     }
     
@@ -84,7 +85,16 @@ extension DDBaseTableViewModel : UITableViewDataSource,UITableViewDelegate {
     }
     
     
+    
+    
 }
+extension DDBaseTableViewModel : DDBaseCellProtocol {
+    
+    func tableCell(cell: DDBaseTableViewCell, didTrigerEvent: DDCellEventType, params: Dictionary<String, Any>?) {
+        
+    }
+}
+
 
 
 // MARK: - 提供给控制器的刷新 方法

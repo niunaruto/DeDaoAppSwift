@@ -9,6 +9,8 @@
 import UIKit
 class DDHomeBannerCell: DDBaseTableViewCell {
    
+    let bannerHeight : CGFloat = 140.0
+    
     
     override func setCellsViewModel(_ model: Any?) {
         
@@ -25,19 +27,21 @@ class DDHomeBannerCell: DDBaseTableViewCell {
     }
     
     lazy var banner: NNBannerScrollView = {
-         let banner = NNBannerScrollView(frame: CGRect(x: 0, y: 0, width: UIScreen.main.bounds.size.width, height: 140), nil, self, nil)
+         let banner = NNBannerScrollView(frame: CGRect(x: 0, y: 0, width: UIView.screenWidth, height: self.bannerHeight))
+        banner.delegate = banner
         return banner
     }()
     
     
     override func setUI() {
        contentView.addSubview(banner)
+
     }
     
     override func setLayout() {
         banner.snp .makeConstraints { (make) in
             make.edges.equalToSuperview()
-            make.height.equalTo(140)
+            make.height.equalTo(bannerHeight)
         }
     }
 
@@ -45,9 +49,10 @@ class DDHomeBannerCell: DDBaseTableViewCell {
     
 }
 
-
-extension DDHomeBannerCell : NNBannerScrollViewDelegate{
+extension NNBannerScrollView : NNBannerScrollViewDelegate {
     func bannerScrollViewDidSelectItemAt(index: NSInteger) {
         
     }
 }
+
+

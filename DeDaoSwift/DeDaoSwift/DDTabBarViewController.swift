@@ -64,7 +64,7 @@ UITabBarControllerDelegate {
         let home = CYLBaseNavigationController(rootViewController: DDTableViewController())
         
         
-        let mine = CYLBaseNavigationController(rootViewController: DDStudyViewController())
+        let mine = CYLBaseNavigationController(rootViewController: DDTableViewController())
         
         let chat = CYLBaseNavigationController(rootViewController: DDTableViewController())
         

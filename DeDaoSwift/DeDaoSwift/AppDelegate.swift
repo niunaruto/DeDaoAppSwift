@@ -9,10 +9,11 @@
 import UIKit
 import GDPerformanceView_Swift
 @UIApplicationMain
+
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-    var performanceView: GDPerformanceMonitor?
+
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {

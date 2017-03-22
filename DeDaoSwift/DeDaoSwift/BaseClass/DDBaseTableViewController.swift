@@ -55,10 +55,17 @@ class DDBaseTableViewController: DDBaseViewController {
     
 }
 
-
 extension DDBaseTableViewController{
     override func initialize() {
         super.initialize()
+    }
+}
+
+
+extension DDBaseTableViewController : DDBaseCellProtocol {
+    func tableCell(cell: DDBaseTableViewCell, didTrigerEvent: DDCellEventType, params: Dictionary<String, Any>?) {
+        
+        
     }
 }
 

@@ -17,6 +17,7 @@ class DDBaseViewController: UIViewController {
         super.viewDidLoad()
         view.backgroundColor = UIColor.white
         initialize()
+        
     }
     
     
@@ -59,6 +60,7 @@ extension DDBaseViewController {
         
     }
     func clickLeftSearchNavItem() {
+        navigationController?.pushViewController(DDSearchViewController(), animated: true)
         
     }
 }

@@ -13,23 +13,9 @@ import ObjectMapper
 
 class DDBaseTableViewCell: UITableViewCell {
 
-    
-    
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        selectionStyle = .none
-
-        setUI()
-        setLayout()
-    }
-    
-    
-    
-
+    weak var delegate : DDBaseCellProtocol?
     override func setSelected(_ selected: Bool, animated: Bool) {
-
         
-        // Configure the view for the selected state
     }
     override init(style: UITableViewCellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
@@ -68,6 +54,7 @@ extension UIView{
 }
 
 extension DDBaseTableViewCell{
+    
     func setUI() {
         
     }
