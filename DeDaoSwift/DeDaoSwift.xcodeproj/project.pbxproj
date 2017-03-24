@@ -16,6 +16,14 @@
 		CE0CE3131E790BCD00CC8C54 /* DDHomePositionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0CE3121E790BCD00CC8C54 /* DDHomePositionModel.swift */; };
 		CE0CE3151E7940DF00CC8C54 /* DDHomeHotAndGustCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0CE3141E7940DF00CC8C54 /* DDHomeHotAndGustCell.swift */; };
 		CE0CE3171E79704600CC8C54 /* DDHomeSubjectCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0CE3161E79704600CC8C54 /* DDHomeSubjectCell.swift */; };
+		CE6630C61E83A20200630FF5 /* DDStudyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE6630BB1E83A20200630FF5 /* DDStudyViewController.swift */; };
+		CE6630C71E83A20200630FF5 /* studyDailyverse.json in Resources */ = {isa = PBXBuildFile; fileRef = CE6630BE1E83A20200630FF5 /* studyDailyverse.json */; };
+		CE6630C81E83A20200630FF5 /* studyJsonData.json in Resources */ = {isa = PBXBuildFile; fileRef = CE6630BF1E83A20200630FF5 /* studyJsonData.json */; };
+		CE6630C91E83A20200630FF5 /* DDStudyHeadView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE6630C11E83A20200630FF5 /* DDStudyHeadView.swift */; };
+		CE6630CC1E83A20200630FF5 /* DDStudyViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE6630C51E83A20200630FF5 /* DDStudyViewModel.swift */; };
+		CE6630CE1E83A26000630FF5 /* DDstudyDailyverseCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE6630CD1E83A26000630FF5 /* DDstudyDailyverseCell.swift */; };
+		CE6630D01E83A87C00630FF5 /* DDStudyDailyVerseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE6630CF1E83A87C00630FF5 /* DDStudyDailyVerseModel.swift */; };
+		CE6630D21E83AECB00630FF5 /* DDStudyTimeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE6630D11E83AECB00630FF5 /* DDStudyTimeCell.swift */; };
 		CE708D1C1E6914B300F4DF5D /* DDBaseTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE708D191E6914B300F4DF5D /* DDBaseTableViewController.swift */; };
 		CE708D1D1E6914B300F4DF5D /* DDBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE708D1A1E6914B300F4DF5D /* DDBaseViewController.swift */; };
 		CE708D1E1E6914B300F4DF5D /* DDBaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE708D1B1E6914B300F4DF5D /* DDBaseViewModel.swift */; };
@@ -62,9 +70,6 @@
 		CE82D0291E7B88BE000CD6C3 /* homePositionData.json in Resources */ = {isa = PBXBuildFile; fileRef = CE82D0251E7B88BE000CD6C3 /* homePositionData.json */; };
 		CE82D02A1E7B88BE000CD6C3 /* searchHot.json in Resources */ = {isa = PBXBuildFile; fileRef = CE82D0261E7B88BE000CD6C3 /* searchHot.json */; };
 		CE82D02B1E7B88BE000CD6C3 /* searchTextList.json in Resources */ = {isa = PBXBuildFile; fileRef = CE82D0271E7B88BE000CD6C3 /* searchTextList.json */; };
-		CE82D0321E7B8962000CD6C3 /* DDStudyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE82D0311E7B8962000CD6C3 /* DDStudyViewController.swift */; };
-		CE82D0341E7B8A2F000CD6C3 /* DDStudyTopRemarkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE82D0331E7B8A2F000CD6C3 /* DDStudyTopRemarkView.swift */; };
-		CE82D0361E7B8B49000CD6C3 /* DDStudyViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE82D0351E7B8B49000CD6C3 /* DDStudyViewModel.swift */; };
 		CEB18E081E6711AE001653AD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB18E071E6711AE001653AD /* AppDelegate.swift */; };
 		CEB18E0F1E6711AE001653AD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEB18E0E1E6711AE001653AD /* Assets.xcassets */; };
 		CEB18E121E6711AE001653AD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEB18E101E6711AE001653AD /* LaunchScreen.storyboard */; };
@@ -75,7 +80,6 @@
 		CEDE22CF1E7FD9DD001134BF /* DDBaseCellProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDE22CE1E7FD9DD001134BF /* DDBaseCellProtocol.swift */; };
 		CEE4DE6A1E684A9B0093558C /* DDTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE4DE691E684A9B0093558C /* DDTabBarViewController.swift */; };
 		CEE4DE7F1E684DA60093558C /* DDTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE4DE7E1E684DA60093558C /* DDTableViewController.swift */; };
-		CEFEBA891E7BB4E4008FE341 /* DDStudyTopRemarkViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEFEBA881E7BB4E4008FE341 /* DDStudyTopRemarkViewCell.swift */; };
 		CEFEBA8B1E7BC38F008FE341 /* GDPerformanceView_Swift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEFEBA8A1E7BC38F008FE341 /* GDPerformanceView_Swift.framework */; };
 		EB70D11DC41422F772F8819C /* Pods_DeDaoSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D88A0070B2B8B67E8338D85 /* Pods_DeDaoSwift.framework */; };
 /* End PBXBuildFile section */
@@ -109,6 +113,14 @@
 		CE0CE3121E790BCD00CC8C54 /* DDHomePositionModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DDHomePositionModel.swift; sourceTree = "<group>"; };
 		CE0CE3141E7940DF00CC8C54 /* DDHomeHotAndGustCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DDHomeHotAndGustCell.swift; sourceTree = "<group>"; };
 		CE0CE3161E79704600CC8C54 /* DDHomeSubjectCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DDHomeSubjectCell.swift; sourceTree = "<group>"; };
+		CE6630BB1E83A20200630FF5 /* DDStudyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DDStudyViewController.swift; sourceTree = "<group>"; };
+		CE6630BE1E83A20200630FF5 /* studyDailyverse.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = studyDailyverse.json; sourceTree = "<group>"; };
+		CE6630BF1E83A20200630FF5 /* studyJsonData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = studyJsonData.json; sourceTree = "<group>"; };
+		CE6630C11E83A20200630FF5 /* DDStudyHeadView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DDStudyHeadView.swift; sourceTree = "<group>"; };
+		CE6630C51E83A20200630FF5 /* DDStudyViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DDStudyViewModel.swift; sourceTree = "<group>"; };
+		CE6630CD1E83A26000630FF5 /* DDstudyDailyverseCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DDstudyDailyverseCell.swift; sourceTree = "<group>"; };
+		CE6630CF1E83A87C00630FF5 /* DDStudyDailyVerseModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DDStudyDailyVerseModel.swift; sourceTree = "<group>"; };
+		CE6630D11E83AECB00630FF5 /* DDStudyTimeCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DDStudyTimeCell.swift; sourceTree = "<group>"; };
 		CE708D191E6914B300F4DF5D /* DDBaseTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DDBaseTableViewController.swift; sourceTree = "<group>"; };
 		CE708D1A1E6914B300F4DF5D /* DDBaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DDBaseViewController.swift; sourceTree = "<group>"; };
 		CE708D1B1E6914B300F4DF5D /* DDBaseViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DDBaseViewModel.swift; sourceTree = "<group>"; };
@@ -164,9 +176,6 @@
 		CE82D0251E7B88BE000CD6C3 /* homePositionData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = homePositionData.json; sourceTree = "<group>"; };
 		CE82D0261E7B88BE000CD6C3 /* searchHot.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = searchHot.json; sourceTree = "<group>"; };
 		CE82D0271E7B88BE000CD6C3 /* searchTextList.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = searchTextList.json; sourceTree = "<group>"; };
-		CE82D0311E7B8962000CD6C3 /* DDStudyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DDStudyViewController.swift; sourceTree = "<group>"; };
-		CE82D0331E7B8A2F000CD6C3 /* DDStudyTopRemarkView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DDStudyTopRemarkView.swift; sourceTree = "<group>"; };
-		CE82D0351E7B8B49000CD6C3 /* DDStudyViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DDStudyViewModel.swift; sourceTree = "<group>"; };
 		CEB18E041E6711AE001653AD /* DeDaoSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DeDaoSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEB18E071E6711AE001653AD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CEB18E0E1E6711AE001653AD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -184,7 +193,6 @@
 		CEE4DE691E684A9B0093558C /* DDTabBarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DDTabBarViewController.swift; sourceTree = "<group>"; };
 		CEE4DE7D1E684C6A0093558C /* DeDaoSwift-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DeDaoSwift-Bridging-Header.h"; sourceTree = "<group>"; };
 		CEE4DE7E1E684DA60093558C /* DDTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DDTableViewController.swift; sourceTree = "<group>"; };
-		CEFEBA881E7BB4E4008FE341 /* DDStudyTopRemarkViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DDStudyTopRemarkViewCell.swift; sourceTree = "<group>"; };
 		CEFEBA8A1E7BC38F008FE341 /* GDPerformanceView_Swift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GDPerformanceView_Swift.framework; path = "Pods/../build/Debug-iphoneos/GDPerformanceView-Swift/GDPerformanceView_Swift.framework"; sourceTree = "<group>"; };
 		D07FDF203FB69993E2B75B43 /* Pods-DeDaoSwift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DeDaoSwift.release.xcconfig"; path = "Pods/Target Support Files/Pods-DeDaoSwift/Pods-DeDaoSwift.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -269,6 +277,61 @@
 			path = DLIntrospection;
 			sourceTree = "<group>";
 		};
+		CE6630B91E83A20200630FF5 /* Study */ = {
+			isa = PBXGroup;
+			children = (
+				CE6630BA1E83A20200630FF5 /* Controller */,
+				CE6630BC1E83A20200630FF5 /* Model */,
+				CE6630BD1E83A20200630FF5 /* StudyJson */,
+				CE6630C01E83A20200630FF5 /* View */,
+				CE6630C41E83A20200630FF5 /* ViewModel */,
+			);
+			path = Study;
+			sourceTree = "<group>";
+		};
+		CE6630BA1E83A20200630FF5 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				CE6630BB1E83A20200630FF5 /* DDStudyViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		CE6630BC1E83A20200630FF5 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				CE6630CF1E83A87C00630FF5 /* DDStudyDailyVerseModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CE6630BD1E83A20200630FF5 /* StudyJson */ = {
+			isa = PBXGroup;
+			children = (
+				CE6630BE1E83A20200630FF5 /* studyDailyverse.json */,
+				CE6630BF1E83A20200630FF5 /* studyJsonData.json */,
+			);
+			path = StudyJson;
+			sourceTree = "<group>";
+		};
+		CE6630C01E83A20200630FF5 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CE6630C11E83A20200630FF5 /* DDStudyHeadView.swift */,
+				CE6630CD1E83A26000630FF5 /* DDstudyDailyverseCell.swift */,
+				CE6630D11E83AECB00630FF5 /* DDStudyTimeCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CE6630C41E83A20200630FF5 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				CE6630C51E83A20200630FF5 /* DDStudyViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 		CE708D181E6914B300F4DF5D /* BaseClass */ = {
 			isa = PBXGroup;
 			children = (
@@ -348,50 +411,6 @@
 			path = HomeJson;
 			sourceTree = "<group>";
 		};
-		CE82D02C1E7B88F0000CD6C3 /* Study */ = {
-			isa = PBXGroup;
-			children = (
-				CE82D02D1E7B88F0000CD6C3 /* Controller */,
-				CE82D02E1E7B88F0000CD6C3 /* Model */,
-				CE82D0301E7B88F0000CD6C3 /* ViewModel */,
-				CE82D02F1E7B88F0000CD6C3 /* View */,
-			);
-			name = Study;
-			path = Home/Study;
-			sourceTree = "<group>";
-		};
-		CE82D02D1E7B88F0000CD6C3 /* Controller */ = {
-			isa = PBXGroup;
-			children = (
-				CE82D0311E7B8962000CD6C3 /* DDStudyViewController.swift */,
-			);
-			path = Controller;
-			sourceTree = "<group>";
-		};
-		CE82D02E1E7B88F0000CD6C3 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		CE82D02F1E7B88F0000CD6C3 /* View */ = {
-			isa = PBXGroup;
-			children = (
-				CE82D0331E7B8A2F000CD6C3 /* DDStudyTopRemarkView.swift */,
-				CEFEBA881E7BB4E4008FE341 /* DDStudyTopRemarkViewCell.swift */,
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
-		CE82D0301E7B88F0000CD6C3 /* ViewModel */ = {
-			isa = PBXGroup;
-			children = (
-				CE82D0351E7B8B49000CD6C3 /* DDStudyViewModel.swift */,
-			);
-			path = ViewModel;
-			sourceTree = "<group>";
-		};
 		CEB18DFB1E6711AE001653AD = {
 			isa = PBXGroup;
 			children = (
@@ -422,9 +441,9 @@
 				CEE4DE691E684A9B0093558C /* DDTabBarViewController.swift */,
 				CEE4DE7D1E684C6A0093558C /* DeDaoSwift-Bridging-Header.h */,
 				CE708D181E6914B300F4DF5D /* BaseClass */,
-				CE82D02C1E7B88F0000CD6C3 /* Study */,
 				CE7C120A1E6D623600067BFB /* Vendors */,
 				CEE4DE941E69098A0093558C /* Listen */,
+				CE6630B91E83A20200630FF5 /* Study */,
 				CEE4DE991E69098A0093558C /* Mine */,
 				CEE4DE9E1E69098A0093558C /* Purchase */,
 				CEE4DE651E684A4F0093558C /* Home */,
@@ -751,8 +770,10 @@
 				CE82D02A1E7B88BE000CD6C3 /* searchHot.json in Resources */,
 				CE82D0281E7B88BE000CD6C3 /* homeJsonData.json in Resources */,
 				CE82D0291E7B88BE000CD6C3 /* homePositionData.json in Resources */,
+				CE6630C71E83A20200630FF5 /* studyDailyverse.json in Resources */,
 				CEB18E121E6711AE001653AD /* LaunchScreen.storyboard in Resources */,
 				CEB18E0F1E6711AE001653AD /* Assets.xcassets in Resources */,
+				CE6630C81E83A20200630FF5 /* studyJsonData.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -832,32 +853,34 @@
 				CE7C13121E72753200067BFB /* NNBannerScrollViewCell.swift in Sources */,
 				CE7C131F1E76953800067BFB /* NNAlertView.swift in Sources */,
 				CE0CE30E1E78ED6E00CC8C54 /* DDHomeStorytellCell.swift in Sources */,
-				CEFEBA891E7BB4E4008FE341 /* DDStudyTopRemarkViewCell.swift in Sources */,
 				CE82D01B1E7B7D9F000CD6C3 /* UIBarButtonItem+Extension.swift in Sources */,
 				CE7C11FB1E6D395000067BFB /* DDHomeFreeAudioModel.swift in Sources */,
 				CE0CE3111E7908D900CC8C54 /* DDHomeMagazineCell.swift in Sources */,
 				CE7C12231E6D648D00067BFB /* UIImageView+Extension.swift in Sources */,
 				CEE4DE6A1E684A9B0093558C /* DDTabBarViewController.swift in Sources */,
 				CE7C13111E72753200067BFB /* NNBannerScrollView.swift in Sources */,
+				CE6630D21E83AECB00630FF5 /* DDStudyTimeCell.swift in Sources */,
 				CE7C12011E6D433600067BFB /* DDHomeNewModel.swift in Sources */,
 				CE0CE3091E78D91200CC8C54 /* DDHomeColumnCell.swift in Sources */,
 				CE82D0171E7A819A000CD6C3 /* UITableView+Extension.swift in Sources */,
-				CE82D0321E7B8962000CD6C3 /* DDStudyViewController.swift in Sources */,
 				CEDE22CF1E7FD9DD001134BF /* DDBaseCellProtocol.swift in Sources */,
 				CEE4DE7F1E684DA60093558C /* DDTableViewController.swift in Sources */,
 				CEB550A21E7779F60001BEC0 /* DDBaseTableHeaderFooterView.swift in Sources */,
 				CE7C13141E763C9400067BFB /* DDHomeIndexCell.swift in Sources */,
 				CE7C13181E764A2B00067BFB /* UIButton+Extension.swift in Sources */,
 				CE7C13231E769D7500067BFB /* DDBaseTableViewModel.swift in Sources */,
+				CE6630C61E83A20200630FF5 /* DDStudyViewController.swift in Sources */,
 				CE0CE3171E79704600CC8C54 /* DDHomeSubjectCell.swift in Sources */,
 				CE708D3A1E694D0E00F4DF5D /* DDScrollBannerView.swift in Sources */,
+				CE6630CE1E83A26000630FF5 /* DDstudyDailyverseCell.swift in Sources */,
 				CE708D201E6914D100F4DF5D /* DDNavigationProtocol.swift in Sources */,
 				CE708D1C1E6914B300F4DF5D /* DDBaseTableViewController.swift in Sources */,
 				CE82D0191E7ACD22000CD6C3 /* DDHomeShowMoreCell.swift in Sources */,
 				CE7C12451E6EB81400067BFB /* DDViewModelServices.swift in Sources */,
+				CE6630CC1E83A20200630FF5 /* DDStudyViewModel.swift in Sources */,
 				CE708D1E1E6914B300F4DF5D /* DDBaseViewModel.swift in Sources */,
 				CE708D1D1E6914B300F4DF5D /* DDBaseViewController.swift in Sources */,
-				CE82D0361E7B8B49000CD6C3 /* DDStudyViewModel.swift in Sources */,
+				CE6630D01E83A87C00630FF5 /* DDStudyDailyVerseModel.swift in Sources */,
 				CE7C11FF1E6D3D2F00067BFB /* DDHomeStorytellModel.swift in Sources */,
 				CE0CE3151E7940DF00CC8C54 /* DDHomeHotAndGustCell.swift in Sources */,
 				CE7C122B1E6E599000067BFB /* UIView+Extension.swift in Sources */,
@@ -871,8 +894,8 @@
 				CE7C12031E6D441300067BFB /* DDHomeSubjectModel.swift in Sources */,
 				CE7C12271E6E586C00067BFB /* DDHomeBannerCell.swift in Sources */,
 				CE0CE3071E78D6E100CC8C54 /* DDHomeLiveCell.swift in Sources */,
+				CE6630C91E83A20200630FF5 /* DDStudyHeadView.swift in Sources */,
 				CE7C11EB1E6D0E5700067BFB /* DDHomeModel.swift in Sources */,
-				CE82D0341E7B8A2F000CD6C3 /* DDStudyTopRemarkView.swift in Sources */,
 				CE708D361E69454200F4DF5D /* DDNetworkTools.swift in Sources */,
 				CE0A7F381E7FD7E9004A82E7 /* DDSearchViewController.swift in Sources */,
 				CE7C131C1E767D4100067BFB /* DDHomeFreeAudioCell.swift in Sources */,

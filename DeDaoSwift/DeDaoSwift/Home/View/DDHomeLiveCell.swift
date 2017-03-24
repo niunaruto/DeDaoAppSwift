@@ -7,7 +7,7 @@
 //
 
 import UIKit
-
+import RxSwift
 class DDHomeLiveCell: DDBaseTableViewCell {
     
     
@@ -38,6 +38,7 @@ class DDHomeLiveCell: DDBaseTableViewCell {
     override func setUI() {
         contentView.addSubview(titleLabel)
         contentView.addSubview(subDescLabel)
+        
         
         let rightImageView = UIImageView(image: UIImage(named: "new_main_subscribe_right"))
         contentView.addSubview(rightImageView)

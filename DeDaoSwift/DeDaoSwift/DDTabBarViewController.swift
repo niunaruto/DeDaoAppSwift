@@ -64,7 +64,7 @@ UITabBarControllerDelegate {
         let home = CYLBaseNavigationController(rootViewController: DDTableViewController())
         
         
-        let mine = CYLBaseNavigationController(rootViewController: DDTableViewController())
+        let mine = CYLBaseNavigationController(rootViewController: DDStudyViewController())
         
         let chat = CYLBaseNavigationController(rootViewController: DDTableViewController())
         
@@ -75,7 +75,7 @@ UITabBarControllerDelegate {
         
         
         viewControllers = [
-            mine,
+            home,
             home,
             chat,
             bbs,

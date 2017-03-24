@@ -90,12 +90,10 @@ extension DDBaseTableViewController : viewModelDelegate {
 
     func loadDataFinished(_ vm: Any, _ status: loadDataFinishedStatus) {
 
-        guard status == .success else {
-            endRefreshing()
-            return
-        }
-        endRefreshing()
+        
         tableView.reloadData()
+        endRefreshing()
+
         
     }
     
@@ -107,6 +105,8 @@ extension DDBaseTableViewController : viewModelDelegate {
             tableView.mj_footer.endRefreshing()
         }
     }
+    
+    
 
     
     

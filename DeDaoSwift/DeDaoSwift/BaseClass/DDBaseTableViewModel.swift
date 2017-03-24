@@ -14,7 +14,7 @@ public enum loadDataFinishedStatus : Int {
     case error
 }
 protocol viewModelDelegate : class {
-    func loadDataFinished(_ vm : Any, _ status : loadDataFinishedStatus)
+     func loadDataFinished(_ vm : Any, _ status : loadDataFinishedStatus)
 }
 class DDBaseTableViewModel: DDBaseViewModel {
     

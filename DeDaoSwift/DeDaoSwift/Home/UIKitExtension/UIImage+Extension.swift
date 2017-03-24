@@ -18,5 +18,20 @@ extension UIImage {
         return image!
     }
     
+    class func screensHotView(_ view : UIView) -> UIImage?{
+        
+        let size = view.bounds.size
+        UIGraphicsBeginImageContextWithOptions(size, true, 0)
+        
+        if let ctx = UIGraphicsGetCurrentContext(){
+            view.layer.render(in: ctx)
+            view.layer.backgroundColor = UIColor.white.cgColor
+
+            let image = UIGraphicsGetImageFromCurrentImageContext();// 生成新图片
+            UIGraphicsEndImageContext();// 关闭上下文
+            return image
+        }
+        return nil
+    }
     
 }
