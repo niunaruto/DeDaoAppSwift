@@ -1,0 +1,199 @@
+PODS:
+  - Alamofire (4.9.1)
+  - AlipaySDK-iOS (15.6.8)
+  - BSGridCollectionViewLayout (1.2.5)
+  - BSImagePicker (2.10.3):
+    - BSGridCollectionViewLayout (= 1.2.5)
+    - BSImageView (= 1.0.3)
+  - BSImageView (1.0.3)
+  - CHIPageControl (0.1.8):
+    - CHIPageControl/Aji (= 0.1.8)
+    - CHIPageControl/Aleppo (= 0.1.8)
+    - CHIPageControl/Chimayo (= 0.1.8)
+    - CHIPageControl/Fresno (= 0.1.8)
+    - CHIPageControl/Jalapeno (= 0.1.8)
+    - CHIPageControl/Jaloro (= 0.1.8)
+    - CHIPageControl/Paprika (= 0.1.8)
+    - CHIPageControl/Puya (= 0.1.8)
+  - CHIPageControl/Aji (0.1.8)
+  - CHIPageControl/Aleppo (0.1.8)
+  - CHIPageControl/Chimayo (0.1.8)
+  - CHIPageControl/Fresno (0.1.8)
+  - CHIPageControl/Jalapeno (0.1.8)
+  - CHIPageControl/Jaloro (0.1.8)
+  - CHIPageControl/Paprika (0.1.8)
+  - CHIPageControl/Puya (0.1.8)
+  - Differentiator (4.0.1)
+  - FLAnimatedImage (1.0.12)
+  - HandyJSON (5.0.1)
+  - iCarousel (1.8.3)
+  - IQKeyboardManagerSwift (6.2.1)
+  - Kingfisher (5.4.0)
+  - Masonry (1.1.0)
+  - MJRefresh (3.1.15.7)
+  - PryntTrimmerView (4.0.0)
+  - Realm (3.17.3):
+    - Realm/Headers (= 3.17.3)
+  - Realm/Headers (3.17.3)
+  - RealmSwift (3.17.3):
+    - Realm (= 3.17.3)
+  - RxAlamofire (5.0.0):
+    - RxAlamofire/Core (= 5.0.0)
+  - RxAlamofire/Core (5.0.0):
+    - Alamofire (~> 4.8)
+    - RxSwift (~> 5.0)
+  - RxCocoa (5.0.1):
+    - RxRelay (~> 5)
+    - RxSwift (~> 5)
+  - RxDataSources (4.0.1):
+    - Differentiator (~> 4.0)
+    - RxCocoa (~> 5.0)
+    - RxSwift (~> 5.0)
+  - RxRelay (5.0.1):
+    - RxSwift (~> 5)
+  - RxSwift (5.0.1)
+  - SAMKeychain (1.5.3)
+  - SDWebImage (4.4.8):
+    - SDWebImage/Core (= 4.4.8)
+  - SDWebImage/Core (4.4.8)
+  - SDWebImage/GIF (4.4.8):
+    - FLAnimatedImage (~> 1.0)
+    - SDWebImage/Core
+  - Sentry (4.3.1):
+    - Sentry/Core (= 4.3.1)
+  - Sentry/Core (4.3.1)
+  - SKTagView (0.9.2)
+  - SnapKit (5.0.1)
+  - SteviaLayout (4.7.3)
+  - TTTAttributedLabel (2.0.0)
+  - UMCAnalytics (6.0.5):
+    - UMCCommon
+  - UMCCommon (2.1.1)
+  - WechatOpenSDK (1.8.5)
+  - YPImagePicker (4.1.3):
+    - PryntTrimmerView (~> 4.0.0)
+    - SteviaLayout (~> 4.7.3)
+  - ZFPlayer (3.2.16):
+    - ZFPlayer/Core (= 3.2.16)
+  - ZFPlayer/AVPlayer (3.2.16):
+    - ZFPlayer/Core
+  - ZFPlayer/ControlView (3.2.16):
+    - ZFPlayer/Core
+  - ZFPlayer/Core (3.2.16)
+
+DEPENDENCIES:
+  - AlipaySDK-iOS
+  - BSImagePicker
+  - CHIPageControl (~> 0.1.7)
+  - FLAnimatedImage (~> 1.0.12)
+  - HandyJSON (~> 5.0.0)
+  - iCarousel
+  - IQKeyboardManagerSwift (~> 6.2.1)
+  - Kingfisher (~> 5.4.0)
+  - Masonry
+  - MJRefresh (~> 3.1.15.7)
+  - RealmSwift (~> 3.17.0)
+  - RxAlamofire (~> 5.0.0)
+  - RxCocoa (~> 5.0.0)
+  - RxDataSources (~> 4.0.1)
+  - RxSwift (~> 5.0.0)
+  - SAMKeychain (~> 1.5.3)
+  - SDWebImage (~> 4.4.6)
+  - SDWebImage/GIF
+  - Sentry (from `https://github.com/getsentry/sentry-cocoa.git`, tag `4.3.1`)
+  - SKTagView (~> 0.9.2)
+  - SnapKit (~> 5.0.0)
+  - TTTAttributedLabel (~> 2.0.0)
+  - UMCAnalytics
+  - UMCCommon
+  - WechatOpenSDK (= 1.8.5)
+  - YPImagePicker
+  - ZFPlayer (~> 3.2.7)
+  - ZFPlayer/AVPlayer
+  - ZFPlayer/ControlView
+
+SPEC REPOS:
+  https://github.com/CocoaPods/Specs.git:
+    - Alamofire
+    - AlipaySDK-iOS
+    - BSGridCollectionViewLayout
+    - BSImagePicker
+    - BSImageView
+    - CHIPageControl
+    - Differentiator
+    - FLAnimatedImage
+    - HandyJSON
+    - iCarousel
+    - IQKeyboardManagerSwift
+    - Kingfisher
+    - Masonry
+    - MJRefresh
+    - PryntTrimmerView
+    - Realm
+    - RealmSwift
+    - RxAlamofire
+    - RxCocoa
+    - RxDataSources
+    - RxRelay
+    - RxSwift
+    - SAMKeychain
+    - SDWebImage
+    - SKTagView
+    - SnapKit
+    - SteviaLayout
+    - TTTAttributedLabel
+    - UMCAnalytics
+    - UMCCommon
+    - WechatOpenSDK
+    - YPImagePicker
+    - ZFPlayer
+
+EXTERNAL SOURCES:
+  Sentry:
+    :git: https://github.com/getsentry/sentry-cocoa.git
+    :tag: 4.3.1
+
+CHECKOUT OPTIONS:
+  Sentry:
+    :git: https://github.com/getsentry/sentry-cocoa.git
+    :tag: 4.3.1
+
+SPEC CHECKSUMS:
+  Alamofire: 85e8a02c69d6020a0d734f6054870d7ecb75cf18
+  AlipaySDK-iOS: 703a55774a37f412410ab04af96c011b91ec58cb
+  BSGridCollectionViewLayout: 333dcb457a5a3bdd9212607ab5756553dcfe06cb
+  BSImagePicker: 07404254f2fcdaf5a2eb403c0f8c337267ce8738
+  BSImageView: a149459433a2687157d034c78e059d30ac7f2544
+  CHIPageControl: 76b35c8309d8dd155e869c109cc6ffc0aaa465ff
+  Differentiator: 886080237d9f87f322641dedbc5be257061b0602
+  FLAnimatedImage: 4a0b56255d9b05f18b6dd7ee06871be5d3b89e31
+  HandyJSON: d45b8415c501e3affc59ca9762c1197ff0feb646
+  iCarousel: d782f635afac190c49bb8ee455882284cff8b85f
+  IQKeyboardManagerSwift: 0f0ae8935360b4003e6ea1ac7c19898f01e2f7c7
+  Kingfisher: 9c8f2cc6710334e06f32ba2b45e77707d5e2f0c9
+  Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
+  MJRefresh: 697f8ec75ebdbe9207767bb682cf0f51b0d8a41f
+  PryntTrimmerView: 67e67573ffd4c073f1308effa66aefd0cfa667a0
+  Realm: 5a1d9d47bfc101dd597668b1a8af4288a2557f6d
+  RealmSwift: b7fdc2d18616621c31df5c7a398a45a2163f8eb0
+  RxAlamofire: e7875a012aff55345672d0f70a2a9cd6aeb0f211
+  RxCocoa: e741b9749968e8a143e2b787f1dfbff2b63d0a5c
+  RxDataSources: efee07fa4de48477eca0a4611e6d11e2da9c1114
+  RxRelay: 89d54507f4fd4d969e6ec1d4bd7f3673640b4640
+  RxSwift: e2dc62b366a3adf6a0be44ba9f405efd4c94e0c4
+  SAMKeychain: 483e1c9f32984d50ca961e26818a534283b4cd5c
+  SDWebImage: 783af2c3fa36291a250030c4752ee370a9a51d13
+  Sentry: 5267d493a398663538317e4dcc438c12c66202ed
+  SKTagView: 59cdadcd16e4a09300746ad1811a72371e1327f7
+  SnapKit: 97b92857e3df3a0c71833cce143274bf6ef8e5eb
+  SteviaLayout: c2ecdcff57d44e38fd2f65e54ad52aeae28ca0c4
+  TTTAttributedLabel: 8cffe8e127e4e82ff3af1e5386d4cd0ad000b656
+  UMCAnalytics: 045be2cd1ec05aa95ad62405a850757f932e2d59
+  UMCCommon: 971f324a5a99c9d662ae040a815e7e3d7ef8b2a8
+  WechatOpenSDK: 9b15110aba1d502456d8e83677357e6437f2e751
+  YPImagePicker: 7a34eabd0ef544ae8fbf9785c3df9ec5bbf242e3
+  ZFPlayer: fbae8477ec9a83f644bd8890e92e7871f37a587d
+
+PODFILE CHECKSUM: b4fe43e56a86ccefcac06c5bead7e3c2b918ac83
+
+COCOAPODS: 1.8.4

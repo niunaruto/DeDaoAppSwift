@@ -10,9 +10,16 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    var me = ("Mars", 11,"da")
+
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        print(me.1)
+        print(type(of: me))
+    }
+    
+    func backATrueData() -> (Any,Any,Any) {
+        return self.me
     }
 
 

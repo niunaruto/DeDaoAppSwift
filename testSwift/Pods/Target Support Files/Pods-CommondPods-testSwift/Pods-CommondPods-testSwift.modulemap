@@ -1,0 +1,6 @@
+framework module Pods_CommondPods_testSwift {
+  umbrella header "Pods-CommondPods-testSwift-umbrella.h"
+
+  export *
+  module * { export * }
+}

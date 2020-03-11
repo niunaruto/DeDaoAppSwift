@@ -1,0 +1,6 @@
+framework module SKTagView {
+  umbrella header "SKTagView-umbrella.h"
+
+  export *
+  module * { export * }
+}

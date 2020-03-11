@@ -1,0 +1,68 @@
+# Uncomment the next line to define a global platform for your project
+source 'https://github.com/CocoaPods/Specs.git'
+platform :ios, '10.0'
+inhibit_all_warnings!
+use_frameworks!
+
+abstract_target 'CommondPods' do
+  
+  #Swift类库
+  pod 'RxSwift', '~> 5.0.0'
+  pod 'RxCocoa', '~> 5.0.0'
+  pod 'RxDataSources', '~> 4.0.1'
+  pod 'RxAlamofire', '~> 5.0.0'
+#  pod 'NSObject+Rx', '~> 5.0.0'# 定义全局的dispose
+  #  pod 'IBAnimatable' #主要使用于Interface Builder,设置动画
+  #  pod 'R.swift' #资源处理，图片 字体 视频 xib等等
+  #pod 'Hero', '~> 0.3.6'        #视图控制器过渡动画的库
+  pod 'SnapKit', '~> 5.0.0'
+  pod 'HandyJSON', '~> 5.0.0'
+  pod 'IQKeyboardManagerSwift', '~> 6.2.1'
+  pod 'SAMKeychain', '~> 1.5.3'  #密码加密
+  #OC类库
+  pod 'MJRefresh', '~> 3.1.15.7'
+  pod 'Masonry'
+  
+  pod 'iCarousel'
+  # bug分析
+#  pod 'Bugly', '~>2.5.0'
+  #pod 'LCActionSheet' #弹出视图
+  #pod 'WXSTransition', '~> 1.2.1' #导航跳转动画
+  pod 'WechatOpenSDK', '1.8.5'
+  pod 'CHIPageControl', '~> 0.1.7'
+  pod 'SDWebImage', '~>4.4.6'
+  pod 'SDWebImage/GIF'
+  pod 'FLAnimatedImage', '~> 1.0.12'
+  pod 'SKTagView', '~> 0.9.2'
+  pod 'ZFPlayer','~> 3.2.7'
+  pod 'ZFPlayer/AVPlayer'
+  pod 'ZFPlayer/ControlView'
+#  pod 'PPBadgeViewSwift'
+  pod 'YPImagePicker' # 图片选择框架
+  pod 'Kingfisher', '~> 5.4.0'
+  #pod 'JXPhotoBrowser', '~> 2.2.3' #图片浏览器
+  pod 'AlipaySDK-iOS'
+  #友盟 分析和推送
+  pod 'UMCCommon'
+  #  pod 'UMCSecurityPlugins'
+  pod 'UMCAnalytics'
+  #设置默认数据库
+  pod 'RealmSwift', '~> 3.17.0'
+  pod 'TTTAttributedLabel', '~> 2.0.0'
+  pod "BSImagePicker"
+  #UI库查询展示
+#  pod 'Reveal-SDK', '~> 21',:configurations => ['Debug']
+  #查看网络请求 UI图层 和日志的类库
+#  pod 'FLEX' ,'~> 2.4.0', :configurations => ['Debug']
+  # 奔溃日志信息采集
+  pod 'Sentry', :git => 'https://github.com/getsentry/sentry-cocoa.git', :tag => '4.3.1'
+  #查看UI库
+  #pod 'LookinServer', :configurations => ['Debug']
+  # 添加各自的pod第三方
+  target 'testSwift' do
+  end
+
+
+end
+
+
